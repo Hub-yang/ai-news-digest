@@ -1,0 +1,13 @@
+{
+  "name": "ai-news-digest",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Daily AI news digest aggregated from RSS feeds",
+  "type": "module",
+  "scripts": {
+    "build": "node fetch-and-build.js"
+  },
+  "dependencies": {
+    "rss-parser": "^3.13.0"
+  }
+}
