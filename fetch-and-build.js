@@ -7,10 +7,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ITEMS_PER_SOURCE = 5;
 const DESCRIPTION_MAX_LENGTH = 220;
 
+const FETCH_TIMEOUT_MS = 20000;
+
 const parser = new Parser({
   timeout: 15000,
   headers: { "User-Agent": "Mozilla/5.0 (ai-news-digest RSS reader)" },
 });
+
+function withTimeout(promise, ms) {
+  return Promise.race([
+    promise,
+    new Promise((_, reject) => setTimeout(() => reject(new Error(`timed out after ${ms}ms`)), ms)),
+  ]);
+}
 
 function stripHtml(html) {
   if (!html) return "";
@@ -35,7 +44,7 @@ function escapeHtml(text) {
 
 async function fetchSource(source) {
   try {
-    const feed = await parser.parseURL(source.url);
+    const feed = await withTimeout(parser.parseURL(source.url), FETCH_TIMEOUT_MS);
     const items = (feed.items || [])
       .filter((item) => item.link && item.title)
       .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
@@ -229,7 +238,9 @@ async function main() {
   console.log(`Digest written to ${outputPath}`);
 }
 
-main().catch((err) => {
-  console.error("Fatal error building digest:", err);
-  process.exit(1);
-});
+main()
+  .then(() => process.exit(0))
+  .catch((err) => {
+    console.error("Fatal error building digest:", err);
+    process.exit(1);
+  });
