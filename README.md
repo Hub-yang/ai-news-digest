@@ -13,22 +13,34 @@
 ## 快速开始
 
 ```bash
-npm ci              # 安装依赖
-npm run build        # 抓取所有 RSS 源，生成 output/digest.html
+pnpm install              # 安装依赖
+pnpm build                # 抓取所有 RSS 源，生成 output/digest.html
 open output/digest.html   # 本地预览（macOS）
 ```
 
-`npm run build` 等价于执行 `node fetch-and-build.js`。构建完成后，摘要页面会写入 `output/digest.html`。
+`pnpm build` 等价于执行 `vite-node src/build.ts`（构建期直接运行 TS/Vue 入口脚本，无需单独打包）。构建完成后，摘要页面会写入 `output/digest.html`。
 
 ## 项目结构
 
 ```
 .
-├── fetch-and-build.js   # 抓取 RSS、渲染 HTML 的主脚本
-├── sources.json         # RSS 源配置列表
-├── output/digest.html   # 构建产物（每次运行覆盖）
+├── src/
+│   ├── build.ts              # 入口：编排抓取 + Vue SSR 渲染 + 写文件
+│   ├── data/
+│   │   ├── types.ts          # Source / FeedItem / SourceResult 类型
+│   │   └── fetch-sources.ts  # RSS 抓取、超时、容错逻辑
+│   ├── components/
+│   │   ├── App.vue           # 页面整体结构（header/正文/footer）
+│   │   └── SourceSection.vue # 单个 RSS 源的一个板块
+│   ├── styles/digest.css     # 内联样式的 CSS 源文件
+│   └── utils/format-date.ts  # 条目日期格式化
+├── vite.config.ts            # 供 vite-node 编译 .vue 文件
+├── tsconfig.json
+├── eslint.config.js          # @antfu/eslint-config
+├── sources.json               # RSS 源配置列表
+├── output/digest.html         # 构建产物（每次运行覆盖）
 └── .github/workflows/
-    └── daily-digest.yml # 每日定时构建 + 部署到 GitHub Pages
+    └── daily-digest.yml      # 每日定时构建 + 部署到 GitHub Pages
 ```
 
 ## 自定义数据源
@@ -50,9 +62,10 @@ open output/digest.html   # 本地预览（macOS）
 
 2. **构建阶段（`build` job）**：
    - `actions/checkout` 拉取仓库代码
+   - `pnpm/action-setup` 准备 pnpm（须在 `actions/setup-node` 之前，因为后者的 `cache: pnpm` 依赖 pnpm 已在 PATH 上）
    - `actions/setup-node` 准备 Node 20 环境
-   - `npm ci` 安装依赖（使用 lockfile，保证可复现）
-   - `node fetch-and-build.js` 并发抓取全部 RSS 源，生成 `output/digest.html`
+   - `pnpm install --frozen-lockfile` 安装依赖（使用 lockfile，保证可复现）
+   - `pnpm build` 并发抓取全部 RSS 源，通过 Vue SSR 渲染并生成 `output/digest.html`
    - 将产物复制为 `_site/index.html`，用 `actions/upload-pages-artifact` 打包上传，作为 Pages 部署的输入
 
 3. **部署阶段（`deploy` job）**：
@@ -74,7 +87,11 @@ workflow 声明了最小权限集：`contents: read`（读取代码）、`pages:
 
 - Node.js（原生 ESM，`type: "module"`）
 - [`rss-parser`](https://www.npmjs.com/package/rss-parser) 用于解析 RSS/Atom 源
-- 无前端框架、无构建工具链、无测试框架——刻意保持轻量，产物是一份纯静态 HTML
+- Vue 3 + `@vue/server-renderer`：仅用于构建期把组件树渲染成 HTML 字符串（`renderToString()`），无客户端运行时、无 hydration、无路由/状态管理
+- Vite + `vite-node`：免打包直接执行 `src/build.ts` 这个 TS/Vue 入口脚本
+- TypeScript、ESLint（`@antfu/eslint-config`）
+- pnpm 作为包管理器
+- 构建期渲染，产物仍是一份零 JS 的纯静态 HTML——刻意保持轻量，没有测试框架
 
 ## License
 

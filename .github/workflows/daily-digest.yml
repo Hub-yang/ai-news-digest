@@ -2,9 +2,9 @@ name: Daily AI Digest
 
 on:
   schedule:
-    - cron: "0 0 * * *" # 08:00 Asia/Shanghai
+    - cron: '0 0 * * *' # 08:00 Asia/Shanghai
   push:
-    branches: ["main"]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: pages
   cancel-in-progress: false
 
 jobs:
@@ -21,11 +21,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm ci
-      - run: node fetch-and-build.js
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
       - run: |
           mkdir -p _site
           cp output/digest.html _site/index.html

@@ -1,0 +1,98 @@
+  :root {
+    --bg: #f4f5f3;
+    --fg: #15191b;
+    --muted: #5c6663;
+    --accent: #1f6f78;
+    --border: #dbdfdc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0c1210; --fg: #eef1ef; --muted: #8a9a95; --accent: #55bcae; --border: #223330; }
+  }
+  :root[data-theme="dark"] { --bg: #0c1210; --fg: #eef1ef; --muted: #8a9a95; --accent: #55bcae; --border: #223330; }
+  :root[data-theme="light"] { --bg: #f4f5f3; --fg: #15191b; --muted: #5c6663; --accent: #1f6f78; --border: #dbdfdc; }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 700px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+  header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--fg);
+  }
+  header .eyebrow {
+    display: block;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.6rem;
+  }
+  header h1 { font-size: 2rem; margin: 0 0 0.5rem; letter-spacing: -0.01em; text-wrap: balance; }
+  header .subtitle {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-variant-numeric: tabular-nums;
+  }
+  .source-section { margin-bottom: 2.5rem; }
+  .source-name {
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 0.78rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+    margin: 0 0 0.9rem;
+  }
+  .item-list { list-style: none; margin: 0; padding: 0; }
+  .item { padding: 1rem 0; border-top: 1px solid var(--border); }
+  .item:first-child { border-top: none; }
+  .item-line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .item-title {
+    color: var(--fg);
+    font-weight: 700;
+    font-size: 1.08rem;
+    text-decoration: none;
+    text-wrap: balance;
+  }
+  .item-title:hover { color: var(--accent); }
+  .item-date {
+    flex-shrink: 0;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 0.72rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  .item-desc {
+    margin: 0.4rem 0 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 0.92rem;
+    color: var(--muted);
+    overflow-wrap: break-word;
+    max-width: 65ch;
+  }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+    text-align: center;
+    font-family: ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .empty-state { text-align: center; color: var(--muted); padding: 3rem 0; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
