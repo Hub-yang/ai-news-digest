@@ -3,8 +3,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   plugins: [vue()],
-  optimizeDeps: {
-    noDiscovery: true,
-    include: [],
+  ssgOptions: {
+    script: 'async',
   },
 })

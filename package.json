@@ -5,12 +5,15 @@
   "private": true,
   "description": "Daily AI news digest aggregated from RSS feeds",
   "scripts": {
-    "build": "vite-node src/build.ts",
+    "dev": "vite",
+    "build": "vite-ssg build",
+    "preview": "vite preview",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@vue/server-renderer": "^3.5.40",
+    "@unhead/vue": "^2.1.16",
     "rss-parser": "^3.13.0",
+    "vite-ssg": "^28.3.0",
     "vue": "^3.5.40"
   },
   "devDependencies": {
@@ -18,7 +21,6 @@
     "@vitejs/plugin-vue": "^6.0.8",
     "eslint": "^10.7.0",
     "typescript": "^5.9.3",
-    "vite": "^8.1.5",
-    "vite-node": "^6.0.0"
+    "vite": "^8.1.5"
   }
 }

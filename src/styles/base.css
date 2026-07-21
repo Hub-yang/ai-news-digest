@@ -1,0 +1,46 @@
+:root {
+  --bg: #f4f5f3;
+  --fg: #15191b;
+  --muted: #5c6663;
+  --accent: #1f6f78;
+  --border: #dbdfdc;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0c1210;
+    --fg: #eef1ef;
+    --muted: #8a9a95;
+    --accent: #55bcae;
+    --border: #223330;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0c1210;
+  --fg: #eef1ef;
+  --muted: #8a9a95;
+  --accent: #55bcae;
+  --border: #223330;
+}
+:root[data-theme="light"] {
+  --bg: #f4f5f3;
+  --fg: #15191b;
+  --muted: #5c6663;
+  --accent: #1f6f78;
+  --border: #dbdfdc;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family:
+    Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  line-height: 1.5;
+}
+a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}

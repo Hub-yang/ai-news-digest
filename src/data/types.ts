@@ -6,7 +6,7 @@ export interface Source {
 export interface FeedItem {
   title: string
   link: string
-  pubDate: Date | null
+  formattedDate: string
   description: string
 }
 
