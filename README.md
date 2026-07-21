@@ -69,7 +69,7 @@ pnpm preview               # 本地预览构建产物
 2. **构建阶段（`build` job）**：
    - `actions/checkout` 拉取仓库代码
    - `pnpm/action-setup` 准备 pnpm（须在 `actions/setup-node` 之前，因为后者的 `cache: pnpm` 依赖 pnpm 已在 PATH 上）
-   - `actions/setup-node` 准备 Node 20 环境
+   - `actions/setup-node` 准备 Node 22 环境（pnpm 11.15+ 要求 Node >= 22.13，Node 20 会导致 pnpm 缓存探测那一步崩溃）
    - `pnpm install --frozen-lockfile` 安装依赖（使用 lockfile，保证可复现）
    - `pnpm build` 并发抓取全部 RSS 源，通过 vite-ssg 渲染并生成 `dist/` 静态站
    - 用 `actions/upload-pages-artifact` 直接把 `./dist` 打包上传，作为 Pages 部署的输入
