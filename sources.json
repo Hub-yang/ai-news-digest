@@ -6,5 +6,9 @@
   { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
   { "name": "MIT Technology Review (AI)", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/" },
   { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/" },
-  { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/" }
+  { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/" },
+  { "name": "Simon Willison's Weblog", "url": "https://simonwillison.net/atom/everything/" },
+  { "name": "GitHub Blog (AI & ML)", "url": "https://github.blog/ai-and-ml/feed/" },
+  { "name": "InfoQ AI, ML & Data Eng", "url": "https://feed.infoq.com/ai-ml-data-eng/" },
+  { "name": "Latent Space", "url": "https://www.latent.space/feed" }
 ]

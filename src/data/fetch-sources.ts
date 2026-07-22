@@ -12,7 +12,12 @@ const FETCH_TIMEOUT_MS = 20000
 
 const parser = new Parser({
   timeout: 15000,
-  headers: { 'User-Agent': 'Mozilla/5.0 (ai-news-digest RSS reader)' },
+  // rss-parser 默认发送 Accept: application/rss+xml，个别源（如 InfoQ）对这个
+  // 过窄的 Accept 做严格内容协商，直接 406；放宽成更通用的 XML/通配写法。
+  headers: {
+    'User-Agent': 'Mozilla/5.0 (ai-news-digest RSS reader)',
+    'Accept': 'application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.9, */*;q=0.8',
+  },
 })
 
 // XML 解析只会解码标准 XML 实体（amp/lt/gt/quot/apos）；不少 feed 把 HTML
