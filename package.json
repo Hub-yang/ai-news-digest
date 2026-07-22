@@ -8,7 +8,10 @@
     "dev": "vite",
     "build": "vite-ssg build",
     "preview": "vite preview",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "commitlint": "commitlint --edit"
   },
   "dependencies": {
     "@unhead/vue": "^2.1.16",
@@ -18,9 +21,17 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.1.0",
+    "@commitlint/cli": "^21.2.1",
+    "@commitlint/config-conventional": "^21.2.0",
+    "@huberyyang/todo-scripts": "^1.0.12",
     "@vitejs/plugin-vue": "^6.0.8",
     "eslint": "^10.7.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.1.0",
     "typescript": "^5.9.3",
     "vite": "^8.1.5"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
   }
 }
