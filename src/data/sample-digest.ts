@@ -9,6 +9,7 @@ export const sampleDigest: DigestState = {
   sections: [
     {
       name: '示例来源一',
+      category: '官方/实验室',
       error: null,
       translated: true,
       items: [
@@ -28,6 +29,7 @@ export const sampleDigest: DigestState = {
     },
     {
       name: '示例来源二',
+      category: '科技媒体',
       error: null,
       // 故意设为 false，本地预览时可以看到 footer 里「翻译失败」的提示效果
       translated: false,
@@ -42,6 +44,7 @@ export const sampleDigest: DigestState = {
     },
     {
       name: '示例来源三（不可用）',
+      category: '社区/独立博客',
       error: 'sample fetch failure for local preview',
       translated: false,
       items: [],

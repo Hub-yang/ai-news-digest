@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { computed, inject } from 'vue'
+import { computed, inject, ref } from 'vue'
 import { digestKey } from '../data/digest-key'
+import CategoryNav from './CategoryNav.vue'
 import SourceSection from './SourceSection.vue'
 
 const digest = inject(digestKey)
@@ -14,6 +15,16 @@ const dateLabel = computed(() => digest.dateLabel)
 
 const nonEmptySections = computed(() => sections.value.filter(s => s.items.length > 0))
 const hasAnyItems = computed(() => nonEmptySections.value.length > 0)
+
+// 分类顺序取自 sources.json 中各来源首次出现的顺序；只统计有内容的来源，
+// 避免点进去发现是空分类。
+const categories = computed(() => [...new Set(nonEmptySections.value.map(s => s.category))])
+const selectedCategory = ref<string | null>(null)
+const filteredSections = computed(() =>
+  selectedCategory.value === null
+    ? nonEmptySections.value
+    : nonEmptySections.value.filter(s => s.category === selectedCategory.value),
+)
 const failedCount = computed(() => sections.value.filter(s => s.error).length)
 const untranslatedCount = computed(() => nonEmptySections.value.filter(s => !s.translated).length)
 
@@ -41,7 +52,8 @@ useHead({
       </div>
     </header>
     <template v-if="hasAnyItems">
-      <SourceSection v-for="section in nonEmptySections" :key="section.name" :section="section" />
+      <CategoryNav v-model="selectedCategory" :categories="categories" />
+      <SourceSection v-for="section in filteredSections" :key="section.name" :section="section" />
     </template>
     <p v-else class="empty-state">
       今日暂无可用文章。

@@ -114,12 +114,12 @@ export async function fetchSource(source: Source): Promise<SourceResult> {
       item.description = translatedTexts[i * 2 + 1] || item.description
     })
 
-    return { name: source.name, items, error: null, translated }
+    return { name: source.name, category: source.category, items, error: null, translated }
   }
   catch (err) {
     const message = errorMessage(err)
     console.warn(`[warn] failed to fetch "${source.name}" (${source.url}): ${message}`)
-    return { name: source.name, items: [], error: message, translated: false }
+    return { name: source.name, category: source.category, items: [], error: message, translated: false }
   }
 }
 

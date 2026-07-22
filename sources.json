@@ -1,14 +1,14 @@
 [
-  { "name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml" },
-  { "name": "Google DeepMind Blog", "url": "https://deepmind.google/blog/rss.xml" },
-  { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml" },
-  { "name": "Hacker News (AI)", "url": "https://hnrss.org/newest?q=AI" },
-  { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/" },
-  { "name": "MIT Technology Review (AI)", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/" },
-  { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/" },
-  { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/" },
-  { "name": "Simon Willison's Weblog", "url": "https://simonwillison.net/atom/everything/" },
-  { "name": "GitHub Blog (AI & ML)", "url": "https://github.blog/ai-and-ml/feed/" },
-  { "name": "InfoQ AI, ML & Data Eng", "url": "https://feed.infoq.com/ai-ml-data-eng/" },
-  { "name": "Latent Space", "url": "https://www.latent.space/feed" }
+  { "name": "OpenAI Blog", "url": "https://openai.com/news/rss.xml", "category": "官方/实验室" },
+  { "name": "Google DeepMind Blog", "url": "https://deepmind.google/blog/rss.xml", "category": "官方/实验室" },
+  { "name": "Hugging Face Blog", "url": "https://huggingface.co/blog/feed.xml", "category": "官方/实验室" },
+  { "name": "GitHub Blog (AI & ML)", "url": "https://github.blog/ai-and-ml/feed/", "category": "官方/实验室" },
+  { "name": "TechCrunch AI", "url": "https://techcrunch.com/category/artificial-intelligence/feed/", "category": "科技媒体" },
+  { "name": "MIT Technology Review (AI)", "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed/", "category": "科技媒体" },
+  { "name": "VentureBeat AI", "url": "https://venturebeat.com/category/ai/feed/", "category": "科技媒体" },
+  { "name": "Ars Technica AI", "url": "https://arstechnica.com/ai/feed/", "category": "科技媒体" },
+  { "name": "InfoQ AI, ML & Data Eng", "url": "https://feed.infoq.com/ai-ml-data-eng/", "category": "科技媒体" },
+  { "name": "Hacker News (AI)", "url": "https://hnrss.org/newest?q=AI", "category": "社区/独立博客" },
+  { "name": "Simon Willison's Weblog", "url": "https://simonwillison.net/atom/everything/", "category": "社区/独立博客" },
+  { "name": "Latent Space", "url": "https://www.latent.space/feed", "category": "社区/独立博客" }
 ]
