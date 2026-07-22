@@ -10,6 +10,7 @@ export const sampleDigest: DigestState = {
     {
       name: '示例来源一',
       error: null,
+      translated: true,
       items: [
         {
           title: '一条示例标题，用来预览标题换行和长度效果',
@@ -28,6 +29,8 @@ export const sampleDigest: DigestState = {
     {
       name: '示例来源二',
       error: null,
+      // 故意设为 false，本地预览时可以看到 footer 里「翻译失败」的提示效果
+      translated: false,
       items: [
         {
           title: '第三条示例标题，下面没有描述文本',
@@ -40,6 +43,7 @@ export const sampleDigest: DigestState = {
     {
       name: '示例来源三（不可用）',
       error: 'sample fetch failure for local preview',
+      translated: false,
       items: [],
     },
   ],

@@ -15,10 +15,15 @@ const dateLabel = computed(() => digest.dateLabel)
 const nonEmptySections = computed(() => sections.value.filter(s => s.items.length > 0))
 const hasAnyItems = computed(() => nonEmptySections.value.length > 0)
 const failedCount = computed(() => sections.value.filter(s => s.error).length)
+const untranslatedCount = computed(() => nonEmptySections.value.filter(s => !s.translated).length)
 
 const footerText = computed(() => {
-  const suffix = failedCount.value ? ` · 有 ${failedCount.value} 个来源今日不可用` : ''
-  return `聚合自 ${sections.value.length} 个 RSS 来源${suffix}。`
+  const segments = [`聚合自 ${sections.value.length} 个 RSS 来源`]
+  if (failedCount.value)
+    segments.push(`有 ${failedCount.value} 个来源今日不可用`)
+  if (untranslatedCount.value)
+    segments.push(`有 ${untranslatedCount.value} 个来源翻译失败，展示英文原文`)
+  return `${segments.join(' · ')}。`
 })
 
 useHead({
