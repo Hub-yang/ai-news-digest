@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@unhead/vue": "^2.1.16",
+    "@vueuse/core": "^14.3.0",
     "rss-parser": "^3.13.0",
     "vite-ssg": "^28.3.0",
     "vue": "^3.5.40"
@@ -24,11 +25,13 @@
     "@commitlint/cli": "^21.2.1",
     "@commitlint/config-conventional": "^21.2.0",
     "@huberyyang/todo-scripts": "^1.0.12",
+    "@iconify-json/lucide": "^1.2.118",
     "@vitejs/plugin-vue": "^6.0.8",
     "eslint": "^10.7.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.1.0",
     "typescript": "^5.9.3",
+    "unplugin-icons": "^23.0.1",
     "vite": "^8.1.5"
   },
   "lint-staged": {

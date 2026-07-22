@@ -4,6 +4,7 @@ import { computed, inject, ref } from 'vue'
 import { digestKey } from '../data/digest-key'
 import CategoryNav from './CategoryNav.vue'
 import SourceSection from './SourceSection.vue'
+import ThemeToggle from './ThemeToggle.vue'
 
 const digest = inject(digestKey)
 if (!digest) {
@@ -45,7 +46,10 @@ useHead({
 <template>
   <div class="wrap">
     <header>
-      <span class="eyebrow">每日快讯</span>
+      <div class="header-top">
+        <span class="eyebrow">每日快讯</span>
+        <ThemeToggle />
+      </div>
       <h1>AI 日报</h1>
       <div class="subtitle">
         {{ dateLabel }}
@@ -76,6 +80,17 @@ header {
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--fg);
 }
+.header-top {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.6rem;
+}
+.header-top :deep(.theme-toggle) {
+  position: absolute;
+  right: 0;
+}
 header .eyebrow {
   display: block;
   font-family:
@@ -84,7 +99,6 @@ header .eyebrow {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.6rem;
 }
 header h1 {
   font-size: 2rem;

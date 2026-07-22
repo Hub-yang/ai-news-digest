@@ -4,6 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    // 首屏渲染前同步应用已保存的主题，避免 async 模块脚本加载完成前的
+    // 一帧闪烁成系统默认配色（仅当用户曾显式选择浅色/深色时才生效）。
+    (function () {
+      try {
+        // vueuse 的 useStorage 对字符串类型的默认值使用「原样存取」的序列化器，
+        // 不会 JSON.stringify，所以这里读到的是不带引号的原始字符串。
+        var saved = localStorage.getItem('theme')
+        if (saved === 'light' || saved === 'dark')
+          document.documentElement.dataset.theme = saved
+      }
+      catch {}
+    })()
+  </script>
 </head>
 
 <body>

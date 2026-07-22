@@ -1,5 +1,6 @@
 import process from 'node:process'
 import vue from '@vitejs/plugin-vue'
+import Icons from 'unplugin-icons/vite'
 import { defineConfig } from 'vite'
 
 // Vite 的 loadEnv 只把 VITE_ 前缀的变量暴露给 import.meta.env，不会把 .env
@@ -15,7 +16,7 @@ catch {
 
 export default defineConfig({
   base: '/ai-news-digest/',
-  plugins: [vue()],
+  plugins: [vue(), Icons({ compiler: 'vue3' })],
   ssgOptions: {
     script: 'async',
   },
