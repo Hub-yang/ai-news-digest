@@ -17,20 +17,20 @@ const hasAnyItems = computed(() => nonEmptySections.value.length > 0)
 const failedCount = computed(() => sections.value.filter(s => s.error).length)
 
 const footerText = computed(() => {
-  const suffix = failedCount.value ? ` · ${failedCount.value} source(s) unavailable today` : ''
-  return `Aggregated from ${sections.value.length} RSS sources${suffix}.`
+  const suffix = failedCount.value ? ` · 有 ${failedCount.value} 个来源今日不可用` : ''
+  return `聚合自 ${sections.value.length} 个 RSS 来源${suffix}。`
 })
 
 useHead({
-  title: () => `Daily AI Digest — ${dateLabel.value}`,
+  title: () => `AI 日报 — ${dateLabel.value}`,
 })
 </script>
 
 <template>
   <div class="wrap">
     <header>
-      <span class="eyebrow">Wire Digest</span>
-      <h1>Daily AI Digest</h1>
+      <span class="eyebrow">每日快讯</span>
+      <h1>AI 日报</h1>
       <div class="subtitle">
         {{ dateLabel }}
       </div>
@@ -39,7 +39,7 @@ useHead({
       <SourceSection v-for="section in nonEmptySections" :key="section.name" :section="section" />
     </template>
     <p v-else class="empty-state">
-      No articles could be fetched today.
+      今日暂无可用文章。
     </p>
     <footer>
       {{ footerText }}

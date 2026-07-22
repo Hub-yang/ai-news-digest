@@ -30,6 +30,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist

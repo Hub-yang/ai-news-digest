@@ -3,6 +3,8 @@ import type { FeedItem, Source, SourceResult } from './types'
 import Parser from 'rss-parser'
 import sourcesData from '../../sources.json'
 import { formatDate } from '../utils/format-date'
+import { errorMessage, withTimeout } from '../utils/network'
+import { translateTexts } from './translate'
 
 const ITEMS_PER_SOURCE = 5
 const DESCRIPTION_MAX_LENGTH = 220
@@ -12,22 +14,6 @@ const parser = new Parser({
   timeout: 15000,
   headers: { 'User-Agent': 'Mozilla/5.0 (ai-news-digest RSS reader)' },
 })
-
-function withTimeout<T>(promise: Promise<T>, ms: number): Promise<T> {
-  return new Promise<T>((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error(`timed out after ${ms}ms`)), ms)
-    promise.then(
-      (value) => {
-        clearTimeout(timer)
-        resolve(value)
-      },
-      (err) => {
-        clearTimeout(timer)
-        reject(err)
-      },
-    )
-  })
-}
 
 function stripHtml(html: string | undefined): string {
   if (!html)
@@ -42,11 +28,6 @@ function truncate(text: string, maxLength: number): string {
   if (text.length <= maxLength)
     return text
   return `${text.slice(0, maxLength).replace(/\s+\S*$/, '')}…`
-}
-
-function errorMessage(err: unknown): string {
-  const e = err as { message?: string, code?: string }
-  return e?.message || e?.code || String(err) || 'Unknown error'
 }
 
 export async function fetchSource(source: Source): Promise<SourceResult> {
@@ -65,6 +46,14 @@ export async function fetchSource(source: Source): Promise<SourceResult> {
           DESCRIPTION_MAX_LENGTH,
         ),
       }))
+
+    const texts = items.flatMap(item => [item.title, item.description])
+    const translated = await translateTexts(texts)
+    items.forEach((item, i) => {
+      item.title = translated[i * 2] || item.title
+      item.description = translated[i * 2 + 1] || item.description
+    })
+
     return { name: source.name, items, error: null }
   }
   catch (err) {
@@ -86,7 +75,7 @@ export function fetchAllSources(): Promise<DigestState> {
     const succeeded = sections.filter(r => !r.error).length
     console.log(`Fetched ${succeeded}/${sources.length} sources successfully.`)
 
-    const dateLabel = new Date().toLocaleDateString('en-US', {
+    const dateLabel = new Date().toLocaleDateString('zh-CN', {
       weekday: 'long',
       month: 'long',
       day: 'numeric',

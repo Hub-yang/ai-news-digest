@@ -5,32 +5,32 @@ import type { DigestState } from './digest-key'
 // 在 `pnpm dev` 里当兜底用，让本地开发不用等网络请求、也能快速热更新地
 // 改样式/结构；生产构建里这个模块不会被打进产物（见 main.ts 里的 DEV 分支）。
 export const sampleDigest: DigestState = {
-  dateLabel: 'Monday, January 1, 2024',
+  dateLabel: '2024年1月1日星期一',
   sections: [
     {
-      name: 'Sample Source One',
+      name: '示例来源一',
       error: null,
       items: [
         {
-          title: 'A sample headline to preview title wrapping and length',
+          title: '一条示例标题，用来预览标题换行和长度效果',
           link: 'https://example.com/sample-article-one',
-          formattedDate: 'Jan 1, 2024',
-          description: 'A short placeholder description used only for local styling and layout checks — it is not real fetched content.',
+          formattedDate: '2024年1月1日',
+          description: '一段简短的占位描述文本，仅用于本地样式和布局检查——并非真实抓取的内容。',
         },
         {
-          title: 'Another sample headline, this one a bit shorter',
+          title: '另一条示例标题，这条稍短一些',
           link: 'https://example.com/sample-article-two',
-          formattedDate: 'Dec 31, 2023',
-          description: 'Another placeholder description, long enough to show how the item-desc paragraph wraps across a couple of lines in the layout.',
+          formattedDate: '2023年12月31日',
+          description: '另一段占位描述文本，长度足够展示条目描述段落在布局中如何换行显示。',
         },
       ],
     },
     {
-      name: 'Sample Source Two',
+      name: '示例来源二',
       error: null,
       items: [
         {
-          title: 'A third sample headline with no description below it',
+          title: '第三条示例标题，下面没有描述文本',
           link: 'https://example.com/sample-article-three',
           formattedDate: '',
           description: '',
@@ -38,7 +38,7 @@ export const sampleDigest: DigestState = {
       ],
     },
     {
-      name: 'Sample Source Three (unavailable)',
+      name: '示例来源三（不可用）',
       error: 'sample fetch failure for local preview',
       items: [],
     },
