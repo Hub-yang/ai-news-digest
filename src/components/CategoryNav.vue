@@ -47,6 +47,7 @@ const emit = defineEmits<{
   padding: 0.75rem 0;
   margin-bottom: 2rem;
   scrollbar-width: none;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 .category-nav::-webkit-scrollbar {
   display: none;
@@ -65,7 +66,7 @@ const emit = defineEmits<{
   padding: 0.4rem 0.9rem;
   cursor: pointer;
   white-space: nowrap;
-  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
 .nav-item:hover {
   color: var(--fg);
