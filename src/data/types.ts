@@ -6,9 +6,12 @@ export interface Source {
 
 export interface FeedItem {
   title: string
+  /** 中文译文；翻译失败时等于 title（与 SourceResult.translated:false 的回退语义一致） */
+  titleZh: string
   link: string
   formattedDate: string
   description: string
+  descriptionZh: string
 }
 
 export interface SourceResult {

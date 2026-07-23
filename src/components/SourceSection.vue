@@ -1,7 +1,22 @@
 <script setup lang="ts">
-import type { SourceResult } from '../data/types'
+import type { FeedItem, SourceResult } from '../data/types'
+import { inject } from 'vue'
+import { languageKey } from '../composables/use-language'
 
 defineProps<{ section: SourceResult }>()
+
+const language = inject(languageKey)
+if (!language) {
+  throw new Error('language state not found — App.vue must call provide(languageKey, ...) before mounting SourceSection')
+}
+const { lang } = language
+
+function displayTitle(item: FeedItem) {
+  return lang.value === 'zh' ? item.titleZh : item.title
+}
+function displayDescription(item: FeedItem) {
+  return lang.value === 'zh' ? item.descriptionZh : item.description
+}
 </script>
 
 <template>
@@ -12,11 +27,11 @@ defineProps<{ section: SourceResult }>()
     <ul class="item-list">
       <li v-for="item in section.items" :key="item.link" class="item">
         <div class="item-line">
-          <a class="item-title" :href="item.link" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+          <a class="item-title" :href="item.link" target="_blank" rel="noopener noreferrer">{{ displayTitle(item) }}</a>
           <span v-if="item.formattedDate" class="item-date">{{ item.formattedDate }}</span>
         </div>
         <p v-if="item.description" class="item-desc">
-          {{ item.description }}
+          {{ displayDescription(item) }}
         </p>
       </li>
     </ul>

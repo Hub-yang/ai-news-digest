@@ -14,16 +14,20 @@ export const sampleDigest: DigestState = {
       translated: true,
       items: [
         {
-          title: '一条示例标题，用来预览标题换行和长度效果',
+          title: 'A sample headline used to preview title wrapping and length',
+          titleZh: '一条示例标题，用来预览标题换行和长度效果',
           link: 'https://example.com/sample-article-one',
           formattedDate: '2024年1月1日',
-          description: '一段简短的占位描述文本，仅用于本地样式和布局检查——并非真实抓取的内容。',
+          description: 'A short placeholder description, used only to check local styling and layout — not real fetched content.',
+          descriptionZh: '一段简短的占位描述文本，仅用于本地样式和布局检查——并非真实抓取的内容。',
         },
         {
-          title: '另一条示例标题，这条稍短一些',
+          title: 'Another sample headline, a bit shorter',
+          titleZh: '另一条示例标题，这条稍短一些',
           link: 'https://example.com/sample-article-two',
           formattedDate: '2023年12月31日',
-          description: '另一段占位描述文本，长度足够展示条目描述段落在布局中如何换行显示。',
+          description: 'Another placeholder description, long enough to show how the item description paragraph wraps in the layout.',
+          descriptionZh: '另一段占位描述文本，长度足够展示条目描述段落在布局中如何换行显示。',
         },
       ],
     },
@@ -31,14 +35,17 @@ export const sampleDigest: DigestState = {
       name: '示例来源二',
       category: '科技媒体',
       error: null,
-      // 故意设为 false，本地预览时可以看到 footer 里「翻译失败」的提示效果
+      // 故意设为 false，本地预览时可以看到 footer 里「翻译失败」的提示效果；
+      // titleZh/descriptionZh 也故意等于英文原文，模拟翻译失败时的真实回退结果。
       translated: false,
       items: [
         {
-          title: '第三条示例标题，下面没有描述文本',
+          title: 'A third sample headline, with no description below',
+          titleZh: 'A third sample headline, with no description below',
           link: 'https://example.com/sample-article-three',
           formattedDate: '',
           description: '',
+          descriptionZh: '',
         },
       ],
     },

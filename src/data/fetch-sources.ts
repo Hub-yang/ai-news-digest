@@ -97,21 +97,29 @@ export async function fetchSource(source: Source): Promise<SourceResult> {
         return bTime - aTime
       })
       .slice(0, ITEMS_PER_SOURCE)
-      .map(item => ({
-        title: item.title!.trim(),
-        link: item.link!,
-        formattedDate: formatDate(item.pubDate ? new Date(item.pubDate) : null),
-        description: truncate(
+      .map((item) => {
+        const title = item.title!.trim()
+        const description = truncate(
           stripHtml(item.contentSnippet || item.content || item.summary || ''),
           DESCRIPTION_MAX_LENGTH,
-        ),
-      }))
+        )
+        // titleZh/descriptionZh 先临时等于原文，翻译成功后在下面统一回填；
+        // 翻译失败/无 key 时保持原样，即页面默认展示的英文原文。
+        return {
+          title,
+          titleZh: title,
+          link: item.link!,
+          formattedDate: formatDate(item.pubDate ? new Date(item.pubDate) : null),
+          description,
+          descriptionZh: description,
+        }
+      })
 
     const texts = items.flatMap(item => [item.title, item.description])
     const { texts: translatedTexts, translated } = await translateTexts(texts)
     items.forEach((item, i) => {
-      item.title = translatedTexts[i * 2] || item.title
-      item.description = translatedTexts[i * 2 + 1] || item.description
+      item.titleZh = translatedTexts[i * 2] || item.title
+      item.descriptionZh = translatedTexts[i * 2 + 1] || item.description
     })
 
     return { name: source.name, category: source.category, items, error: null, translated }

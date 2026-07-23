@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { computed, inject, ref } from 'vue'
+import { computed, inject, provide, ref } from 'vue'
+import { languageKey, useLanguage } from '../composables/use-language'
 import { digestKey } from '../data/digest-key'
 import CategoryNav from './CategoryNav.vue'
+import LangToggle from './LangToggle.vue'
 import SourceSection from './SourceSection.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
@@ -10,6 +12,10 @@ const digest = inject(digestKey)
 if (!digest) {
   throw new Error('digest state not found — main.ts must call app.provide(digestKey, ...) before mounting App')
 }
+
+// 只实例化一次，provide 给 LangToggle 和每个 SourceSection 共用
+// （useStorage 在同一文档内多实例不互相同步，见 use-language.ts 注释）。
+provide(languageKey, useLanguage())
 
 const sections = computed(() => digest.sections)
 const dateLabel = computed(() => digest.dateLabel)
@@ -48,7 +54,10 @@ useHead({
     <header>
       <div class="header-top">
         <span class="eyebrow">每日快讯</span>
-        <ThemeToggle />
+        <div class="header-actions">
+          <LangToggle />
+          <ThemeToggle />
+        </div>
       </div>
       <h1>AI 日报</h1>
       <div class="subtitle">
@@ -87,9 +96,12 @@ header {
   justify-content: center;
   margin-bottom: 0.6rem;
 }
-.header-top :deep(.theme-toggle) {
+.header-actions {
   position: absolute;
   right: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 header .eyebrow {
   display: block;
