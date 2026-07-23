@@ -96,9 +96,9 @@ useHead({
 }
 header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px solid var(--fg);
+  border-bottom: 1px solid var(--fg);
 }
 .header-top {
   position: relative;
