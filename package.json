@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
+    "typecheck": "vue-tsc --noEmit",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
   },
@@ -26,15 +27,18 @@
     "@commitlint/config-conventional": "^21.2.0",
     "@huberyyang/todo-scripts": "^1.0.12",
     "@iconify-json/lucide": "^1.2.118",
+    "@types/node": "^22.20.1",
     "@vitejs/plugin-vue": "^6.0.8",
     "eslint": "^10.7.0",
     "husky": "^9.1.7",
     "lint-staged": "^17.1.0",
     "typescript": "^5.9.3",
     "unplugin-icons": "^23.0.1",
-    "vite": "^8.1.5"
+    "vite": "^8.1.5",
+    "vue-tsc": "^3.3.7"
   },
   "lint-staged": {
-    "*": "eslint . --fix"
+    "*": "eslint . --fix",
+    "*.{ts,vue}": "bash -c 'vue-tsc --noEmit'"
   }
 }

@@ -29,6 +29,7 @@ jobs:
           node-version: 22
           cache: pnpm
       - run: pnpm install --frozen-lockfile
+      - run: pnpm typecheck
       - run: pnpm build
         env:
           DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}

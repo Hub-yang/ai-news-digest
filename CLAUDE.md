@@ -9,6 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `pnpm build` — runs `vite-ssg build`, fetching all RSS sources at build time and writing a standard Vite static site to `dist/`
 - `pnpm preview` — runs `vite preview`, serving the already-built `dist/` locally
 - `pnpm lint` — runs ESLint (`@antfu/eslint-config`) over the repo
+- `pnpm typecheck` — runs `vue-tsc --noEmit` (full project type check, including `.vue` SFC `<script>` blocks — plain `tsc` can't check those)
 
 There is no test suite in this repo. To verify a change touching real fetch/build behavior, use `pnpm build` followed by `pnpm preview` — `pnpm dev` never runs the real RSS fetch (see below), so it's only useful for markup/CSS iteration.
 
@@ -34,7 +35,7 @@ Key points for anyone modifying this:
 - **No manual HTML escaping**: Vue's template text interpolation (`{{ }}`) and attribute bindings (`:href`) auto-escape at SSR render time via `@vue/compiler-ssr`.
 - **Output is a standard Vite static site** (`dist/index.html` + `dist/assets/*.{css,js}`), deployed as-is to GitHub Pages via `upload-pages-artifact` pointed at `./dist`.
 - Item limit per source (`ITEMS_PER_SOURCE = 5`) and description truncation length (`DESCRIPTION_MAX_LENGTH = 220`), both in `src/data/fetch-sources.ts`, are the two tunables most likely to come up in feature requests.
-- TypeScript is checked only via ESLint's type-aware rules and Vite's esbuild strip (no type errors block the build) — there is no separate `tsc --noEmit`/`vue-tsc` step.
+- TypeScript is checked via ESLint's type-aware rules, Vite's esbuild strip (no type errors block the build itself), and `pnpm typecheck` (`vue-tsc --noEmit`) — the latter runs on every commit via `lint-staged` (`*.{ts,vue}` in `package.json`, wrapped in `bash -c` so lint-staged's auto-appended staged-file args don't make `vue-tsc` bypass `tsconfig.json`) and again as a dedicated CI step before `pnpm build`.
 - `@unhead/vue`'s version is pinned to match exactly what `vite-ssg` depends on internally (check with `pnpm why @unhead/vue`) — two different instances would mean two separate head-tag registries, silently breaking `useHead()`.
 
 ### Translation (DeepL)
@@ -46,7 +47,6 @@ The page content is Chinese. Static UI copy (header, footer, empty state, `<titl
 - `withTimeout()`/`errorMessage()` used to live inline in `fetch-sources.ts`; they're now shared from `src/utils/network.ts` since both RSS fetching and translation need the same timeout-race/error-formatting logic.
 - Source names (`sources.json`'s `name`, e.g. "OpenAI Blog") are deliberately left untranslated — they're brand names, not prose.
 - **Local `.env` loading**: Vite's own `loadEnv()` only exposes `VITE_`-prefixed vars to `import.meta.env` and does not write anything back to the real `process.env` — but `translate.ts` reads `process.env.DEEPL_API_KEY` directly (matching how CI supplies it, as a real env var via the workflow's `env:` block). So `vite.config.ts` calls Node's native `process.loadEnvFile()` (guarded in a try/catch — no `.env` file locally is fine, it's optional) to populate `process.env` before `pnpm build`/`pnpm dev` run. No `dotenv` dependency needed on Node 22.
-- Copy `.env.example` to `.env` and fill in `DEEPL_API_KEY` to test real translation locally; `.env`/`.env.local`/`.env.*.local` are gitignored.
 
 ## CI/CD
 
