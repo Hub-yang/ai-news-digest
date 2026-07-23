@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
-import { computed, inject, provide, ref } from 'vue'
+import { computed, inject, provide } from 'vue'
 import { languageKey, useLanguage } from '../composables/use-language'
+import { useSelectedCategory } from '../composables/use-selected-category'
 import { digestKey } from '../data/digest-key'
 import CategoryNav from './CategoryNav.vue'
 import LangToggle from './LangToggle.vue'
@@ -26,7 +27,19 @@ const hasAnyItems = computed(() => nonEmptySections.value.length > 0)
 // 分类顺序取自 sources.json 中各来源首次出现的顺序；只统计有内容的来源，
 // 避免点进去发现是空分类。
 const categories = computed(() => [...new Set(nonEmptySections.value.map(s => s.category))])
-const selectedCategory = ref<string | null>(null)
+
+// 持久化选中的分类；持久化的分类若已不在当日 categories 里（来源/分类变化），
+// 回退到第一个分类，避免过滤后页面空白。
+const storedCategory = useSelectedCategory()
+const selectedCategory = computed<string | null>({
+  get: () =>
+    storedCategory.value !== null && categories.value.includes(storedCategory.value)
+      ? storedCategory.value
+      : (categories.value[0] ?? null),
+  set: (value) => {
+    storedCategory.value = value
+  },
+})
 const filteredSections = computed(() =>
   selectedCategory.value === null
     ? nonEmptySections.value

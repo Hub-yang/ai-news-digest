@@ -12,15 +12,6 @@ const emit = defineEmits<{
 <template>
   <nav class="category-nav" aria-label="分类筛选">
     <button
-      type="button"
-      class="nav-item"
-      :class="{ active: modelValue === null }"
-      :aria-pressed="modelValue === null"
-      @click="emit('update:modelValue', null)"
-    >
-      首页
-    </button>
-    <button
       v-for="category in categories"
       :key="category"
       type="button"
