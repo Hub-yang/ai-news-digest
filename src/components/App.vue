@@ -35,7 +35,7 @@ const filteredSections = computed(() =>
 const failedCount = computed(() => sections.value.filter(s => s.error).length)
 const untranslatedCount = computed(() => nonEmptySections.value.filter(s => !s.translated).length)
 
-const footerText = computed(() => {
+const statsText = computed(() => {
   const segments = [`聚合自 ${sections.value.length} 个 RSS 来源`]
   if (failedCount.value)
     segments.push(`有 ${failedCount.value} 个来源今日不可用`)
@@ -43,6 +43,7 @@ const footerText = computed(() => {
     segments.push(`有 ${untranslatedCount.value} 个来源翻译失败，展示英文原文`)
   return `${segments.join(' · ')}。`
 })
+const subtitleText = computed(() => `${dateLabel.value} · ${statsText.value}`)
 
 useHead({
   title: () => `AI 日报 — ${dateLabel.value}`,
@@ -61,7 +62,7 @@ useHead({
       </div>
       <h1>AI 日报</h1>
       <div class="subtitle">
-        {{ dateLabel }}
+        {{ subtitleText }}
       </div>
     </header>
     <template v-if="hasAnyItems">
@@ -71,9 +72,6 @@ useHead({
     <p v-else class="empty-state">
       今日暂无可用文章。
     </p>
-    <footer>
-      {{ footerText }}
-    </footer>
   </div>
 </template>
 
@@ -81,11 +79,11 @@ useHead({
 .wrap {
   max-width: 700px;
   margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
+  padding: 2rem 1.5rem 3rem;
 }
 header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   padding-bottom: 1.5rem;
   border-bottom: 2px solid var(--fg);
 }
@@ -124,16 +122,6 @@ header .subtitle {
   color: var(--muted);
   font-size: 0.85rem;
   font-variant-numeric: tabular-nums;
-}
-footer {
-  margin-top: 3rem;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--border);
-  text-align: center;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-  font-size: 0.75rem;
-  color: var(--muted);
 }
 .empty-state {
   text-align: center;
