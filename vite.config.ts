@@ -2,6 +2,7 @@ import process from 'node:process'
 import vue from '@vitejs/plugin-vue'
 import Icons from 'unplugin-icons/vite'
 import { defineConfig } from 'vite'
+import vueDevTools from 'vite-plugin-vue-devtools'
 
 // Vite 的 loadEnv 只把 VITE_ 前缀的变量暴露给 import.meta.env，不会把 .env
 // 写回真正的 process.env——而翻译逻辑读的是 process.env.DEEPL_API_KEY（CI 里
@@ -16,7 +17,7 @@ catch {
 
 export default defineConfig({
   base: '/ai-news-digest/',
-  plugins: [vue(), Icons({ compiler: 'vue3' })],
+  plugins: [vue(), vueDevTools(), Icons({ compiler: 'vue3' })],
   ssgOptions: {
     script: 'async',
   },
