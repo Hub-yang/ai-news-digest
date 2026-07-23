@@ -1,60 +1,81 @@
 # AI News Digest
 
-每日自动聚合 AI 领域新闻的摘要页面。用 Vue 3 + vite-ssg 在构建期抓取 RSS 数据并渲染成标准的 Vite 静态站，通过 GitHub Actions 每天定时构建、部署到 GitHub Pages。
+[![Daily AI Digest](https://github.com/Hub-yang/ai-news-digest/actions/workflows/daily-digest.yml/badge.svg)](https://github.com/Hub-yang/ai-news-digest/actions/workflows/daily-digest.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)
+
+每日自动聚合 AI 领域新闻的摘要页面。用 Vue 3 + vite-ssg 在构建期抓取 RSS 数据、翻译成中文并渲染成标准的 Vite 静态站，通过 GitHub Actions 每天定时构建、部署到 GitHub Pages。
+
+**在线预览**：https://hub-yang.github.io/ai-news-digest/
 
 ## 功能特性
 
-- 聚合 8 个 AI 相关 RSS 源：OpenAI Blog、Google DeepMind Blog、Hugging Face Blog、Hacker News (AI)、TechCrunch AI、MIT Technology Review (AI)、VentureBeat AI、Ars Technica AI
+- 聚合 14 个 AI 相关 RSS 源，按「官方/实验室」「科技媒体」「社区/独立博客」「Claude」四个分类组织，可通过顶部导航按分类筛选（选中的分类会持久化到本地）
 - 每个源最多展示最近 5 条，按发布时间倒序排列
+- 标题/摘要通过 DeepL API 在构建期翻译成中文，支持中英文一键切换（默认展示英文原文）；未配置 API Key 或翻译失败时自动降级为英文原文，不影响构建
+- 浅色/深色/跟随系统三态主题切换，切换状态持久化到本地
 - 单源抓取失败不影响整体构建（详见下文「容错机制」）
-- 页面结构和样式完全用 Vue SFC 编写，构建期 SSR 渲染 + 客户端 hydration，标准 Vite 多文件产物（`dist/index.html` + 独立的 CSS/JS 资源），支持浅色/深色主题自适应；页面本身目前仍无交互功能，但架构已经为将来加交互留好扩展性
+- 页面结构和样式完全用 Vue SFC 编写，构建期 SSR 渲染 + 客户端 hydration，标准 Vite 多文件产物（`dist/index.html` + 独立的 CSS/JS 资源）
 - 每天自动构建并发布到 GitHub Pages，无需人工干预
 
 ## 快速开始
 
 ```bash
-pnpm install              # 安装依赖
+pnpm install               # 安装依赖
 pnpm dev                   # 热更新本地开发（改样式/结构用，见下方说明）
-pnpm build                # 抓取所有 RSS 源，生成 dist/ 静态站
-pnpm preview               # 本地预览构建产物
+pnpm build                 # 抓取所有 RSS 源，生成 dist/ 静态站
+pnpm preview                # 本地预览构建产物
+pnpm lint                  # ESLint 检查
+pnpm typecheck              # vue-tsc 类型检查
 ```
 
 `pnpm build` 等价于执行 `vite-ssg build`。构建完成后，静态站会写入 `dist/`（`dist/index.html` + `dist/assets/*.{css,js}`）。
 
 **`pnpm dev` 用的是示例数据，不是真实 RSS**：抓取逻辑只在构建期（`import.meta.env.SSR` 为真）跑一次，`pnpm dev` 是纯客户端渲染的热更新开发服务器，既不会经过那趟构建期抓取，浏览器里也跑不了 `rss-parser`。所以 `main.ts` 在开发模式下会退回读 `src/data/sample-digest.ts` 里的一份固定示例数据（包含一个正常源和一个模拟失败的源，方便顺带预览"N 个源不可用"这条 footer 文案），让本地改样式/结构时不用等网络、可以直接热更新。这个兜底分支和示例数据在生产构建里会被摇树删掉，不会进最终产物。要看真实抓取数据，用 `pnpm build` + `pnpm preview`。
 
+如果要本地测试翻译功能，在项目根目录新建 `.env`（已加入 `.gitignore`），写入 `DEEPL_API_KEY=你的密钥` 即可，`vite.config.ts` 会自动加载。
+
 ## 项目结构
 
 ```
 .
-├── index.html                 # Vite 入口 HTML
+├── index.html                       # Vite 入口 HTML
 ├── src/
-│   ├── main.ts                # 入口：ViteSSG() + 构建期抓取数据 + provide 给组件树
+│   ├── main.ts                      # 入口：ViteSSG() + 构建期抓取数据 + provide 给组件树
 │   ├── data/
-│   │   ├── types.ts           # Source / FeedItem / SourceResult 类型
-│   │   ├── digest-key.ts      # provide/inject 用的 InjectionKey
-│   │   ├── fetch-sources.ts   # RSS 抓取、超时、容错逻辑
-│   │   └── sample-digest.ts   # pnpm dev 用的示例数据（生产构建会被摇树删掉）
+│   │   ├── types.ts                 # Source / FeedItem / SourceResult 类型
+│   │   ├── digest-key.ts            # provide/inject 用的 InjectionKey
+│   │   ├── fetch-sources.ts         # RSS 抓取、超时、容错、HTML 实体解码逻辑
+│   │   ├── translate.ts             # DeepL 翻译，无 key / 失败时降级为原文
+│   │   └── sample-digest.ts         # pnpm dev 用的示例数据（生产构建会被摇树删掉）
 │   ├── components/
-│   │   ├── App.vue            # 页面整体结构 + 样式（header/正文/footer）
-│   │   └── SourceSection.vue  # 单个 RSS 源的一个板块 + 样式
-│   ├── styles/base.css        # 全局样式（CSS 变量、reset）
-│   └── utils/format-date.ts   # 条目日期格式化
-├── vite.config.ts             # @vitejs/plugin-vue + ssgOptions
+│   │   ├── App.vue                  # 页面整体结构 + 样式（header/正文/footer）
+│   │   ├── CategoryNav.vue          # 分类筛选导航
+│   │   ├── SourceSection.vue        # 单个 RSS 源的一个板块 + 样式
+│   │   ├── LangToggle.vue           # 中英文切换按钮
+│   │   └── ThemeToggle.vue          # 浅色/深色/跟随系统切换按钮
+│   ├── composables/
+│   │   ├── use-selected-category.ts # 持久化选中分类
+│   │   ├── use-language.ts          # 持久化语言偏好，跨组件共享
+│   │   └── use-theme.ts             # 持久化主题偏好
+│   ├── styles/base.css              # 全局样式（CSS 变量、reset、深色模式媒体查询）
+│   └── utils/
+│       ├── format-date.ts           # 条目日期格式化
+│       └── network.ts               # 超时竞速、错误信息格式化（抓取/翻译共用）
+├── vite.config.ts                   # @vitejs/plugin-vue + vite-plugin-vue-devtools + ssgOptions
 ├── tsconfig.json
-├── eslint.config.js           # @antfu/eslint-config
-├── sources.json                # RSS 源配置列表
-├── dist/                       # 构建产物（每次运行覆盖，未提交到仓库）
+├── eslint.config.ts                 # @antfu/eslint-config
+├── sources.json                     # RSS 源配置列表（含分类）
+├── dist/                            # 构建产物（每次运行覆盖，未提交到仓库）
 └── .github/workflows/
-    └── daily-digest.yml       # 每日定时构建 + 部署到 GitHub Pages
+    └── daily-digest.yml             # 每日定时构建 + 部署到 GitHub Pages
 ```
 
 ## 自定义数据源
 
-编辑 `sources.json`，按 `{ "name": "显示名称", "url": "RSS 地址" }` 的格式增删条目即可，无需改动脚本逻辑：
+编辑 `sources.json`，按 `{ "name": "显示名称", "url": "RSS 地址", "category": "分类名" }` 的格式增删条目即可，无需改动脚本逻辑。分类导航按各来源在文件中首次出现的顺序展示：
 
 ```json
-{ "name": "Your Source", "url": "https://example.com/feed.xml" }
+{ "name": "Your Source", "url": "https://example.com/feed.xml", "category": "科技媒体" }
 ```
 
 ## 定时任务的执行机制与原理
@@ -68,10 +89,11 @@ pnpm preview               # 本地预览构建产物
 
 2. **构建阶段（`build` job）**：
    - `actions/checkout` 拉取仓库代码
-   - `pnpm/action-setup` 准备 pnpm（须在 `actions/setup-node` 之前，因为后者的 `cache: pnpm` 依赖 pnpm 已在 PATH 上）
+   - `pnpm/action-setup` 准备 pnpm（须在 `actions/setup-node` 之前，因为后者的 `cache: pnpm` 依赖 pnpm 已在 PATH 上），版本锁定在 `11.15.1`
    - `actions/setup-node` 准备 Node 22 环境（pnpm 11.15+ 要求 Node >= 22.13，Node 20 会导致 pnpm 缓存探测那一步崩溃）
    - `pnpm install --frozen-lockfile` 安装依赖（使用 lockfile，保证可复现）
-   - `pnpm build` 并发抓取全部 RSS 源，通过 vite-ssg 渲染并生成 `dist/` 静态站
+   - `pnpm typecheck` 类型检查，失败则中止部署
+   - `pnpm build` 并发抓取全部 RSS 源、调用 DeepL 翻译（`DEEPL_API_KEY` 来自仓库 secrets），通过 vite-ssg 渲染并生成 `dist/` 静态站
    - 用 `actions/upload-pages-artifact` 直接把 `./dist` 打包上传，作为 Pages 部署的输入
 
 3. **部署阶段（`deploy` job）**：
@@ -83,7 +105,8 @@ pnpm preview               # 本地预览构建产物
 5. **容错机制（脚本层面，非 workflow 层面）**：
    - 每个 RSS 源的抓取都被单独 `try/catch` 包裹（`fetchSource()`），单个源失败或超时不会导致整个构建失败
    - 每次请求叠加两层超时保护：`rss-parser` 自身 15s 的 socket 超时 + 脚本额外包一层 20s 的硬超时（`withTimeout`），专门用来防止某个源长时间无响应导致 GitHub Actions 任务挂起超时
-   - 页面底部会提示当天有多少个源不可用；只有当**全部**源都失败时才展示"今日暂无内容"的空状态
+   - 翻译请求同样有 15s 超时；无 `DEEPL_API_KEY`、超时或接口失败都会静默降级为展示英文原文，不影响构建
+   - 页面底部会提示当天有多少个源不可用、多少个源翻译失败；只有当**全部**源都失败时才展示"今日暂无内容"的空状态
 
 ## 权限说明
 
@@ -91,15 +114,20 @@ workflow 声明了最小权限集：`contents: read`（读取代码）、`pages:
 
 ## 技术栈
 
-- Node.js（原生 ESM，`type: "module"`）
+- Node.js 22（原生 ESM，`type: "module"`）
 - [`rss-parser`](https://www.npmjs.com/package/rss-parser) 用于解析 RSS/Atom 源
-- Vue 3（`<script setup>` SFC）
+- [DeepL API](https://www.deepl.com/docs-api) 用于标题/摘要中文翻译
+- Vue 3（`<script setup>` SFC）+ [VueUse](https://vueuse.org/)（`useStorage`/`usePreferredDark` 等持久化与系统偏好检测）
 - [`vite-ssg`](https://github.com/antfu-collective/vite-ssg)（single-page 模式，未引入 `vue-router`）：标准 Vite 静态站生成方案，构建期 SSR + 客户端 hydration
 - `@unhead/vue`：管理 `<title>` 等 head 内容
-- Vite + TypeScript、ESLint（`@antfu/eslint-config`）
+- Vite + TypeScript、ESLint（`@antfu/eslint-config`）、commitlint + husky（Conventional Commits）
 - pnpm 作为包管理器
-- 构建期 SSR + 客户端 hydration，标准 Vite 多文件产物，页面本身目前仍无交互功能，但架构已为将来加交互做好准备——没有引入测试框架
+- 没有引入测试框架
+
+## Contributing
+
+欢迎提 Issue / PR。改动涉及构建期抓取或 CI 流程时，请用 `pnpm build && pnpm preview` 验证真实数据下的渲染效果（`pnpm dev` 只渲染示例数据）；提交前确保 `pnpm typecheck` 和 `pnpm lint` 通过。
 
 ## License
 
-未指定 License，默认保留所有权利。
+[MIT](./LICENSE)
