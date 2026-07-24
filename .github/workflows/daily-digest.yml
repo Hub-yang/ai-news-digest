@@ -60,7 +60,7 @@ jobs:
         with:
           name: dist
           path: dist
-      - uses: easingthemes/ssh-deploy@v5
+      - uses: easingthemes/ssh-deploy@v6
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
