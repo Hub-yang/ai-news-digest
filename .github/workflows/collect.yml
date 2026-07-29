@@ -1,0 +1,49 @@
+name: Collect Snapshot
+
+# 每日采集一份原料快照并提交回仓库。不构建、不部署——站点内容只在出刊时才变。
+#
+# 之所以必须每天跑：RSS 是滑动窗口，高频源（HN、TechCrunch）的 feed 里只留得住
+# 最近一小段时间的条目，等到周一再一次性抓「过去 7 天」是抓不全的。
+on:
+  schedule:
+    - cron: '0 23 * * *' # 07:00 Asia/Shanghai
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# 与 publish 共用一个组，避免两者同时往 main 推 content/ 造成推送冲突
+concurrency:
+  group: content
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.15.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # 采集不翻译，因此不需要 DEEPL_API_KEY
+      - run: pnpm collect
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/snapshots
+          if git diff --staged --quiet; then
+            echo "No snapshot changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(content): 采集 $(TZ=Asia/Shanghai date +%Y-%m-%d) 快照"
+          # 拉一下再推，防止与 publish 的提交撞车
+          git pull --rebase
+          git push

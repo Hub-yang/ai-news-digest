@@ -1,27 +1,27 @@
 <script setup lang="ts">
 defineProps<{
-  categories: string[]
-  modelValue: string | null
+  categories: { name: string, anchorId: string }[]
 }>()
 
-const emit = defineEmits<{
-  'update:modelValue': [value: string | null]
-}>()
+/**
+ * 锚点目录，不是筛选器——一期周刊是一份完整读物，点某个分类只应该把读者
+ * 送到那个板块，而不该把其余内容藏起来。
+ *
+ * 用 <a href="#..."> 而不是 JS 滚动：无 JS 时依然可用，滚动行为交给 CSS 的
+ * scroll-behavior，锚点偏移交给板块自己的 scroll-margin-top。
+ */
 </script>
 
 <template>
-  <nav class="category-nav" aria-label="分类筛选">
-    <button
+  <nav class="category-nav" aria-label="板块目录">
+    <a
       v-for="category in categories"
-      :key="category"
-      type="button"
+      :key="category.anchorId"
       class="nav-item"
-      :class="{ active: modelValue === category }"
-      :aria-pressed="modelValue === category"
-      @click="emit('update:modelValue', category)"
+      :href="`#${category.anchorId}`"
     >
-      {{ category }}
-    </button>
+      {{ category.name }}
+    </a>
   </nav>
 </template>
 
@@ -51,6 +51,7 @@ const emit = defineEmits<{
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
+  text-decoration: none;
   background: transparent;
   border: 1px solid var(--border);
   border-radius: 999px;
@@ -60,10 +61,6 @@ const emit = defineEmits<{
   transition: color 0.2s, border-color 0.2s, background 0.2s;
 }
 .nav-item:hover {
-  color: var(--fg);
-  border-color: var(--muted);
-}
-.nav-item.active {
   color: var(--bg);
   background: var(--accent);
   border-color: var(--accent);

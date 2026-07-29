@@ -1,12 +1,14 @@
-import type { DigestState } from './digest-key'
-import type { FeedItem, Source, SourceResult } from './types'
+import type { Snapshot, SnapshotItem, SnapshotSourceError, Source } from './types'
 import Parser from 'rss-parser'
 import sourcesData from '../../sources.json'
-import { formatDate } from '../utils/format-date'
 import { errorMessage, withTimeout } from '../utils/network'
-import { translateTexts } from './translate'
 
-const ITEMS_PER_SOURCE = 5
+/**
+ * 每源每次采集的条目上限。翻译已挪到出刊阶段（只翻入选的几十条），采集本身
+ * 不再消耗 DeepL 额度，所以这里可以放得比较宽——HN AI 这类高频源一天远不止
+ * 5 条，上限太低会让一周的原料缺一大块。
+ */
+const ITEMS_PER_SOURCE = 20
 const DESCRIPTION_MAX_LENGTH = 220
 const FETCH_TIMEOUT_MS = 20000
 
@@ -68,11 +70,25 @@ function timeOrNaN(pubDate: string | undefined): number {
   return pubDate ? new Date(pubDate).getTime() : Number.NaN
 }
 
-export async function fetchSource(source: Source): Promise<SourceResult> {
+/**
+ * 把 feed 里的 pubDate 规整成 ISO 字符串。缺失或畸形一律返回 ''——
+ * 快照必须是 JSON 安全的纯字符串，不能出现 Date 对象（见 types.ts 注释）。
+ */
+function toIsoDate(pubDate: string | undefined): string {
+  const time = timeOrNaN(pubDate)
+  return Number.isNaN(time) ? '' : new Date(time).toISOString()
+}
+
+export interface FetchSourceResult {
+  items: SnapshotItem[]
+  error: string | null
+}
+
+export async function fetchSource(source: Source): Promise<FetchSourceResult> {
   try {
     const feed = await withTimeout(parser.parseURL(source.url), FETCH_TIMEOUT_MS)
     const seenLinks = new Set<string>()
-    const items: FeedItem[] = (feed.items || [])
+    const items: SnapshotItem[] = (feed.items || [])
       .filter((item) => {
         // 只接受 http(s) 链接（防止恶意/畸形 feed 塞入 javascript: 等危险 scheme），
         // 并按 link 去重（个别聚合 feed 会重复出现同一篇文章）。
@@ -97,61 +113,50 @@ export async function fetchSource(source: Source): Promise<SourceResult> {
         return bTime - aTime
       })
       .slice(0, ITEMS_PER_SOURCE)
-      .map((item) => {
-        const title = item.title!.trim()
-        const description = truncate(
+      .map(item => ({
+        title: item.title!.trim(),
+        link: item.link!,
+        description: truncate(
           stripHtml(item.contentSnippet || item.content || item.summary || ''),
           DESCRIPTION_MAX_LENGTH,
-        )
-        // titleZh/descriptionZh 先临时等于原文，翻译成功后在下面统一回填；
-        // 翻译失败/无 key 时保持原样，即页面默认展示的英文原文。
-        return {
-          title,
-          titleZh: title,
-          link: item.link!,
-          formattedDate: formatDate(item.pubDate ? new Date(item.pubDate) : null),
-          description,
-          descriptionZh: description,
-        }
-      })
+        ),
+        pubDate: toIsoDate(item.pubDate),
+        source: source.name,
+        category: source.category,
+      }))
 
-    const texts = items.flatMap(item => [item.title, item.description])
-    const { texts: translatedTexts, translated } = await translateTexts(texts)
-    items.forEach((item, i) => {
-      item.titleZh = translatedTexts[i * 2] || item.title
-      item.descriptionZh = translatedTexts[i * 2 + 1] || item.description
-    })
-
-    return { name: source.name, category: source.category, items, error: null, translated }
+    return { items, error: null }
   }
   catch (err) {
     const message = errorMessage(err)
     console.warn(`[warn] failed to fetch "${source.name}" (${source.url}): ${message}`)
-    return { name: source.name, category: source.category, items: [], error: message, translated: false }
+    return { items: [], error: message }
   }
 }
 
-// vite-ssg invokes the SSR entry's createApp() twice per build (once to discover
-// routes, once to render the page) — memoize so the RSS sources only get fetched once.
-let digestPromise: Promise<DigestState> | undefined
+/**
+ * 并发抓取全部来源，汇总成一份当日快照。
+ *
+ * 单源失败被 fetchSource 内部吞掉并记进 errors，不会让整次采集失败——
+ * 延续「一个坏源不拖垮全局」的既有哲学。
+ */
+export async function collectSnapshot(): Promise<Snapshot> {
+  const sources = sourcesData as Source[]
+  const results = await Promise.all(sources.map(fetchSource))
 
-export function fetchAllSources(): Promise<DigestState> {
-  digestPromise ??= (async () => {
-    const sources = sourcesData as Source[]
-    const sections = await Promise.all(sources.map(fetchSource))
+  const items: SnapshotItem[] = []
+  const errors: SnapshotSourceError[] = []
+  results.forEach((result, i) => {
+    items.push(...result.items)
+    if (result.error)
+      errors.push({ source: sources[i]!.name, message: result.error })
+  })
 
-    const succeeded = sections.filter(r => !r.error).length
-    console.log(`Fetched ${succeeded}/${sources.length} sources successfully.`)
+  console.log(`Collected ${items.length} items from ${sources.length - errors.length}/${sources.length} sources.`)
 
-    const dateLabel = new Date().toLocaleDateString('zh-CN', {
-      weekday: 'long',
-      month: 'long',
-      day: 'numeric',
-      year: 'numeric',
-    })
-
-    return { sections, dateLabel }
-  })()
-
-  return digestPromise
+  return {
+    collectedAt: new Date().toISOString(),
+    items,
+    errors,
+  }
 }

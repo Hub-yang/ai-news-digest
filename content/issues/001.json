@@ -1,0 +1,352 @@
+{
+  "number": 1,
+  "startDate": "2026-07-22T08:16:16.836Z",
+  "endDate": "2026-07-29T08:16:16.836Z",
+  "dateLabel": "2026年7月22日 — 29日",
+  "publishedAt": "2026-07-29T08:25:44.592Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "Scientific computing in the age of agentic AI",
+          "titleZh": "代理式人工智能时代的科学计算",
+          "description": "A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in genomics and beyond.",
+          "descriptionZh": "一份新的实地报告展示了科学家如何利用人工智能编程代理来推动科学计算现代化，从而加速基因组学及其他领域的软件开发和科学发现。",
+          "link": "https://openai.com/index/scientific-computing-agentic-ai",
+          "formattedDate": "2026年7月29日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The harness is all you need (mostly)",
+          "titleZh": "（基本上）只需这套线束就够了",
+          "description": "A practical GitHub Copilot workflow for prototyping, planning, implementing, and reviewing software without chasing every new AI tool. The post The harness is all you need (mostly) appeared first on The GitHub Blog.",
+          "descriptionZh": "一个实用的 GitHub Copilot 工作流，用于软件原型设计、规划、实现和审查，无需追逐每一款新推出的 AI 工具。文章《（基本上）你只需要这个工具集》首发于 GitHub 博客。",
+          "link": "https://github.blog/ai-and-ml/github-copilot/the-harness-is-all-you-need-mostly/",
+          "formattedDate": "2026年7月28日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "GitHub Copilot app for Beginners: Getting started",
+          "titleZh": "GitHub Copilot 入门指南：开始使用",
+          "description": "New to the GitHub Copilot app? Learn how to start projects, work with AI agents, explore canvases, and streamline your development workflow. The post GitHub Copilot app for Beginners: Getting started appeared first on…",
+          "descriptionZh": "初次使用 GitHub Copilot 应用？了解如何启动项目、与 AI 助手协作、探索画布，以及优化您的开发工作流。文章《GitHub Copilot 应用入门指南：开始使用》首发于……",
+          "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-getting-started/",
+          "formattedDate": "2026年7月28日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How AI is expanding what people do at work",
+          "titleZh": "人工智能如何拓展人们的工作范围",
+          "description": "New OpenAI research shows how AI is expanding what workers do, with ChatGPT users taking on tasks across roles and reshaping job boundaries.",
+          "descriptionZh": "OpenAI的最新研究表明，人工智能正在拓展员工的工作范围，ChatGPT用户正在承担跨岗位的任务，并重塑了岗位边界。",
+          "link": "https://openai.com/index/how-ai-is-expanding-what-people-do-at-work",
+          "formattedDate": "2026年7月27日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Launching Health in ChatGPT",
+          "titleZh": "在 ChatGPT 中推出“健康”功能",
+          "description": "Health in ChatGPT now lets eligible U.S. users securely connect medical records and Apple Health to get more personalized insights and better understand their health.",
+          "descriptionZh": "ChatGPT中的“健康”功能现已允许符合条件的美国用户安全地连接医疗记录和Apple Health，从而获得更个性化的分析结果，并更好地了解自身健康状况。",
+          "link": "https://openai.com/index/health-in-chatgpt",
+          "formattedDate": "2026年7月23日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Copilot vs. raw API access: What are you actually paying for?",
+          "titleZh": "Copilot 与直接调用 API：您究竟为哪些功能付费？",
+          "description": "Copilot now bills usage at listed API rates. Compare direct model access with the coding workflow, policy, and harness work around it. The post Copilot vs. raw API access: What are you actually paying for? appeared…",
+          "descriptionZh": "Copilot 现根据所列 API 费率按使用量计费。请将直接访问 API 与围绕其展开的编码工作流、策略及测试框架进行对比。文章《Copilot 与直接访问 API：您实际为哪些服务付费？》已发布……",
+          "link": "https://github.blog/ai-and-ml/github-copilot/copilot-vs-raw-api-access-what-are-you-actually-paying-for/",
+          "formattedDate": "2026年7月23日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Accelerating the frontiers of scientific discovery: Google’s $40M commitment to the Genesis Mission",
+          "titleZh": "推动科学发现的前沿：谷歌向“创世计划”投入4000万美元",
+          "description": "Google commits $40M in AI tokens and credits for the Genesis Mission",
+          "descriptionZh": "谷歌为“创世计划”提供4000万美元的人工智能代币和积分",
+          "link": "https://deepmind.google/blog/accelerating-the-frontiers-of-scientific-discovery-googles-40m-commitment-to-the-genesis-mission/",
+          "formattedDate": "2026年7月22日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Building AI infrastructure with the Effingham County community",
+          "titleZh": "与埃芬汉姆县社区携手共建人工智能基础设施",
+          "description": "OpenAI announces Project Camellia in Effingham County, Georgia, with commitments to responsible energy, community investment, jobs, and access to Codex.",
+          "descriptionZh": "OpenAI宣布在佐治亚州埃芬汉姆县启动“Camellia项目”，承诺在负责任的能源利用、社区投资、就业以及Codex平台访问方面做出贡献。",
+          "link": "https://openai.com/index/building-ai-infrastructure-with-the-effingham-county-community",
+          "formattedDate": "2026年7月22日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "Sam Altman is ready to decelerate",
+          "titleZh": "萨姆·奥尔特曼准备放慢脚步了",
+          "description": "His change of position comes after \"the first security incident that I have felt very viscerally.\"",
+          "descriptionZh": "他之所以改变立场，是因为“我亲身经历的第一次安全事件”。",
+          "link": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/",
+          "formattedDate": "2026年7月29日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "OpenAI says its AI agent broke out of testing sandbox to hack Hugging Face",
+          "titleZh": "OpenAI称其AI代理突破测试沙箱，入侵了Hugging Face",
+          "description": "\"This is day one for cybersecurity in the age of agents,\" Hugging Face CEO says.",
+          "descriptionZh": "“这是‘智能代理时代’网络安全的第一天，”Hugging Face 首席执行官表示。",
+          "link": "https://arstechnica.com/ai/2026/07/how-an-openai-benchmark-test-turned-into-a-real-world-cyberattack/",
+          "formattedDate": "2026年7月23日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Cyera agrees to acquire Oasis Security for $1B to safeguard proliferating AI agents",
+          "titleZh": "Cyera同意以10亿美元收购Oasis Security，以防范日益泛滥的人工智能代理",
+          "description": "The deal is Cyera's third acquisition this year.",
+          "descriptionZh": "这是Cyera今年进行的第三次收购。",
+          "link": "https://techcrunch.com/2026/07/28/cyera-agrees-to-acquire-oasis-security-for-1b-to-safeguard-proliferating-ai-agents/",
+          "formattedDate": "2026年7月29日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Bot-detection startup Spur nabs $200M from Insight",
+          "titleZh": "机器人检测初创公司Spur从Insight处获得2亿美元融资",
+          "description": "Spur Intelligence has raised a $200 million round from Insight Partners for its tech that can identify legit human traffic from bots.",
+          "descriptionZh": "Spur Intelligence 已从 Insight Partners 处筹集了 2 亿美元融资，用于开发其能够区分真实人类流量与机器人流量的技术。",
+          "link": "https://techcrunch.com/2026/07/28/bot-detection-startup-spur-nabs-200m-from-insight/",
+          "formattedDate": "2026年7月29日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "MCP startup Runlayer accuses Rippling of stealing its product idea",
+          "titleZh": "初创公司Runlayer指控Rippling剽窃其产品创意",
+          "description": "Runlayer is suing Rippling after Rippling evaluated the startup's MCP gateway product and then opted to build one itself.",
+          "descriptionZh": "在Rippling对这家初创公司的MCP网关产品进行评估后，决定自行开发同类产品，Runlayer因此对Rippling提起了诉讼。",
+          "link": "https://techcrunch.com/2026/07/28/mcp-startup-runlayer-accuses-rippling-of-stealing-its-product-idea/",
+          "formattedDate": "2026年7月29日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Despite AI hype, Google's data shows workers aren't automating themselves away",
+          "titleZh": "尽管人工智能热潮不断，但谷歌的数据表明，自动化并未导致员工失业",
+          "description": "Analysis of 15 million real AI interactions finds most tasks at most jobs are unaffected.",
+          "descriptionZh": "对1500万次真实AI交互的分析发现，大多数岗位上的绝大多数任务均未受到影响。",
+          "link": "https://arstechnica.com/ai/2026/07/despite-ai-hype-googles-data-shows-workers-arent-automating-themselves-away/",
+          "formattedDate": "2026年7月29日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Grafana Assistant Expands to More Than 30 Data Sources",
+          "titleZh": "Grafana Assistant 支持的数据源已扩展至 30 多个",
+          "description": "Grafana Labs has expanded the capabilities of Grafana Assistant, enabling its AI-powered observability assistant to query and correlate data across more than 30 different data sources through natural language. By Craig…",
+          "descriptionZh": "Grafana Labs 扩展了 Grafana Assistant 的功能，使其这款基于人工智能的可观测性助手能够通过自然语言查询并关联来自 30 多个不同数据源的数据。作者：Craig…",
+          "link": "https://www.infoq.com/news/2026/07/grafana-assistant-data-source/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月28日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: The Future of Engineering: Mindsets That Matter When Code Isn’t Enough",
+          "titleZh": "演讲：工程的未来：当代码不再足够时，哪些思维方式至关重要",
+          "description": "Ben Greene discusses how software engineers can adapt and thrive in an era of rapid AI code automation. Drawing on his startup experience, he explains key mindsets like starting simple, maintaining code comprehension,…",
+          "descriptionZh": "本·格林探讨了软件工程师如何在人工智能代码自动化迅猛发展的时代中适应并脱颖而出。他结合自己的创业经验，阐述了“从简单做起”、“保持对代码的理解”等关键思维方式……",
+          "link": "https://www.infoq.com/presentations/ai-future-engineering/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月28日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Samsung’s chip workers are jumping ship to rival SK Hynix",
+          "titleZh": "三星的芯片员工正纷纷跳槽至竞争对手SK海力士",
+          "description": "Lee, an engineer at Samsung’s semiconductor division, clocks out when his shift ends. He used to work longer hours, going the extra mile to excel at his projects. But lately, he’s been coming straight home to work on…",
+          "descriptionZh": "李是三星半导体部门的一名工程师，下班后他便准时打卡下班。他过去工作时间更长，为了在项目中出类拔萃，总是加倍努力。但最近，他下班后直接回家处理……",
+          "link": "https://www.technologyreview.com/2026/07/28/1140853/samsung-chip-workers-exodus-sk-hynix/",
+          "formattedDate": "2026年7月28日",
+          "source": "MIT Technology Review (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AWS Launches Amazon GuardDuty Investigation Agent to Automate Threat Triage",
+          "titleZh": "AWS 推出 Amazon GuardDuty 调查代理，以实现威胁分级处理的自动化",
+          "description": "AWS released a public preview of the GuardDuty investigation agent, which correlates findings, 90-day activity logs, and resource topologies into structured reports with risk ratings, confidence scores, and MITRE ATT&CK…",
+          "descriptionZh": "AWS 发布了 GuardDuty 调查代理的公开预览版，该代理可将调查结果、90 天的活动日志和资源拓扑结构关联起来，生成包含风险评级、置信度评分以及 MITRE ATT&CK 的结构化报告……",
+          "link": "https://www.infoq.com/news/2026/07/guardduty-investigation-agent/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月28日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Microsoft unveils AI security tools it says outperform competing platforms",
+          "titleZh": "微软推出了一系列人工智能安全工具，称其性能优于竞争对手的平台",
+          "description": "Microsoft says tools cost less than competing ones and outperform them, too.",
+          "descriptionZh": "微软表示，其工具不仅价格低于竞争对手的产品，性能也更胜一筹。",
+          "link": "https://arstechnica.com/security/2026/07/microsoft-unveils-ai-security-tools-it-says-outperform-competing-platforms/",
+          "formattedDate": "2026年7月28日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "“Google and Reddit do not own the Internet,\" web scraper says after court win",
+          "titleZh": "“谷歌和Reddit并不拥有互联网，”一名网络爬虫开发者在法庭胜诉后表示",
+          "description": "Google's and Reddit's use of DMCA to fight web scraper is bizarre, expert says.",
+          "descriptionZh": "专家称，谷歌和Reddit利用《数字千年版权法案》（DMCA）打击网络爬虫的做法令人费解。",
+          "link": "https://arstechnica.com/tech-policy/2026/07/google-wont-give-up-odd-war-against-ai-web-scraping-despite-court-loss/",
+          "formattedDate": "2026年7月28日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "[AINews] Fearing RSI: OpenAI, Anthropic, GDM, Meta, Thinky cosign letter to \"Pace\" AI development, as HuggingFace details Machine-Speed Offensive Cyberattack",
+          "titleZh": "[AINews] 担忧RSI：OpenAI、Anthropic、GDM、Meta和Thinky联名签署公开信，呼吁“放缓”AI发展步伐；与此同时，HuggingFace详细披露了一起“机器速度”级别的网络攻击事件",
+          "description": "The Big Pause is coming.",
+          "descriptionZh": "“大停顿”即将到来。",
+          "link": "https://www.latent.space/p/ainews-fearing-rsi-openai-anthropic",
+          "formattedDate": "2026年7月29日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Discovering cryptographic weaknesses with Claude",
+          "titleZh": "借助Claude发现密码学漏洞",
+          "description": "Discovering cryptographic weaknesses with Claude The best part of this article (here's the repo ) about how Anthropic researchers used Claude Mythos to find mathematical flaws in both HAWK and a weaker version of AES…",
+          "descriptionZh": "借助Claude发现密码学漏洞 这篇文章（仓库在此）最精彩的部分在于，Anthropic的研究人员如何利用Claude Mythos发现了HAWK和AES较弱版本中的数学缺陷……",
+          "link": "https://simonwillison.net/2026/Jul/28/discovering-cryptographic-weaknesses-with-claude/#atom-everything",
+          "formattedDate": "2026年7月29日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Quoting Akshat Bubna",
+          "titleZh": "引用阿克沙特·布布纳的话",
+          "description": "We’re aware a Modal customer published an unauthenticated endpoint that allowed ​anyone on the internet to use ​their ⁠sandboxes for code execution. This was used by the rogue agent. Modal’s ⁠platform ​or isolation were…",
+          "descriptionZh": "我们了解到，一位 Modal 客户发布了一个未经身份验证的端点，允许互联网上的任何人利用其沙箱执行代码。该端点被恶意代理所利用。Modal 的平台或隔离机制……",
+          "link": "https://simonwillison.net/2026/Jul/28/akshat-bubna/#atom-everything",
+          "formattedDate": "2026年7月29日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "uv 0.12.0",
+          "titleZh": "uv 0.12.0",
+          "description": "uv 0.12.0 Some interesting breaking changes in this release of uv , in particular to the default project produced by the uv init command. uv init is the uv shortcut for creating a new project. The previous version of uv…",
+          "descriptionZh": "uv 0.12.0 本次 uv 发布中包含一些值得关注的兼容性变更，特别是针对由 uv init 命令生成的默认项目。uv init 是 uv 中用于创建新项目的快捷方式。uv 的上一版本……",
+          "link": "https://simonwillison.net/2026/Jul/28/uv/#atom-everything",
+          "formattedDate": "2026年7月29日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident",
+          "titleZh": "Frontier Lab 代理入侵事件剖析：2026年7月事件的技术时间线",
+          "description": "Anatomy of a Frontier Lab Agent Intrusion: A Technical Timeline of the July 2026 Incident Hugging Face just released this extremely detailed technical description of OpenAI's recent accidental cyberattack against their…",
+          "descriptionZh": "“Frontier Lab特工入侵事件剖析：2026年7月事件的技术时间线” Hugging Face刚刚发布了这份极其详细的技术报告，详细描述了OpenAI最近对他们发起的意外网络攻击……",
+          "link": "https://simonwillison.net/2026/Jul/28/anatomy-of-a-frontier-lab-agent-intrusion/#atom-everything",
+          "formattedDate": "2026年7月29日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Codex from 0 to 10M Users: Building ChatGPT Work — Akshay Nathan, OpenAI",
+          "titleZh": "Codex 从 0 到 1000 万用户：构建 ChatGPT 工作 —— Akshay Nathan，OpenAI",
+          "description": "OpenAI's core product engineering lead on how they are building ChatGPT Work to make AGI accessible to all of humanity: Sites, OpenClaw, Memory, Subagents, Finance, No-Code and advice.",
+          "descriptionZh": "OpenAI 核心产品工程负责人阐述了他们如何构建 ChatGPT，以使全人类都能使用 AGI：Sites、OpenClaw、Memory、Subagents、Finance、No-Code 以及建议。",
+          "link": "https://www.latent.space/p/chatgpt-work",
+          "formattedDate": "2026年7月28日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Much ado about Open Weights",
+          "titleZh": "[AINews] 关于“开放体重”的种种争议",
+          "description": "Everyone is writing a lot, but only Kimi K3 shipped today",
+          "descriptionZh": "大家都在写很多内容，但今天只有Kimi K3发货了",
+          "link": "https://www.latent.space/p/ainews-much-ado-about-open-weights",
+          "formattedDate": "2026年7月28日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+          "titleZh": "[AINews] 克劳德 Opus 5：以 Opus 的价格享受 Fable 级别的性能（仅为 Fable 的半价）",
+          "description": "ain't nobody beats Anthropic at distilling Fable!",
+          "descriptionZh": "在提炼《Fable》精髓方面，没人能比得上Anthropic！",
+          "link": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+          "formattedDate": "2026年7月25日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Software companies face existential question as AI changes what customers buy",
+          "titleZh": "随着人工智能改变客户的购买行为，软件公司面临生存抉择",
+          "description": "Article URL: https://www.bizjournals.com/sanjose/news/2026/07/27/ai-software-sell-outcomes-tools.html Comments URL: https://news.ycombinator.com/item?id=49094514 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://www.bizjournals.com/sanjose/news/2026/07/27/ai-software-sell-outcomes-tools.html 评论网址： https://news.ycombinator.com/item?id=49094514 积分：1 # 评论：0",
+          "link": "https://www.bizjournals.com/sanjose/news/2026/07/27/ai-software-sell-outcomes-tools.html",
+          "formattedDate": "2026年7月29日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "ExploitGym AI benchmark source code",
+          "titleZh": "ExploitGym AI 基准测试源代码",
+          "description": "Article URL: https://github.com/sunblaze-ucb/exploitgym/ Comments URL: https://news.ycombinator.com/item?id=49094493 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://github.com/sunblaze-ucb/exploitgym/ 评论网址：https://news.ycombinator.com/item?id=49094493 积分：1 # 评论：0",
+          "link": "https://github.com/sunblaze-ucb/exploitgym/",
+          "formattedDate": "2026年7月29日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Preventing Data-Purpose Laundering by Agentic AI",
+          "titleZh": "利用代理式人工智能防止“数据目的洗白”",
+          "description": "Article URL: https://futurium.ec.europa.eu/en/apply-ai-alliance/community-content/preventing-data-purpose-laundering-agentic-ai-hardware-rooted-pre-effectuation-layer-gdpr-purpose Comments URL:…",
+          "descriptionZh": "文章网址：https://futurium.ec.europa.eu/en/apply-ai-alliance/community-content/preventing-data-purpose-laundering-agentic-ai-hardware-rooted-pre-effectuation-layer-gdpr-purpose 评论网址：…",
+          "link": "https://futurium.ec.europa.eu/en/apply-ai-alliance/community-content/preventing-data-purpose-laundering-agentic-ai-hardware-rooted-pre-effectuation-layer-gdpr-purpose",
+          "formattedDate": "2026年7月29日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Which mobile AI agent is the most powerful in 2026",
+          "titleZh": "2026年，哪款移动AI代理最强大？",
+          "description": "Article URL: https://knightli.com/en/2026/05/29/mobile-gui-agent-projects-comparison/ Comments URL: https://news.ycombinator.com/item?id=49094476 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址： https://knightli.com/en/2026/05/29/mobile-gui-agent-projects-comparison/ 评论网址：https://news.ycombinator.com/item?id=49094476 积分：1 # 评论：0",
+          "link": "https://knightli.com/en/2026/05/29/mobile-gui-agent-projects-comparison/",
+          "formattedDate": "2026年7月29日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 110,
+    "published": 32,
+    "sourceCount": 10,
+    "translated": true
+  }
+}

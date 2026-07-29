@@ -1,11 +1,15 @@
-name: Daily AI Digest
+name: Deploy
 
 on:
-  schedule:
-    - cron: '0 23 * * *' # 07:00 Asia/Shanghai
   push:
     branches: [main]
+    # content/ 的改动由 collect / publish 自己提交，不需要因此重新部署一次。
+    # （GITHUB_TOKEN 推送的 commit 本来就不会触发 workflow，这里是第二道保险。）
+    paths-ignore:
+      - 'content/**'
   workflow_dispatch:
+  # 供 publish.yml 在出刊后调用，避免部署步骤写两份
+  workflow_call:
 
 permissions:
   contents: read
@@ -21,6 +25,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # 显式取分支最新提交，而不是触发本次运行的那个 SHA——被 publish.yml
+          # 调用时，新一期的 commit 是在本次运行开始之后才推上去的，用默认 SHA
+          # 会构建出一个不含新期号的站点。
+          ref: ${{ github.ref_name }}
       - uses: pnpm/action-setup@v4
         with:
           version: 11.15.1
@@ -30,9 +39,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm typecheck
+      # 构建只读 content/ 下的本地 JSON，不联网、不调用任何 API
       - run: pnpm build
-        env:
-          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
@@ -42,7 +50,7 @@ jobs:
           path: ./dist
           retention-days: 1
 
-  deploy:
+  deploy-pages:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

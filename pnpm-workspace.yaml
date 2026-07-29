@@ -1,0 +1,11 @@
+# pnpm 11 把构建脚本白名单等设置放在这里（不声明 packages，仓库仍是单包结构）。
+#
+# esbuild 是 tsx 的依赖，要跑安装脚本落平台二进制；不放行的话 pnpm 会以
+# ERR_PNPM_IGNORED_BUILDS 中止，本地和 CI 都跑不了 collect/publish 脚本。
+#
+# 注意：pnpm 首次生成本文件时会顺手写入 shellEmulator / trustPolicy 两项默认值。
+# trustPolicy: no-downgrade 会让 @types/node 的传递依赖 undici-types 因缺少
+# provenance 而直接装不上（ERR_PNPM_TRUST_DOWNGRADE），本仓库原本也没有这个策略，
+# 故不保留。若日后要开启，得先把 @types/node 升到传递依赖带 provenance 的版本。
+allowBuilds:
+  esbuild: true

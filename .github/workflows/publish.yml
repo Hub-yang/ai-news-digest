@@ -1,0 +1,70 @@
+name: Publish Weekly Issue
+
+# 每周一出刊：把上一周的快照聚合成新的一期，提交回仓库，然后重新构建部署。
+on:
+  schedule:
+    # 08:00 Asia/Shanghai，排在当日采集（07:00）之后一小时，确保用上最新一份快照
+    - cron: '0 0 * * 1'
+  workflow_dispatch:
+    inputs:
+      recent_days:
+        description: 改用「最近 N 天」而不是上一个完整自然周（冷启动出第 1 期时填 7）
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: content
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 11.15.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # 全站唯一调用 DeepL 的地方：只翻本期入选的几十条，翻完固化进 issue JSON，
+      # 此后任何重新构建都不会再产生翻译请求。
+      - name: Assemble issue
+        run: |
+          if [ -n "${{ inputs.recent_days }}" ]; then
+            pnpm publish-issue --recent "${{ inputs.recent_days }}"
+          else
+            pnpm publish-issue
+          fi
+        env:
+          DEEPL_API_KEY: ${{ secrets.DEEPL_API_KEY }}
+
+      - name: Commit issue
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/issues
+          if git diff --staged --quiet; then
+            echo "No new issue to commit."
+            exit 0
+          fi
+          git commit -m "feat(content): 发布新一期周刊"
+          git pull --rebase
+          git push
+
+  # 复用部署流水线，避免 Pages + rsync 两套步骤写两遍。
+  # deploy.yml 里的 checkout 显式取分支最新提交，能拿到上面刚推的那一期。
+  deploy:
+    needs: publish
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    secrets: inherit
