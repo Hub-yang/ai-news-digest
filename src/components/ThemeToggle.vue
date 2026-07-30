@@ -1,14 +1,13 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import IconMonitor from '~icons/lucide/monitor'
 import IconMoon from '~icons/lucide/moon'
 import IconSun from '~icons/lucide/sun'
 import { useTheme } from '../composables/use-theme'
 
-const { mode, cycle } = useTheme()
+const { isDark, toggle } = useTheme()
 
-const icon = computed(() => ({ system: IconMonitor, light: IconSun, dark: IconMoon }[mode.value]))
-const label = computed(() => ({ system: '跟随系统', light: '浅色模式', dark: '深色模式' }[mode.value]))
+const icon = computed(() => isDark.value ? IconMoon : IconSun)
+const label = computed(() => isDark.value ? '深色模式' : '浅色模式')
 </script>
 
 <template>
@@ -17,7 +16,7 @@ const label = computed(() => ({ system: '跟随系统', light: '浅色模式', d
     class="theme-toggle"
     :aria-label="`当前：${label}，点击切换`"
     :title="label"
-    @click="cycle"
+    @click="toggle"
   >
     <component :is="icon" />
   </button>
