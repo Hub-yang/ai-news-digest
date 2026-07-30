@@ -15,10 +15,10 @@ provide(languageKey, useLanguage())
   <header class="site-header">
     <div class="site-header-inner">
       <div class="title-group">
-        <span class="eyebrow">每周精选</span>
         <h1 class="site-title">
           <a :href="siteUrl('/')">AI 周刊</a>
         </h1>
+        <span class="eyebrow">每周精选</span>
       </div>
       <div class="header-actions">
         <LangToggle />

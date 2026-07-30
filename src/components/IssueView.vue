@@ -35,7 +35,7 @@ const statsText = computed(() => {
 })
 
 useHead({
-  title: () => issue ? `AI 周刊 第 ${issue.number} 期 — ${issue.dateLabel}` : 'AI 周刊',
+  title: () => issue ? `AI 周刊 第 ${issue.number} 期` : 'AI 周刊',
   link: () => issue
     // 首页和 /issues/N/ 是同一份内容，指明期号页为规范地址，避免重复内容
     ? [{ rel: 'canonical', href: siteUrl(`/issues/${issue.number}/`) }]
