@@ -4,6 +4,21 @@
   --muted: #5c6663;
   --accent: #1f6f78;
   --border: #dbdfdc;
+
+  /* 固定页头高度，供 App.vue（.wrap 顶部 padding）、CategoryNav.vue（sticky top）、
+     IssueSection.vue（scroll-margin-top）共用，避免同一个数字散落多处 */
+  --header-height: 3.625rem;
+
+  /* 悬浮分页胶囊在视口底部占用的总纵向空间（胶囊高度 + bottom 偏移 + 安全间距），
+     供 App.vue 的 .wrap 底部 padding 使用，避免遮住页脚文案 */
+  --pill-clearance: 5rem;
+}
+
+@media (max-width: 640px) {
+  :root {
+    --header-height: 3.125rem;
+    --pill-clearance: 3.75rem;
+  }
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -44,4 +59,10 @@ body {
 a:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

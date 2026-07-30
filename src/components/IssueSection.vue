@@ -19,8 +19,8 @@ defineProps<{ section: IssueSection, anchorId: string }>()
 <style scoped>
 .issue-section {
   margin-bottom: 2.5rem;
-  /* 顶部有吸顶的锚点导航，锚点跳转时留出它的高度，别把标题顶到导航底下 */
-  scroll-margin-top: 4rem;
+  /* 锚点跳转时既要躲开固定页头，也要躲开吸顶的分类导航（4rem 是它自己的高度） */
+  scroll-margin-top: calc(var(--header-height) + 4rem);
 }
 .category-name {
   font-family:

@@ -12,20 +12,22 @@ provide(languageKey, useLanguage())
 </script>
 
 <template>
-  <div class="wrap">
-    <header>
-      <div class="header-top">
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="title-group">
         <span class="eyebrow">每周精选</span>
-        <div class="header-actions">
-          <LangToggle />
-          <ThemeToggle />
-        </div>
+        <h1 class="site-title">
+          <a :href="siteUrl('/')">AI 周刊</a>
+        </h1>
       </div>
-      <h1>
-        <a :href="siteUrl('/')">AI 周刊</a>
-      </h1>
-    </header>
+      <div class="header-actions">
+        <LangToggle />
+        <ThemeToggle />
+      </div>
+    </div>
+  </header>
 
+  <div class="wrap">
     <RouterView />
 
     <footer>
@@ -38,46 +40,62 @@ provide(languageKey, useLanguage())
 .wrap {
   max-width: 700px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  /* 顶部补偿固定页头高度（+2rem 保留原设计的呼吸感），
+     底部用 --pill-clearance 防止悬浮分页胶囊遮挡下面的页脚文案 */
+  padding: calc(var(--header-height) + .5rem) 1.5rem var(--pill-clearance);
 }
-header {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--fg);
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
-.header-top {
-  position: relative;
+.site-header-inner {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 0.6rem;
+  justify-content: space-between;
+  gap: 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0.75rem 1.5rem;
 }
-.header-actions {
-  position: absolute;
-  right: 0;
+.title-group {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 0;
 }
-header .eyebrow {
-  display: block;
+.eyebrow {
   font-family:
     ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem;
+  white-space: nowrap;
 }
-header h1 {
-  font-size: 2rem;
+.site-title {
   margin: 0;
+  font-size: 1.375rem;
   letter-spacing: -0.01em;
-  text-wrap: balance;
+  white-space: nowrap;
 }
-header h1 a {
+.site-title a {
   color: inherit;
   text-decoration: none;
+}
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: none;
 }
 footer {
   margin-top: 2.5rem;
@@ -88,5 +106,22 @@ footer {
     ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
   font-size: 0.72rem;
   color: var(--muted);
+}
+
+@media (max-width: 640px) {
+  .site-header-inner {
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+  }
+  .eyebrow {
+    font-size: 0.6rem;
+    letter-spacing: 0.14em;
+  }
+  .site-title {
+    font-size: 1.05rem;
+  }
+  .header-actions {
+    gap: 0.35rem;
+  }
 }
 </style>

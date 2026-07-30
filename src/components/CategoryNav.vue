@@ -28,7 +28,7 @@ defineProps<{
 <style scoped>
 .category-nav {
   position: sticky;
-  top: 0;
+  top: var(--header-height);
   z-index: 10;
   display: flex;
   gap: 0.5rem;
