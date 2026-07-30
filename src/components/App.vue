@@ -3,6 +3,7 @@ import { provide } from 'vue'
 import { RouterView } from 'vue-router'
 import { languageKey, useLanguage } from '../composables/use-language'
 import { siteUrl } from '../utils/site-url'
+import GithubLink from './GithubLink.vue'
 import LangToggle from './LangToggle.vue'
 import ThemeToggle from './ThemeToggle.vue'
 
@@ -23,6 +24,7 @@ provide(languageKey, useLanguage())
       <div class="header-actions">
         <LangToggle />
         <ThemeToggle />
+        <GithubLink />
       </div>
     </div>
   </header>

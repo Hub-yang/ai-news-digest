@@ -66,13 +66,19 @@ useHead({
         <IconChevronLeft class="pager-icon" />
         <span>第 {{ prev }} 期</span>
       </a>
-      <span v-else class="pager-placeholder" />
+      <span v-else class="pager-disabled" aria-disabled="true">
+        <IconChevronLeft class="pager-icon" />
+        <span>上一期</span>
+      </span>
       <a class="pager-link archive" :href="siteUrl('/issues/')">全部 {{ total }} 期</a>
       <a v-if="next" class="pager-link" :href="siteUrl(`/issues/${next}/`)">
         <span>第 {{ next }} 期</span>
         <IconChevronRight class="pager-icon" />
       </a>
-      <span v-else class="pager-placeholder" />
+      <span v-else class="pager-disabled" aria-disabled="true">
+        <span>下一期</span>
+        <IconChevronRight class="pager-icon" />
+      </span>
     </nav>
   </template>
 
@@ -150,7 +156,7 @@ useHead({
     0 2px 8px rgba(0, 0, 0, 0.08);
 }
 .pager-link,
-.pager-placeholder {
+.pager-disabled {
   display: flex;
   align-items: center;
   gap: 0.35rem;
@@ -163,9 +169,9 @@ useHead({
   white-space: nowrap;
 }
 .pager-link + .pager-link,
-.pager-link + .pager-placeholder,
-.pager-placeholder + .pager-link,
-.pager-placeholder + .pager-placeholder {
+.pager-link + .pager-disabled,
+.pager-disabled + .pager-link,
+.pager-disabled + .pager-disabled {
   border-left: 1px solid var(--border);
 }
 .pager-link:hover {
@@ -181,8 +187,9 @@ useHead({
   height: 0.9rem;
   flex: none;
 }
-.pager-placeholder {
-  min-width: 5.5rem;
+.pager-disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 @media (max-width: 640px) {
@@ -190,7 +197,7 @@ useHead({
     bottom: 1rem;
   }
   .pager-link,
-  .pager-placeholder {
+  .pager-disabled {
     padding: 0.45rem 0.7rem;
     font-size: 0.7rem;
     gap: 0.25rem;
@@ -198,9 +205,6 @@ useHead({
   .pager-icon {
     width: 0.8rem;
     height: 0.8rem;
-  }
-  .pager-placeholder {
-    min-width: 4rem;
   }
 }
 .empty-state {
