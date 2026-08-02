@@ -4,7 +4,7 @@ import IconGithub from '~icons/lucide/github'
 
 <template>
   <a
-    class="github-link"
+    class="pill-button"
     href="https://github.com/Hub-yang"
     target="_blank"
     rel="noopener noreferrer"
@@ -14,27 +14,3 @@ import IconGithub from '~icons/lucide/github'
     <IconGithub />
   </a>
 </template>
-
-<style scoped>
-.github-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: transparent;
-  color: var(--fg);
-  text-decoration: none;
-  transition: border-color 0.15s ease, color 0.15s ease;
-}
-.github-link:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
-.github-link svg {
-  width: 1.1rem;
-  height: 1.1rem;
-}
-</style>

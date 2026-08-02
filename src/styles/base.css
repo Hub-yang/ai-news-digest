@@ -5,6 +5,10 @@
   --accent: #1f6f78;
   --border: #dbdfdc;
 
+  /* 主题色的淡色版，用作 .pill-button 的 hover 填充。
+     --accent 明/暗各有一套值，color-mix 会自动跟着变，无需按主题重复定义 */
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, transparent);
+
   /* 固定页头高度，供 App.vue（.wrap 顶部 padding）、CategoryNav.vue（sticky top）、
      IssueSection.vue（scroll-margin-top）共用，避免同一个数字散落多处 */
   --header-height: 3.625rem;
@@ -64,5 +68,57 @@ a:focus-visible {
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* 页头右侧的胶囊按钮（LangToggle / ThemeToggle / GithubLink 共用）。
+   三者只在字号、内边距上有差异，其余全部收在这里，改一处即三者同步。 */
+.pill-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  min-width: 2rem;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--fg);
+  cursor: pointer;
+  text-decoration: none;
+
+  /* hover 时的斜向填充：渐变在 45° 处硬分界（左下半填充、右上半透明），
+     再把背景放大到远大于按钮，于是移动 background-position 就等于让这条
+     斜边扫过按钮。49.5%/50.5% 留出约 1px 的过渡带做抗锯齿。
+     位置的两个端点：100% 0（贴右上 = 只露出透明半，空）
+                   0 100%（贴左下 = 只露出填充半，满）。
+     移出时 transition 自动逆放，斜边原路退回，无需额外规则。 */
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    var(--accent-soft) 49.5%,
+    transparent 50.5%
+  );
+  background-size: 250% 250%;
+  background-position: 100% 0;
+  transition: background-position 0.35s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.pill-button svg {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+/* 限定给真正有指针悬停的设备：触摸屏点击后 :hover 会一直粘住，
+   固定页头上的按钮看起来就像被选中了 */
+@media (hover: hover) {
+  .pill-button:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background-position: 0 100%;
+  }
+}
+
+/* 减少动态效果时只去掉扫入过程，填充瞬时到位，配色结果不变 */
+@media (prefers-reduced-motion: reduce) {
+  .pill-button {
+    transition: background-position 0s, border-color 0.15s ease, color 0.15s ease;
   }
 }
