@@ -3,8 +3,12 @@ name: Publish Weekly Issue
 # 每周一出刊：把上一周的快照聚合成新的一期，提交回仓库，然后重新构建部署。
 on:
   schedule:
-    # 08:00 Asia/Shanghai，排在当日采集（07:00）之后一小时，确保用上最新一份快照
-    - cron: '0 0 * * 1'
+    # 08:23 Asia/Shanghai，排在当日采集（07:23）之后一小时，确保用上最新一份快照。
+    #
+    # 分钟数刻意错开整点：GitHub 的 schedule 在高负载时段会直接**丢弃**本次触发
+    # 而不是延后补跑，整点（尤其 UTC 午夜）是全平台最挤的槽位。原来的
+    # `0 0 * * 1` 第一次该触发时就没跑起来，第 2 期是手动补出来的。
+    - cron: '23 0 * * 1'
   workflow_dispatch:
     inputs:
       recent_days:

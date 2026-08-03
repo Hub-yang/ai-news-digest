@@ -6,7 +6,9 @@ name: Collect Snapshot
 # 最近一小段时间的条目，等到周一再一次性抓「过去 7 天」是抓不全的。
 on:
   schedule:
-    - cron: '0 23 * * *' # 07:00 Asia/Shanghai
+    # 07:23 Asia/Shanghai。分钟数错开整点，理由同 publish.yml：整点槽位拥堵，
+    # GitHub 会丢弃触发而不是补跑。
+    - cron: '23 23 * * *'
   workflow_dispatch:
 
 permissions:

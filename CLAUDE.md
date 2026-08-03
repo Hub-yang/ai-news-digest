@@ -9,7 +9,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `pnpm build` — runs `vite-ssg build`. **Reads only the local JSON under `content/`; makes zero network requests.**
 - `pnpm preview` — runs `vite preview`, serving the already-built `dist/` locally
 - `pnpm collect` — fetches every RSS source and writes one day's snapshot to `content/snapshots/YYYY-MM-DD.json`. The only command that touches the feeds.
-- `pnpm publish-issue` — assembles a new issue from the snapshots of the last complete week into `content/issues/00N.json`. The only command that calls DeepL. Flags: `--recent <days>` (use "last N days" instead of the last complete week — needed for a cold start), `--skip-translation`, `--dry-run`.
+- `pnpm publish-issue` — assembles a new issue into `content/issues/00N.json`, covering **from the previous issue's `endDate` up to this Monday 00:00 CST** (falls back to the last complete week when no issue exists yet). The only command that calls DeepL. Flags: `--recent <days>` (use "last N days" instead — needed for a cold start), `--skip-translation`, `--dry-run`.
 - `pnpm rebuild-issue <n>` — recomputes issue `<n>` over its original window. Exists for tuning the selection parameters against real history.
 - `pnpm lint` — runs ESLint (`@antfu/eslint-config`) over the repo
 - `pnpm typecheck` — runs `vue-tsc --noEmit` (full project type check, including `.vue` SFC `<script>` blocks — plain `tsc` can't check those)
@@ -27,8 +27,8 @@ A weekly digest ("AI 周刊"), modelled on JavaScript Weekly: `/` is the latest 
 The central design fact: **the site has no memory of its own, so Git is the database.** RSS feeds are a sliding window — high-volume sources only retain a few hours of items — so a single fetch on publishing day cannot reconstruct a week. Instead a daily job accumulates raw material into the repo, and a weekly job turns it into an issue.
 
 ```
-每日 07:00 CST   collect.yml  →  content/snapshots/YYYY-MM-DD.json  (英文原文，commit 回仓库)
-每周一 08:00 CST publish.yml  →  content/issues/00N.json            (聚类+选取+翻译，commit 后部署)
+每日 07:23 CST   collect.yml  →  content/snapshots/YYYY-MM-DD.json  (英文原文，commit 回仓库)
+每周一 08:23 CST publish.yml  →  content/issues/00N.json            (聚类+选取+翻译，commit 后部署)
 代码 push        deploy.yml   →  只读本地 JSON 渲染全部期号，零网络请求
 ```
 
@@ -88,8 +88,8 @@ Three workflows, split by what actually needs to happen:
 
 | workflow | trigger | does | permissions |
 |---|---|---|---|
-| `collect.yml` | cron `0 23 * * *` (07:00 CST), manual | `pnpm collect` → commit. No build, no deploy. | `contents: write` |
-| `publish.yml` | cron `0 0 * * 1` (Mon 08:00 CST), manual | `pnpm publish-issue` → commit → calls `deploy.yml` | `contents: write` + Pages |
+| `collect.yml` | cron `23 23 * * *` (07:23 CST), manual | `pnpm collect` → commit. No build, no deploy. | `contents: write` |
+| `publish.yml` | cron `23 0 * * 1` (Mon 08:23 CST), manual | `pnpm publish-issue` → commit → calls `deploy.yml` | `contents: write` + Pages |
 | `deploy.yml` | push to `main` (`paths-ignore: content/**`), manual, `workflow_call` | typecheck → build → Pages + rsync to server | Pages, `id-token: write` |
 
 - **No build loop**: GitHub does not trigger workflows for commits pushed with `GITHUB_TOKEN`, so the content commits can't retrigger a build. `paths-ignore: content/**` is a second line of defence.
@@ -97,6 +97,8 @@ Three workflows, split by what actually needs to happen:
 - Publishing is scheduled an hour after collection so it picks up that morning's snapshot.
 - Both content-writing workflows share `concurrency: group: content` and `git pull --rebase` before pushing, so they can't collide on `main`.
 - `workflow_dispatch` on `publish.yml` takes a `recent_days` input — that's the cold-start path (`--recent 7`) for producing issue #1 before a full week of snapshots exists.
+- **Both crons sit at minute 23, not on the hour.** GitHub *drops* scheduled triggers during peak load rather than deferring them, and the top of the hour — especially UTC midnight — is the busiest slot. `publish.yml`'s original `0 0 * * 1` never fired on the first Monday it was due; issue #2 had to be dispatched by hand. Don't move either cron back to `:00`.
+- **A dropped publish does not lose a week**: `scripts/publish.ts` starts the window at the *previous issue's* `endDate` rather than recomputing "last complete week", so a missed Monday is swept up by the next one. Keep that property when touching the window logic — `lastCompleteWeek()` alone would silently drop the skipped week's snapshots forever.
 
 **pnpm is pinned to an exact version** (`pnpm/action-setup`'s `version: 11.15.1`, not a floating `11`) and Node is pinned to 22 (pnpm 11.15+ requires Node >= 22.13 and crashes during `setup-node`'s pnpm-cache probing on Node 20). This pinning was added after CI actually failed on both counts. Also be aware pnpm 11.15+ enforces a `minimumReleaseAge` supply-chain check on `--frozen-lockfile` installs — if a dependency resolved to a very recently published version, CI can reject the lockfile with `ERR_PNPM_MINIMUM_RELEASE_AGE_VIOLATION` even though the same lockfile installed fine locally minutes earlier. If this happens, `pnpm clean --lockfile && pnpm install` to re-resolve, then re-verify with `pnpm install --frozen-lockfile` before pushing.
 

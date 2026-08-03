@@ -24,7 +24,7 @@
 pnpm install               # 安装依赖
 pnpm dev                   # 热更新本地开发（改样式/结构用，见下方说明）
 pnpm collect               # 抓取全部 RSS 源，写入当天快照
-pnpm publish-issue         # 用上一个完整自然周的快照出新一期
+pnpm publish-issue         # 接着上一期，出到本周一为止的新一期
 pnpm build                 # 读取 content/ 生成 dist/ 静态站（不联网）
 pnpm preview               # 本地预览构建产物
 pnpm lint                  # ESLint 检查
@@ -35,7 +35,7 @@ pnpm typecheck             # vue-tsc 类型检查
 
 | 参数 | 用途 |
 |---|---|
-| `--recent <天数>` | 改用「最近 N 天」而不是上一个完整自然周，冷启动出第 1 期时用 |
+| `--recent <天数>` | 改用「最近 N 天」而不是接续上一期，冷启动出第 1 期时用 |
 | `--skip-translation` | 跳过翻译，调算法时避免消耗 DeepL 额度 |
 | `--dry-run` | 只打印结果，不写文件 |
 
@@ -141,8 +141,8 @@ pnpm typecheck             # vue-tsc 类型检查
 
 | workflow | 触发 | 动作 | 权限 |
 |---|---|---|---|
-| `collect.yml` | 每日 cron `0 23 * * *`（北京 07:00）、手动 | `pnpm collect` → commit，不构建不部署 | `contents: write` |
-| `publish.yml` | 每周一 cron `0 0 * * 1`（北京 08:00）、手动 | `pnpm publish-issue` → commit → 调用 `deploy.yml` | `contents: write` + Pages |
+| `collect.yml` | 每日 cron `23 23 * * *`（北京 07:23）、手动 | `pnpm collect` → commit，不构建不部署 | `contents: write` |
+| `publish.yml` | 每周一 cron `23 0 * * 1`（北京 08:23）、手动 | `pnpm publish-issue` → commit → 调用 `deploy.yml` | `contents: write` + Pages |
 | `deploy.yml` | push 到 `main`（忽略 `content/**`）、手动、被调用 | typecheck → build → Pages + 服务器 rsync | Pages、`id-token: write` |
 
 几个关键点：
