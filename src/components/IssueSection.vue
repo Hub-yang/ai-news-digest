@@ -23,8 +23,7 @@ defineProps<{ section: IssueSection, anchorId: string }>()
   scroll-margin-top: calc(var(--header-height) + 4rem);
 }
 .category-name {
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.78rem;
   font-weight: 500;
   text-transform: uppercase;

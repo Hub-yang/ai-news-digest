@@ -44,7 +44,7 @@ provide(languageKey, useLanguage())
   margin: 0 auto;
   /* 顶部补偿固定页头高度（+2rem 保留原设计的呼吸感），
      底部用 --pill-clearance 防止悬浮分页胶囊遮挡下面的页脚文案 */
-  padding: calc(var(--header-height) + .5rem) 1.5rem var(--pill-clearance);
+  padding: calc(var(--header-height) + 0.5rem) 1.5rem var(--pill-clearance);
 }
 .site-header {
   position: fixed;
@@ -54,7 +54,9 @@ provide(languageKey, useLanguage())
   z-index: 100;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 .site-header-inner {
   display: flex;
@@ -72,8 +74,7 @@ provide(languageKey, useLanguage())
   min-width: 0;
 }
 .eyebrow {
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.68rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -104,8 +105,7 @@ footer {
   padding-top: 1.5rem;
   border-top: 1px solid var(--border);
   text-align: center;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.72rem;
   color: var(--muted);
 }

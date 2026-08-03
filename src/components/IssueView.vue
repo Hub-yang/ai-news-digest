@@ -95,8 +95,7 @@ useHead({
   justify-content: space-between;
   gap: 0.35rem 1rem;
   margin-bottom: 1.5rem;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.75rem;
 }
 .issue-meta-left {
@@ -124,7 +123,9 @@ useHead({
     0 12px 40px -8px rgba(0, 0, 0, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.08);
   overflow: hidden;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease;
 }
 @supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
   .issue-pager {
@@ -138,7 +139,7 @@ useHead({
     background: var(--bg);
   }
 }
-:root[data-theme="dark"] .issue-pager {
+:root[data-theme='dark'] .issue-pager {
   box-shadow:
     0 16px 48px -8px rgba(0, 0, 0, 0.6),
     0 2px 8px rgba(0, 0, 0, 0.3);
@@ -150,7 +151,7 @@ useHead({
       0 2px 8px rgba(0, 0, 0, 0.3);
   }
 }
-:root[data-theme="light"] .issue-pager {
+:root[data-theme='light'] .issue-pager {
   box-shadow:
     0 12px 40px -8px rgba(0, 0, 0, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.08);
@@ -161,8 +162,7 @@ useHead({
   align-items: center;
   gap: 0.35rem;
   padding: 0.6rem 1rem;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.78rem;
   color: var(--muted);
   text-decoration: none;

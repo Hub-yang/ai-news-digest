@@ -29,8 +29,7 @@ const nextLabel = computed(() => lang.value === 'en' ? '中文' : 'English')
 /* 其余样式来自全局 .pill-button，这里只补文字按钮特有的排版 */
 .lang-toggle {
   padding: 0 0.5rem;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.78rem;
   font-weight: 600;
 }

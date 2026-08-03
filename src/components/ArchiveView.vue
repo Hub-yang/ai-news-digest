@@ -37,8 +37,7 @@ useHead({ title: '往期 — AI 周刊' })
 
 <style scoped>
 .archive-title {
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.78rem;
   font-weight: 500;
   text-transform: uppercase;
@@ -75,15 +74,13 @@ useHead({ title: '往期 — AI 周刊' })
 }
 .date {
   flex: 1;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.8rem;
   color: var(--muted);
   font-variant-numeric: tabular-nums;
 }
 .count {
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.72rem;
   color: var(--muted);
   white-space: nowrap;
