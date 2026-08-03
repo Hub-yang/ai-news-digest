@@ -20,7 +20,7 @@ defineProps<{
       class="nav-item"
       :href="`#${category.anchorId}`"
     >
-      {{ category.name }}
+      #{{ category.name }}
     </a>
   </nav>
 </template>
@@ -31,7 +31,7 @@ defineProps<{
   top: var(--header-height);
   z-index: 10;
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   overflow-x: auto;
   background: var(--bg);
   border-bottom: 1px solid var(--border);
@@ -53,16 +53,20 @@ defineProps<{
   color: var(--muted);
   text-decoration: none;
   background: transparent;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.4rem 0.9rem;
   cursor: pointer;
   white-space: nowrap;
-  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition:
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 .nav-item:hover {
-  color: var(--bg);
-  background: var(--accent);
-  border-color: var(--accent);
+  color:var(--accent);
+  background-size: 100% 1px;
 }
 </style>
