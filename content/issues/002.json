@@ -1,0 +1,360 @@
+{
+  "number": 2,
+  "startDate": "2026-07-29T08:16:16.836Z",
+  "endDate": "2026-08-02T15:59:59.999Z",
+  "dateLabel": "2026年7月29日 — 8月2日",
+  "publishedAt": "2026-08-03T02:02:29.441Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "Ten advances in mathematics and theoretical computer science",
+          "titleZh": "数学与理论计算机科学领域的十大进展",
+          "description": "OpenAI shares new results on long-standing open problems in mathematics and theoretical computer science, including advances in geometry, cryptography, and complexity.",
+          "descriptionZh": "OpenAI 分享了关于数学和理论计算机科学领域长期未解难题的最新研究成果，其中包括几何学、密码学和复杂性理论方面的进展。",
+          "link": "https://openai.com/index/ten-advances-in-mathematics",
+          "formattedDate": "2026年8月1日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "Advancing the price-performance frontier with GPT-5.6",
+          "titleZh": "借助 GPT-5.6 突破性价比新高度",
+          "description": "Explore lower GPT‑5.6 pricing for Luna and Terra—and how OpenAI’s more efficient models help enterprises deploy AI workflows at scale.",
+          "descriptionZh": "了解 Luna 和 Terra 更优惠的 GPT‑5.6 定价方案，以及 OpenAI 更高效的模型如何帮助企业大规模部署 AI 工作流。",
+          "link": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+          "formattedDate": "2026年7月30日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "Advancing responsible AI across Europe",
+          "titleZh": "在欧洲范围内推进负责任的人工智能发展",
+          "description": "OpenAI shares how its safety, security, transparency, and provenance practices support responsible AI governance in Europe. The work will continue as the EU AI Act advances.",
+          "descriptionZh": "OpenAI 介绍了其安全、保障、透明度和来源追溯方面的做法如何支持欧洲负责任的人工智能治理。随着《欧盟人工智能法案》的推进，相关工作将持续开展。",
+          "link": "https://openai.com/index/advancing-responsible-ai-across-europe",
+          "formattedDate": "2026年7月31日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Building abundant intelligence",
+          "titleZh": "构建丰富的智慧",
+          "description": "A full-stack approach to making advanced AI more capable, more affordable, and more widely useful.",
+          "descriptionZh": "一种全栈式方法，旨在让先进的人工智能更强大、更经济实惠、应用更广泛。",
+          "link": "https://openai.com/index/building-abundant-intelligence",
+          "formattedDate": "2026年7月31日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Stacked sessions and pull requests in the GitHub Copilot app",
+          "titleZh": "GitHub Copilot 应用中的堆叠会话和拉取请求",
+          "description": "Learn how I modernized an old codebase of mine using stacked sessions and pull requests in the GitHub Copilot app. The post Stacked sessions and pull requests in the GitHub Copilot app appeared first on The GitHub Blog.",
+          "descriptionZh": "了解我是如何利用 GitHub Copilot 应用中的“堆叠会话”和“拉取请求”功能，对自己的旧代码库进行现代化改造的。文章《GitHub Copilot 应用中的“堆叠会话”和“拉取请求”》首发于 GitHub 博客。",
+          "link": "https://github.blog/ai-and-ml/github-copilot/stacked-sessions-and-pull-requests-in-the-github-copilot-app/",
+          "formattedDate": "2026年7月30日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "GPU Management: Why Idle GPUs Are the New Grounded Aircraft",
+          "titleZh": "GPU 管理：为何闲置的 GPU 就像被禁飞的飞机",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/Dharma-AI/gpu-management",
+          "formattedDate": "2026年7月30日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Gemini Robotics ER 2: powering robotics with video understanding, task orchestration, and multi-robot collaboration",
+          "titleZh": "Gemini Robotics ER 2：通过视频理解、任务协调和多机器人协作推动机器人技术发展",
+          "description": "Gemini Robotics ER 2 helps robots reason, collaborate, and solve real-world tasks. It represents a step change in video understanding, tool orchestration, and multi-robot collaboration for robotic applications.",
+          "descriptionZh": "Gemini Robotics ER 2 能够帮助机器人进行推理、协作并解决现实世界中的任务。它在机器人应用领域的视频理解、工具协调以及多机器人协作方面实现了质的飞跃。",
+          "link": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration/",
+          "formattedDate": "2026年7月30日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "We’re launching Lyria 3.5 in Google Flow Music, with advances across musicality, lyrics, vocals, and creative control",
+          "titleZh": "我们将在 Google Flow Music 中推出 Lyria 3.5 版本，该版本在音乐性、歌词、人声及创作控制方面均有提升",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://deepmind.google/blog/were-launching-lyria-35-in-google-flow-music-with-advances-across-musicality-lyrics-vocals-and-creative-control/",
+          "formattedDate": "2026年7月29日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "Judge denies xAI’s request to block Minnesota ban on ‘nudify’ apps",
+          "titleZh": "法官驳回了xAI要求阻止明尼苏达州禁止“裸体化”应用的请求",
+          "description": "Despite a lawsuit from xAI, a Minnesota ban on apps that allow users to “nudify” images can move forward.",
+          "descriptionZh": "尽管xAI提起了诉讼，明尼苏达州禁止用户使用“将图像裸体化”功能的应用程序的法案仍可继续推进。",
+          "link": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/",
+          "formattedDate": "2026年8月1日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Snapchat no longer rewards fully AI-generated Spotlight content",
+          "titleZh": "Snapchat 不再对完全由人工智能生成的 Spotlight 内容给予奖励",
+          "description": "Snapchat has adjusted its recommendation systems to ensure that only videos created by real people are eligible for Spotlight recommendations, taking a stance against AI slop.",
+          "descriptionZh": "Snapchat 已调整其推荐系统，以确保只有真实用户创作的视频才有资格进入“Spotlight”推荐列表，以此表明其反对 AI 垃圾内容的立场。",
+          "link": "https://techcrunch.com/2026/07/31/snapchat-no-longer-rewards-fully-ai-generated-spotlight-content/",
+          "formattedDate": "2026年7月31日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Anthropic says its own AI models breached three companies during security tests",
+          "titleZh": "Anthropic表示，其自有的人工智能模型在安全测试中入侵了三家企业",
+          "description": "After OpenAI's models broke into Hugging Face, Anthropic checked its own history and found three similar incidents.",
+          "descriptionZh": "在OpenAI的模型“入侵”Hugging Face之后，Anthropic检查了自身的历史记录，发现有三起类似事件。",
+          "link": "https://techcrunch.com/2026/07/30/anthropic-says-its-own-ai-models-breached-three-companies-during-security-tests/",
+          "formattedDate": "2026年7月31日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Microsoft logs $3.2B from Anthropic investment, but OpenAI was a mixed bag",
+          "titleZh": "微软从对Anthropic的投资中获利32亿美元，但OpenAI的表现喜忧参半",
+          "description": "When Microsoft reported killer fourth-quarter earnings for its fiscal 2026 year (which ended June 30), it tucked in an interesting little tidbit about how its investments in the two biggest, and competing, AI labs are…",
+          "descriptionZh": "当微软公布其2026财年（截至6月30日）第四季度的惊人财报时，其中还透露了一个有趣的小细节，涉及该公司对两家最大且相互竞争的人工智能实验室的投资……",
+          "link": "https://techcrunch.com/2026/07/29/microsoft-logs-3-2b-from-anthropic-investment-but-openai-was-a-mixed-bag/",
+          "formattedDate": "2026年7月29日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "As Reddit stock falls, CEO questions value of Google's AI Overviews",
+          "titleZh": "随着Reddit股价下跌，首席执行官对谷歌AI概览的价值提出质疑",
+          "description": "Reddit may still be considering ending its licensing deal with Google.",
+          "descriptionZh": "Reddit 可能仍在考虑终止与谷歌的许可协议。",
+          "link": "https://arstechnica.com/ai/2026/08/reddit-ceo-on-ai-overviews-were-still-looking-for-that-win-win/",
+          "formattedDate": "2026年8月1日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Reddit keeps its strange DMCA fight over Google search results alive",
+          "titleZh": "Reddit 仍在就谷歌搜索结果与谷歌展开一场奇怪的《数字千年版权法案》（DMCA）纠纷",
+          "description": "Reddit advances lawsuit accusing Perplexity AI of conspiring with web scraper.",
+          "descriptionZh": "Reddit 提起诉讼，指控 Perplexity AI 与网络爬虫合谋。",
+          "link": "https://arstechnica.com/tech-policy/2026/07/reddit-keeps-weird-dmca-lawsuit-against-web-scraper-alive-despite-googles-loss/",
+          "formattedDate": "2026年7月31日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Claude published malicious code to the Internet and attacked 3 real companies",
+          "titleZh": "克劳德将恶意代码发布到互联网上，并攻击了3家真实公司",
+          "description": "Had the hacks used conventional methods, someone would likely go to prison.",
+          "descriptionZh": "如果这些黑客使用的是常规手段，很可能就会有人因此入狱。",
+          "link": "https://arstechnica.com/security/2026/07/likely-illegally-claude-gained-access-to-3-networks-will-anthropic-be-held-to-account/",
+          "formattedDate": "2026年7月31日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Google Earth risked ruin with retracted AI tool for making fake satellite pics",
+          "titleZh": "谷歌地球因一款用于生成虚假卫星图像的人工智能工具被撤下而险些声名狼藉",
+          "description": "“What on earth is Google doing?” Misinformation fears spur walk-back of AI tool.",
+          "descriptionZh": "“谷歌到底在搞什么？”对虚假信息的担忧促使该公司收回了该AI工具。",
+          "link": "https://arstechnica.com/ai/2026/07/google-earth-releases-swiftly-retracts-ai-feature-to-make-fake-satellite-images/",
+          "formattedDate": "2026年7月31日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Dropbox Integrates MCP and Dash to Close the Gap Between Security Design and Code Review",
+          "titleZh": "Dropbox 整合 MCP 和 Dash，以弥合安全设计与代码审查之间的差距",
+          "description": "Dropbox has integrated Model Context Protocol (MCP) with its internal knowledge platform, Dash, to surface security design context during AI assisted code reviews. The system retrieves threat models and security…",
+          "descriptionZh": "Dropbox 已将其内部知识平台 Dash 与模型上下文协议（MCP）集成，以便在 AI 辅助代码审查过程中呈现安全设计上下文。该系统会检索威胁模型和安全……",
+          "link": "https://www.infoq.com/news/2026/07/dropbox-mcp-ai-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月31日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "A fundamental flaw leaves LLMs strikingly vulnerable to attack",
+          "titleZh": "一个根本性缺陷使得大型语言模型（LLMs）极易受到攻击",
+          "description": "It is impossible to make large language models fully secure against hacks because of a fundamental flaw in how they work, a team of researchers argue in a paper presented at the International Conference on Machine…",
+          "descriptionZh": "一支研究团队在提交给国际机器学习会议的一篇论文中指出，由于大型语言模型的工作原理存在根本性缺陷，因此无法使其完全免受黑客攻击……",
+          "link": "https://www.technologyreview.com/2026/07/30/1140927/a-fundamental-flaw-leaves-llms-vulnerable-to-attack/",
+          "formattedDate": "2026年7月30日",
+          "source": "MIT Technology Review (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: Getting Rid of LeetCode Interviews in the World of AI",
+          "titleZh": "演讲：在人工智能领域摆脱 LeetCode 面试",
+          "description": "Daniel Doubrovkine explains why traditional LeetCode whiteboard interviews fail to evaluate senior engineering talent. He discusses his own experience bombing basic algorithm tests despite decades of leadership, and…",
+          "descriptionZh": "丹尼尔·杜布罗夫金解释了为什么传统的LeetCode白板面试无法有效评估资深工程人才。他谈到了自己尽管拥有数十年的领导经验，却在基础算法测试中惨遭滑铁卢的亲身经历，以及……",
+          "link": "https://www.infoq.com/presentations/ai-lead-interview/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月29日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Article: Securing MCP in Production: Defense-in-Depth Beyond the Gateway",
+          "titleZh": "文章：生产环境中MCP的安全防护：超越网关的多层防御",
+          "description": "This article presents a defense-in-depth approach for securing Model Context Protocol (MCP) deployments in production. It outlines four architectural control layers: safe execution, management infrastructure, outbound…",
+          "descriptionZh": "本文提出了一种深度防御方法，用于保障生产环境中模型上下文协议（MCP）部署的安全。文中概述了四个架构控制层：安全执行、管理基础设施、出站……",
+          "link": "https://www.infoq.com/articles/securing-mcp-production-gateway/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年7月29日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "llm-chat-completions-server 0.1a0",
+          "titleZh": "llm-chat-completions-server 0.1a0",
+          "description": "Release: llm-chat-completions-server 0.1a0 A key goal of the new content-addressable logs in LLM 0.32rc1 was being able to support OpenAI Chat Completion style requests where each incoming message extends the previous…",
+          "descriptionZh": "发布：llm-chat-completions-server 0.1a0 LLM 0.32rc1 中新增的内容可寻址日志的一个关键目标，是能够支持 OpenAI 聊天补全风格的请求，即每条传入的消息都会延续前一条……",
+          "link": "https://simonwillison.net/2026/Jul/30/llm-chat-completions-server/#atom-everything",
+          "formattedDate": "2026年7月30日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "llm 0.32rc1",
+          "titleZh": "llm 0.32rc1",
+          "description": "Release: llm 0.32rc1 This RC for LLM 0.32 finishes the work that started in LLM 0.32a0 - it adds a new schema design that does a much better job of capturing the details of the prompts and responses returned by the…",
+          "descriptionZh": "发布：LLM 0.32rc1 该 LLM 0.32 候选版本（RC）完成了在 LLM 0.32a0 中启动的工作——它引入了一种新的模式设计，能够更有效地捕捉提示词以及由……返回的响应中的细节……",
+          "link": "https://simonwillison.net/2026/Jul/30/llm-rc1/#atom-everything",
+          "formattedDate": "2026年7月30日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Ask HN: Which Linux distribution is capitalizing on AI momentum?",
+          "titleZh": "向HN提问：哪款Linux发行版正在借势AI热潮？",
+          "description": "It looks like there is a huge opportunity for Linux distros to become the de-facto operating system not just on servers, but on desktop used by general public too. It is free and perhaps using AI can be made…",
+          "descriptionZh": "看来，Linux发行版不仅在服务器领域，而且在普通用户使用的桌面领域，都有巨大的机会成为事实上的标准操作系统。它完全免费，而且或许借助人工智能，可以使其……",
+          "link": "https://news.ycombinator.com/item?id=49129429",
+          "formattedDate": "2026年7月31日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The Four Horsemen of the AI Bubble Apocalypse",
+          "titleZh": "AI泡沫末日的“四骑士”",
+          "description": "Article URL: https://www.derekthompson.org/p/the-four-horsemen-of-the-ai-bubble Comments URL: https://news.ycombinator.com/item?id=49128402 Points: 5 # Comments: 0",
+          "descriptionZh": "文章网址：https://www.derekthompson.org/p/the-four-horsemen-of-the-ai-bubble 评论网址：https://news.ycombinator.com/item?id=49128402 积分：5 # 评论：0",
+          "link": "https://www.derekthompson.org/p/the-four-horsemen-of-the-ai-bubble",
+          "formattedDate": "2026年7月31日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Open letters about AI development",
+          "titleZh": "关于人工智能发展的公开信",
+          "description": "Open letters about AI development I wrote this summary of the past few weeks of open letters as a section of my sponsors-only newsletter but I've decided to share it here as well. Open Weights and American AI Leadership…",
+          "descriptionZh": "关于人工智能发展的公开信 我撰写了这篇关于过去几周公开信的摘要，原本作为我仅面向赞助者的通讯中的一部分，但后来决定也将其分享在这里。公开权重与美国在人工智能领域的领导地位……",
+          "link": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+          "formattedDate": "2026年8月2日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "July 2026 newsletter",
+          "titleZh": "2026年7月通讯",
+          "description": "The June edition of my sponsors-only monthly newsletter is out. If you are a sponsor (or if you start a sponsorship now) you can access it here . This month: Accidental cyberattacks by OpenAl and Anthropic models under…",
+          "descriptionZh": "我面向赞助者的月度通讯6月刊已发布。如果您是赞助者（或现在开始赞助），可点击此处查看。本月内容：OpenAI和Anthropic模型在……情况下引发的意外网络攻击……",
+          "link": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+          "formattedDate": "2026年8月2日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] not much happened today",
+          "titleZh": "[AINews] 今天没什么大事",
+          "description": "apart from DeepSeek V4-Flash 0731, a quiet day.",
+          "descriptionZh": "除了 DeepSeek V4-Flash 0731 之外，今天过得挺平静的。",
+          "link": "https://www.latent.space/p/ainews-not-much-happened-today-038",
+          "formattedDate": "2026年8月1日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] GPT 5.6 price cut by 20%-80%: Cost of GPT 5.4 Intelligence dropped 13x in 4 months due to GPT 5.6 recursive self-optimization",
+          "titleZh": "[AINews] GPT 5.6 降价 20%–80%：受 GPT 5.6 递归自优化影响，GPT 5.4 智能成本在 4 个月内下降了 13 倍",
+          "description": "Distillation is all you need!",
+          "descriptionZh": "只需蒸馏即可！",
+          "link": "https://www.latent.space/p/ainews-gpt-56-price-cut-by-20-80",
+          "formattedDate": "2026年7月31日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Ontologies Are So Back: Why AI Agents Are Reviving the Semantic Web",
+          "titleZh": "本体论又火了：为什么人工智能代理正在重振语义网",
+          "description": "AI engineers are rediscovering ontologies as a way to keep probabilistic agents inside deterministic boundaries.",
+          "descriptionZh": "人工智能工程师们正在重新发现本体论，将其作为一种将概率性智能体限制在确定性边界内的方法。",
+          "link": "https://www.latent.space/p/ontologies-agentic-systems",
+          "formattedDate": "2026年7月30日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] AI is eating Finance; AIE NYC now open",
+          "titleZh": "[AINews] 人工智能正在颠覆金融业；AIE NYC 现已开业",
+          "description": "a quiet day lets us cover how AI is permeating financial services as the next big vertical after coding.",
+          "descriptionZh": "趁着今天比较清闲，我们就来探讨一下，继编程之后，人工智能如何正渗透到金融服务这一下一个重要垂直领域。",
+          "link": "https://www.latent.space/p/ainews-ai-is-eating-finance-aie-nyc",
+          "formattedDate": "2026年7月29日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: I made 70K+ hand-drawn icons using AI",
+          "titleZh": "Show HN：我利用AI制作了7万多个手绘图标",
+          "description": "Article URL: https://koboyo.com/icons Comments URL: https://news.ycombinator.com/item?id=49139602 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://koboyo.com/icons 评论网址：https://news.ycombinator.com/item?id=49139602 积分：1 # 评论：0",
+          "link": "https://koboyo.com/icons",
+          "formattedDate": "2026年8月1日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Symbio self fine-tuning AI loop",
+          "titleZh": "Show HN：Symbio 自适应微调 AI 循环",
+          "description": "It trains based off the mistakes it made with the solution you gave OR what it got. Thank you for reading Comments URL: https://news.ycombinator.com/item?id=49139461 Points: 2 # Comments: 0",
+          "descriptionZh": "它会根据你在答案中指出的错误，或者根据它得到的结果来进行训练。感谢阅读 评论链接：https://news.ycombinator.com/item?id=49139461 积分：2 # 评论：0",
+          "link": "https://github.com/huyedits/Symbio",
+          "formattedDate": "2026年8月1日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 175,
+    "published": 32,
+    "sourceCount": 11,
+    "translated": true
+  }
+}
