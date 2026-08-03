@@ -33,14 +33,14 @@
     --border: #223330;
   }
 }
-:root[data-theme="dark"] {
+:root[data-theme='dark'] {
   --bg: #0c1210;
   --fg: #eef1ef;
   --muted: #8a9a95;
   --accent: #55bcae;
   --border: #223330;
 }
-:root[data-theme="light"] {
+:root[data-theme='light'] {
   --bg: #f4f5f3;
   --fg: #15191b;
   --muted: #5c6663;
@@ -55,10 +55,11 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family:
-    Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  font-family: Georgia, 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', serif;
   line-height: 1.5;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
 }
 a:focus-visible {
   outline: 2px solid var(--accent);
@@ -83,11 +84,31 @@ a:focus-visible {
   cursor: pointer;
   text-decoration: none;
   background-color: transparent;
-  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background-color 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 .pill-button svg {
   width: 1.1rem;
   height: 1.1rem;
+}
+
+.tinter {
+  background-image: linear-gradient(var(--accent), var(--accent));
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
+  transition:
+    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+    background-size 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.tinter:hover {
+  color: var(--accent) !important;
+  background-size: 100% 1px;
 }
 
 /* 限定给真正有指针悬停的设备：触摸屏点击后 :hover 会一直粘住，

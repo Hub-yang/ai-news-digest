@@ -18,7 +18,7 @@ const description = computed(() => lang.value === 'zh' ? props.item.descriptionZ
 <template>
   <li class="item">
     <div class="item-line">
-      <a class="item-title" :href="item.link" target="_blank" rel="noopener noreferrer">{{ title }}</a>
+      <a class="item-title tinter" :href="item.link" target="_blank" rel="noopener noreferrer">{{ title }}</a>
       <span v-if="item.formattedDate" class="item-date">{{ item.formattedDate }}</span>
     </div>
     <p v-if="description" class="item-desc">
@@ -54,13 +54,10 @@ const description = computed(() => lang.value === 'zh' ? props.item.descriptionZ
   text-decoration: none;
   text-wrap: balance;
 }
-.item-title:hover {
-  color: var(--accent);
-}
+
 .item-date {
   flex-shrink: 0;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.72rem;
   font-variant-numeric: tabular-nums;
   color: var(--muted);
@@ -68,9 +65,7 @@ const description = computed(() => lang.value === 'zh' ? props.item.descriptionZ
 }
 .item-desc {
   margin: 0.4rem 0 0;
-  font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   font-size: 0.92rem;
   color: var(--muted);
   overflow-wrap: break-word;
@@ -78,8 +73,7 @@ const description = computed(() => lang.value === 'zh' ? props.item.descriptionZ
 }
 .item-byline {
   margin: 0.45rem 0 0;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.72rem;
   letter-spacing: 0.03em;
   color: var(--muted);

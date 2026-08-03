@@ -17,7 +17,7 @@ defineProps<{
     <a
       v-for="category in categories"
       :key="category.anchorId"
-      class="nav-item"
+      class="nav-item tinter"
       :href="`#${category.anchorId}`"
     >
       #{{ category.name }}
@@ -38,35 +38,19 @@ defineProps<{
   padding: 0.75rem 0;
   margin-bottom: 2rem;
   scrollbar-width: none;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 .category-nav::-webkit-scrollbar {
   display: none;
 }
+
 .nav-item {
-  flex: none;
-  font-family:
-    ui-monospace, "SF Mono", "Cascadia Code", Menlo, Consolas, monospace;
+  font-family: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
   font-size: 0.75rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
   text-decoration: none;
-  background: transparent;
   cursor: pointer;
   white-space: nowrap;
-  background-image: linear-gradient(var(--accent), var(--accent));
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: 0% 1px;
-  transition:
-    color 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-    background-size 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-}
-.nav-item:hover {
-  color:var(--accent);
-  background-size: 100% 1px;
 }
 </style>
