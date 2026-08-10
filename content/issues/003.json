@@ -1,0 +1,431 @@
+{
+  "number": 3,
+  "startDate": "2026-08-02T15:59:59.999Z",
+  "endDate": "2026-08-09T15:59:59.999Z",
+  "dateLabel": "2026年8月2日 — 9日",
+  "publishedAt": "2026-08-10T02:38:27.180Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "Baseten on Hugging Face Inference Providers 🔥",
+          "titleZh": "基于 Hugging Face 推理提供商的 Baseten 🔥",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/baseten",
+          "formattedDate": "2026年8月6日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "Third-party cyber evaluations involving OpenAI models",
+          "titleZh": "涉及 OpenAI 模型的第三方网络安全评估",
+          "description": "OpenAI explains recent third-party cybersecurity evaluation incidents and outlines new safeguards to strengthen AI model testing and evaluation.",
+          "descriptionZh": "OpenAI 就近期发生的第三方网络安全评估事件进行了说明，并概述了旨在加强人工智能模型测试和评估的新保障措施。",
+          "link": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+          "formattedDate": "2026年8月4日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "TutorMoments: Do AI tutors know when to help and when to hold back?",
+          "titleZh": "“TutorMoments”：人工智能辅导老师知道何时该提供帮助、何时该适可而止吗？",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/allenai/tutormoments",
+          "formattedDate": "2026年8月7日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Responding to the next frontier of critical cyber capabilities",
+          "titleZh": "应对关键网络能力的下一个前沿领域",
+          "description": "OpenAI is sharing preliminary cybersecurity evaluations for Astra and the steps we’re taking to strengthen safeguards and security controls.",
+          "descriptionZh": "OpenAI 正在分享针对 Astra 的初步网络安全评估结果，以及我们为加强防护措施和安全控制所采取的步骤。",
+          "link": "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities",
+          "formattedDate": "2026年8月7日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How HSP GRUPPE builds AI capabilities for tax advisory",
+          "titleZh": "HSP GRUPPE 如何构建税务咨询领域的人工智能能力",
+          "description": "Discover how HSP GRUPPE uses ChatGPT Enterprise to boost productivity, improve work quality, and create more capacity for tax advisory and client service.",
+          "descriptionZh": "了解 HSP GRUPPE 如何利用 ChatGPT Enterprise 提升工作效率、提高工作质量，并为税务咨询和客户服务腾出更多资源。",
+          "link": "https://openai.com/index/hsp-gruppe",
+          "formattedDate": "2026年8月7日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "A guide to slash commands in the GitHub Copilot app",
+          "titleZh": "GitHub Copilot 应用中的斜杠命令指南",
+          "description": "Go beyond chat in the GitHub Copilot app with these slash commands. They'll help you plan, collaborate, automate, and customize your dev workflow. The post A guide to slash commands in the GitHub Copilot app appeared…",
+          "descriptionZh": "借助这些斜杠命令，在 GitHub Copilot 应用中体验超越普通聊天的功能。它们将帮助您规划、协作、自动化并自定义开发工作流。文章《GitHub Copilot 应用中的斜杠命令指南》已发布……",
+          "link": "https://github.blog/ai-and-ml/github-copilot/a-guide-to-slash-commands-in-the-github-copilot-app/",
+          "formattedDate": "2026年8月6日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "WeatherNext: AI model achieves breakthrough in forecasting cyclones",
+          "titleZh": "WeatherNext：AI模型在气旋预报方面取得突破",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+          "formattedDate": "2026年8月6日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users",
+          "titleZh": "改进 ChatGPT 中的 GPT‑5.6 Sol——并向免费用户开放 GPT-5.6 Luna 的使用权限",
+          "description": "ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GPT-5.6 Luna.",
+          "descriptionZh": "ChatGPT 推出了性能更优的 GPT-5.6 Sol，其准确性和一致性均有所提升；此外，免费用户的访问权限也得到了扩展，并可与 GPT-5.6 Luna 进行每日不限次数的对话。",
+          "link": "https://openai.com/index/improving-gpt-5-6-sol-in-chatgpt",
+          "formattedDate": "2026年8月6日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How the GitHub legal team used Copilot CLI to streamline their workflows",
+          "titleZh": "GitHub 法务团队如何利用 Copilot CLI 优化工作流程",
+          "description": "Learn how to build tools to simplify how you work—without writing a single line of code. The post How the GitHub legal team used Copilot CLI to streamline their workflows appeared first on The GitHub Blog.",
+          "descriptionZh": "了解如何构建工具来简化工作流程——无需编写任何代码。文章《GitHub 法务团队如何利用 Copilot CLI 优化工作流程》首发于 GitHub 博客。",
+          "link": "https://github.blog/ai-and-ml/github-copilot/how-the-github-legal-team-used-copilot-cli-to-streamline-their-workflows/",
+          "formattedDate": "2026年8月4日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Deploy local agents everywhere with LFM2.5-2.6B",
+          "titleZh": "使用 LFM2.5-2.6B 在各处部署本地代理",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/LiquidAI/lfm2-5-2-6b",
+          "formattedDate": "2026年8月4日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "OpenAI says it slowed Astra model development over security concerns",
+          "titleZh": "OpenAI表示，出于安全考虑，已放缓Astra模型的开发进度",
+          "description": "OpenAI said it has suspended work on some aspects of its upcoming model Astra over concerns about its cybersecurity prowess.",
+          "descriptionZh": "OpenAI表示，由于对其网络安全能力的担忧，该公司已暂停了即将推出的Astra模型部分方面的工作。",
+          "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+          "formattedDate": "2026年8月7日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Cloudflare launches Kitesurf, a browser built for AI agents",
+          "titleZh": "Cloudflare 推出 Kitesurf——一款专为人工智能代理设计的浏览器",
+          "description": "Kitesurf is a cloud-hosted browser designed for AI agents instead of people. It uses less computing power than Chromium for common automation tasks, helping developers build browser-based AI agents more efficiently.",
+          "descriptionZh": "Kitesurf 是一款专为人工智能代理而非人类设计的云端托管浏览器。在处理常见的自动化任务时，它比 Chromium 消耗更少的计算资源，有助于开发者更高效地构建基于浏览器的 AI 代理。",
+          "link": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/",
+          "formattedDate": "2026年8月7日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "InfoQ AI, ML & Data Eng"
+          ]
+        },
+        {
+          "title": "Jill Lepore on the ‘Artificial State’ and why Silicon Valley’s leaders are bad sci-fi readers",
+          "titleZh": "吉尔·莱波尔谈“人造国家”，以及为何硅谷的领导者们不擅长阅读科幻小说",
+          "description": "Historian Jill Lepore has a theory about why tech companies often use soaring language to describe their products — almost as if they’re forming a new government. And whether you’re thinking of Twitter’s old “town hall…",
+          "descriptionZh": "历史学家吉尔·莱波尔提出了一种理论，解释了科技公司为何常常使用夸张的措辞来描述其产品——几乎就像是在组建一个新政府一样。无论你想到的是推特以前的“市政厅”……",
+          "link": "https://techcrunch.com/podcast/jill-lepore-on-the-artificial-state-and-why-silicon-valleys-leaders-are-bad-sci-fi-readers/",
+          "formattedDate": "2026年8月7日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AI isn’t enough to protect social media communities from AI",
+          "titleZh": "仅靠人工智能还不足以保护社交媒体社区免受人工智能的侵害",
+          "description": "Why humans need to moderate humans.",
+          "descriptionZh": "为什么人类需要由人类来监管。",
+          "link": "https://arstechnica.com/gadgets/2026/08/ai-isnt-enough-to-protect-social-media-communities-from-ai/",
+          "formattedDate": "2026年8月6日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Meta launches Muse Code, an AI agent for large code bases",
+          "titleZh": "Meta 推出 Muse Code，一款面向大型代码库的人工智能代理",
+          "description": "Meta expanded its AI coding offerings with a new agent that, it promises, can handle complex tasks with complex software.",
+          "descriptionZh": "Meta 通过推出一款新代理扩展了其人工智能编程服务，据称该代理能够处理涉及复杂软件的复杂任务。",
+          "link": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/",
+          "formattedDate": "2026年8月5日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "Stripe Uses Graph Search and State Machines to Automate Database Remediation",
+          "titleZh": "Stripe 利用 Graph Search 和状态机实现数据库修复自动化",
+          "description": "The engineering team at Stripe recently described how they automated database incident recovery by modeling their global infrastructure as a graph. Using graph search algorithms together with state machines, the team…",
+          "descriptionZh": "Stripe 的工程团队最近介绍了他们如何通过将全球基础设施建模为图，来实现数据库故障恢复的自动化。该团队通过结合使用图搜索算法和状态机……",
+          "link": "https://www.infoq.com/news/2026/08/database-remediation-graph/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月9日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "DeepMind’s hurricane breakthrough has surprised weather scientists",
+          "titleZh": "DeepMind在飓风研究方面的突破令气象科学家们大为惊讶",
+          "description": "Open source WeatherNext model can make accurate predictions with lower-resolution weather data.",
+          "descriptionZh": "开源的WeatherNext模型即使使用低分辨率的气象数据，也能做出准确的预测。",
+          "link": "https://arstechnica.com/science/2026/08/deepminds-hurricane-model-bought-forecasters-an-extra-day/",
+          "formattedDate": "2026年8月8日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: Keeping ChatGPT Fast as AI Development Accelerates",
+          "titleZh": "演讲：在人工智能发展加速的背景下，如何保持ChatGPT的高速运行",
+          "description": "Martin Spier explains how agentic workflows dramatically increase code change volume at OpenAI. He discusses the hidden systemic performance costs of rapid shipping beyond GPUs, and shares how deploying always-on AI…",
+          "descriptionZh": "马丁·斯皮尔（Martin Spier）解释了代理式工作流如何大幅增加 OpenAI 的代码变更量。他探讨了快速发布所带来的、超出 GPU 范畴的隐性系统性能成本，并分享了部署始终在线的 AI……",
+          "link": "https://www.infoq.com/presentations/openai-performance-engineering-agentic-coding/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月8日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Cloudflare's Precursor Detects Bots and AI Agents Through Continuous Behavioral Analysis",
+          "titleZh": "Cloudflare 的 Precursor 通过持续的行为分析来检测机器人和人工智能代理",
+          "description": "Cloudflare recently introduced Precursor, a client-side behavioral analysis engine that continuously evaluates session interactions, such as mouse movements and keyboard timing, to improve detection of sophisticated…",
+          "descriptionZh": "Cloudflare 最近推出了 Precursor，这是一个客户端行为分析引擎，它会持续评估会话交互（例如鼠标移动和键盘按键时机），以提升对复杂……的检测能力。",
+          "link": "https://www.infoq.com/news/2026/08/cloudflare-precursor-detection/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月8日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "OpenAI’s expensive smart speaker will use moving parts to seem “more alive”",
+          "titleZh": "OpenAI 这款价格不菲的智能音箱将通过活动部件让其显得“更有生命力”",
+          "description": "Gurman report claims OpenAI confirmed the speaker is not an Apple ripoff.",
+          "descriptionZh": "据古尔曼的报道称，OpenAI已确认该语音助手并非抄袭苹果的产品。",
+          "link": "https://arstechnica.com/gadgets/2026/08/openais-expensive-smart-speaker-will-use-moving-parts-to-seem-more-alive/",
+          "formattedDate": "2026年8月7日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Instacart Builds Blueberry, an AI-Powered Assistant to Help On-Call Engineers Investigate Incidents",
+          "titleZh": "Instacart 开发了“Blueberry”——一款由人工智能驱动的助手，旨在帮助值班工程师排查故障",
+          "description": "Instacart introduced Blueberry, an AI-assisted incident response system that helps on-call engineers investigate production issues faster. It combines AI agents, operational data, and historical incident knowledge to…",
+          "descriptionZh": "Instacart 推出了“Blueberry”——一款由人工智能辅助的事件响应系统，旨在帮助值班工程师更快地排查生产环境中的问题。该系统整合了人工智能代理、运维数据以及历史事件知识，以……",
+          "link": "https://www.infoq.com/news/2026/08/instacart-blueberry-sre-ai/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月7日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AI chatbots have failed people in crisis. Can that be fixed?",
+          "titleZh": "AI聊天机器人在危机时刻让人们失望了。这个问题能解决吗？",
+          "description": "Clinicians and researchers say AI companies need to open up their safety data.",
+          "descriptionZh": "临床医生和研究人员表示，人工智能公司需要公开其安全数据。",
+          "link": "https://arstechnica.com/ai/2026/08/ai-chatbots-have-failed-people-in-crisis-can-that-be-fixed/",
+          "formattedDate": "2026年8月7日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "Google shifts AI power back to Brin as DeepMind's Hassabis steps aside",
+          "titleZh": "随着DeepMind的哈萨比斯卸任，谷歌将人工智能决策权重新交还给布林",
+          "description": "Article URL: https://giftarticle.ft.com/giftarticle/actions/redeem/1313659c-650d-45f9-9f81-f9f18a7f8b69 Comments URL: https://news.ycombinator.com/item?id=49203346 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://giftarticle.ft.com/giftarticle/actions/redeem/1313659c-650d-45f9-9f81-f9f18a7f8b69 评论网址： https://news.ycombinator.com/item?id=49203346 积分：1 # 评论：0",
+          "link": "https://giftarticle.ft.com/giftarticle/actions/redeem/1313659c-650d-45f9-9f81-f9f18a7f8b69",
+          "formattedDate": "2026年8月6日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "datasette 0.65.3",
+          "titleZh": "datasette 0.65.3",
+          "description": "Release: datasette 0.65.3 Back-ported the SQL Injection security fix from 1.0a38 . Tags: datasette",
+          "descriptionZh": "发布：datasette 0.65.3，从 1.0a38 版本回溯移植了 SQL 注入安全修复程序。标签：datasette",
+          "link": "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything",
+          "formattedDate": "2026年8月6日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "An AI model from Meta also hacked another company during testing",
+          "titleZh": "Meta的一款AI模型在测试期间还入侵了另一家公司",
+          "description": "An AI model from Meta also hacked another company during testing Stop me if you've heard this one before : An AI model from the parent company of Facebook and Instagram hacked into another company’s systems during…",
+          "descriptionZh": "Meta旗下的一款AI模型在测试期间也入侵了另一家公司。如果你之前听过这个故事，就打断我吧：Facebook和Instagram母公司旗下的一款AI模型在……期间入侵了另一家公司的系统……",
+          "link": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/#atom-everything",
+          "formattedDate": "2026年8月6日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Devtools must be open source (exe.dev)",
+          "titleZh": "开发工具必须是开源的（例如 exe.dev）",
+          "description": "My comment on Devtools must be open source (exe.dev) — Hacker News. One of the arguments for open source software for end-users has always been the freedom to examine and modify how that software works. The reality for…",
+          "descriptionZh": "我对“开发者工具必须开源（exe.dev）”的评论 — Hacker News。对于面向最终用户的开源软件而言，其支持理由之一始终是用户拥有检查和修改软件运行方式的自由。而现实情况是……",
+          "link": "https://simonwillison.net/2026/Aug/3/devtools-must-be-open-source-exedev/#atom-everything",
+          "formattedDate": "2026年8月3日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "condense-json 1.0",
+          "titleZh": "condense-json 1.0",
+          "description": "Release: condense-json 1.0 I'm trying to get braver at releasing 1.0 versions. This little library is a year and a half old now - I've applied some sensible and non-disruptive fixes and shipped the big 1.0 for it.…",
+          "descriptionZh": "发布：condense-json 1.0 我正努力让自己更有勇气发布 1.0 版本。这个小库已经有一年半的历史了——我对其进行了一些合理且不影响现有功能的修复，并正式发布了 1.0 版本……",
+          "link": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+          "formattedDate": "2026年8月2日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Why AI is a risk to Communist China",
+          "titleZh": "为什么人工智能对共产主义中国构成威胁",
+          "description": "Article URL: https://www.economist.com/leaders/2026/08/06/why-ai-is-a-risk-to-communist-china Comments URL: https://news.ycombinator.com/item?id=49203368 Points: 4 # Comments: 0",
+          "descriptionZh": "文章网址：https://www.economist.com/leaders/2026/08/06/why-ai-is-a-risk-to-communist-china 评论网址： https://news.ycombinator.com/item?id=49203368 积分：4 # 评论：0",
+          "link": "https://www.economist.com/leaders/2026/08/06/why-ai-is-a-risk-to-communist-china",
+          "formattedDate": "2026年8月6日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: AI product evaluation methodoloy at huby",
+          "titleZh": "Show HN：huby 上的 AI 产品评估方法论",
+          "description": "There are a number of AI benchmarks but I feel they aren't practical when it comes to evaluating AI products. Several months back we started working on designing a methodology to independently evaluate AI products.…",
+          "descriptionZh": "虽然有许多人工智能基准测试，但我认为它们在评估人工智能产品时并不实用。几个月前，我们开始着手设计一种独立评估人工智能产品的方法论……",
+          "link": "https://news.ycombinator.com/item?id=49176006",
+          "formattedDate": "2026年8月4日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Authoryze- payment controls for AI agents",
+          "titleZh": "Show HN：Authoryze——面向 AI 代理的支付控制方案",
+          "description": "Article URL: https://authoryze.ai Comments URL: https://news.ycombinator.com/item?id=49148057 Points: 3 # Comments: 2",
+          "descriptionZh": "文章网址：https://authoryze.ai 评论网址：https://news.ycombinator.com/item?id=49148057 积分：3 # 评论：2",
+          "link": "https://authoryze.ai",
+          "formattedDate": "2026年8月2日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Zawinski's Law of MultiAgents",
+          "titleZh": "[AINews] 扎温斯基的多智能体定律",
+          "description": "a quiet day lets us find some connections among recent themes",
+          "descriptionZh": "一个宁静的日子让我们得以在近期的一些主题之间发现一些联系",
+          "link": "https://www.latent.space/p/ainews-zawinskis-law-of-multiagents",
+          "formattedDate": "2026年8月8日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] AMD buys Taalas",
+          "titleZh": "[AINews] AMD收购Taalas",
+          "description": "The Inference Inflection is HEATING up.",
+          "descriptionZh": "“推断变格”活动正渐入高潮。",
+          "link": "https://www.latent.space/p/ainews-amd-buys-taalas",
+          "formattedDate": "2026年8月7日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Jeff, Sanjay, Oriol, and Quoc depart DeepMind; Demis to Chair; Koray to SVP — what is going on at GDM???",
+          "titleZh": "[AINews] 杰夫、桑杰、奥里奥尔和奎克离开DeepMind；德米斯出任董事长；科雷晋升为高级副总裁——GDM到底怎么了？？？",
+          "description": "The end of an era.",
+          "descriptionZh": "一个时代的终结。",
+          "link": "https://www.latent.space/p/ainews-jeff-sanjay-oriol-and-quoc",
+          "formattedDate": "2026年8月6日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Megakernels are so dead and so back",
+          "titleZh": "[AINews] 巨内核早已过时，如今却又卷土重来",
+          "description": "A quiet day lets us highlight a Cursor launch and an engineering debate",
+          "descriptionZh": "在这个平静的一天里，让我们重点关注 Cursor 的发布以及一场工程辩论",
+          "link": "https://www.latent.space/p/ainews-megakernels-are-so-dead-and",
+          "formattedDate": "2026年8月5日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "Claude",
+      "items": [
+        {
+          "title": "v2.1.226",
+          "titleZh": "v2.1.226",
+          "description": "What's changed Bug fixes and reliability improvements",
+          "descriptionZh": "更新内容 修复了错误并提高了系统稳定性",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.226",
+          "formattedDate": "2026年8月8日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.225",
+          "titleZh": "v2.1.225",
+          "description": "What's changed Added gateway spend-limit support to Claude Code's usage warning; the limit-reached message now names the cap, its reset time, and the operator's message (requires the gateway on 2.1.225) Added a…",
+          "descriptionZh": "更新内容：在 Claude Code 的使用警告中新增了网关消费限额支持；达到限额时的提示信息现会显示限额数值、重置时间以及运营商提示信息（需网关版本为 2.1.225）；新增了……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+          "formattedDate": "2026年8月8日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.224",
+          "titleZh": "v2.1.224",
+          "description": "What's changed Added self-hosted environments: claude self-hosted-runner turns your own machines or containers into a place Claude Code web, mobile, and desktop sessions can run, on Team and Enterprise plans Added…",
+          "descriptionZh": "更新内容：新增了自托管环境：在 Team 和 Enterprise 套餐中，通过 claude self-hosted-runner 可将您的自有机器或容器转变为可运行 Claude Code 网页、移动端和桌面端会话的环境。新增……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.224",
+          "formattedDate": "2026年8月7日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.223",
+          "titleZh": "v2.1.223",
+          "description": "What's changed Added owner wildcard entries (\"owner/*\") to the strictKnownMarketplaces and blockedMarketplaces managed settings for allowing or blocking all marketplace repos under a GitHub org Added a warning when…",
+          "descriptionZh": "有哪些变化 在“strictKnownMarketplaces”和“blockedMarketplaces”管理设置中添加了所有者通配符条目（“owner/*”），用于允许或阻止 GitHub 组织下的所有市场仓库。当……时，会显示一条警告……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.223",
+          "formattedDate": "2026年8月6日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 258,
+    "published": 38,
+    "sourceCount": 11,
+    "translated": true
+  }
+}
