@@ -38,6 +38,15 @@ defineProps<{
   padding: 0.75rem 0;
   margin-bottom: 2rem;
   scrollbar-width: none;
+  /* 向上延伸的阴影把吸顶后与页头之间可能露出的缝隙盖住（--header-height 是手动
+     维护的常量，加上移动端地址栏收起/展开时视口的短暂抖动，缝隙宽度并不固定）。
+     用 box-shadow 而不是 ::before 伪元素，是因为下面的 overflow-x: auto 会把
+     overflow-y 的计算值连带变成 auto，伪元素的负 top 会被裁掉，box-shadow 不受影响。 */
+  box-shadow: 0 -20px 0 0 var(--bg);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .category-nav::-webkit-scrollbar {
   display: none;
