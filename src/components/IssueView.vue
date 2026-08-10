@@ -118,7 +118,7 @@ useHead({
   max-width: calc(100vw - 2rem);
   border-radius: 1rem;
   border: 1.5px solid color-mix(in srgb, var(--fg) 14%, transparent);
-  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  background: var(--bg);
   box-shadow:
     0 12px 40px -8px rgba(0, 0, 0, 0.25),
     0 2px 8px rgba(0, 0, 0, 0.08);
@@ -126,18 +126,6 @@ useHead({
   transition:
     background-color 0.2s ease,
     border-color 0.2s ease;
-}
-@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
-  .issue-pager {
-    backdrop-filter: blur(16px) saturate(180%);
-    -webkit-backdrop-filter: blur(16px) saturate(180%);
-  }
-}
-@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
-  .issue-pager {
-    /* 不支持毛玻璃的浏览器退回不透明背景，避免半透明糊字 */
-    background: var(--bg);
-  }
 }
 :root[data-theme='dark'] .issue-pager {
   box-shadow:
