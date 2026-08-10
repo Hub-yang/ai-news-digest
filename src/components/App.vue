@@ -33,7 +33,7 @@ provide(languageKey, useLanguage())
     <RouterView />
 
     <footer>
-      每周一自动出刊 · 聚合自 14 个 AI 相关 RSS 来源
+      每周一出刊 · 聚合自 14 个 AI 相关 RSS 来源
     </footer>
   </div>
 </template>
