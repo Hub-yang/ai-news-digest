@@ -1,0 +1,445 @@
+{
+  "number": 4,
+  "startDate": "2026-08-09T15:59:59.999Z",
+  "endDate": "2026-08-16T15:59:59.999Z",
+  "dateLabel": "2026年8月9日 — 16日",
+  "publishedAt": "2026-08-17T01:58:10.553Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "Introducing Gemini 3.7 Flash",
+          "titleZh": "Gemini 3.7 Flash 简介",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://deepmind.google/blog/introducing-gemini-3-7-flash/",
+          "formattedDate": "2026年8月13日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": [
+            "Ars Technica AI",
+            "Latent Space"
+          ]
+        },
+        {
+          "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+          "titleZh": "Meta 携 Muse Glimmer 强势回归：本地化、自主决策、多模态且开源",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/muse-glimmer",
+          "formattedDate": "2026年8月10日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog",
+            "InfoQ AI, ML & Data Eng"
+          ]
+        },
+        {
+          "title": "Previewing Ultrafast mode: GPT-5.6 Sol at up to 14X the speed",
+          "titleZh": "“超快模式”预览：GPT-5.6 Sol 的运行速度最高可达原来的 14 倍",
+          "description": "Preview Ultrafast, a new OpenAI API service tier that runs GPT-5.6 Sol up to 14× faster. Powered by Cerebras, it delivers up to 750 output tokens per second.",
+          "descriptionZh": "抢先体验“Ultrafast”——这是 OpenAI 推出的一项全新 API 服务等级，可将 GPT-5.6 Sol 的运行速度提升至最高 14 倍。该服务由 Cerebras 提供技术支持，每秒可输出多达 750 个令牌。",
+          "link": "https://openai.com/index/previewing-ultrafast",
+          "formattedDate": "2026年8月13日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "TechCrunch AI"
+          ]
+        },
+        {
+          "title": "Using the GitHub Copilot SDK for Java",
+          "titleZh": "使用 GitHub Copilot Java SDK",
+          "description": "Enterprise Java developers have a new superpower—drive GitHub Copilot from idiomatic Java code with annotations, virtual threads, and more. The post Using the GitHub Copilot SDK for Java appeared first on The GitHub…",
+          "descriptionZh": "企业级 Java 开发者拥有了一项新能力——通过注解、虚拟线程等符合 Java 惯例的代码来驱动 GitHub Copilot。文章《使用 GitHub Copilot SDK for Java》首发于 The GitHub…",
+          "link": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
+          "formattedDate": "2026年8月10日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Putting frontier cyber models in more trusted hands",
+          "titleZh": "将前沿网络安全模型交由更值得信赖的机构管理",
+          "description": "Approved Daybreak partners can use OpenAI’s frontier cyber models to deliver authorized, governed cybersecurity services to customers.",
+          "descriptionZh": "经批准的Daybreak合作伙伴可使用OpenAI的前沿网络安全模型，向客户提供经过授权且受监管的网络安全服务。",
+          "link": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+          "formattedDate": "2026年8月10日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "Google DeepMind Blog"
+          ]
+        },
+        {
+          "title": "How to bring your software delivery workflow into GitHub with agent apps",
+          "titleZh": "如何通过代理应用将软件交付工作流集成到 GitHub 中",
+          "description": "See how four GitHub agent apps can help you scope, secure, roll out, and ship a feature across the SDLC–all without leaving GitHub. The post How to bring your software delivery workflow into GitHub with agent apps…",
+          "descriptionZh": "了解四款 GitHub 代理应用如何帮助您在整个软件开发生命周期（SDLC）中规划、保障安全、部署并发布功能——全程无需离开 GitHub。博文《如何通过代理应用将软件交付工作流整合到 GitHub 中……》",
+          "link": "https://github.blog/ai-and-ml/github-copilot/how-to-bring-your-software-delivery-workflow-into-github-with-agent-apps/",
+          "formattedDate": "2026年8月14日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "State of Open Models: Summer 2026 Observations",
+          "titleZh": "开放模型现状：2026年夏季观察报告",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+          "formattedDate": "2026年8月14日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Record, train, and deploy from one place with Strands Agents, LeRobot, and Hugging Face Storage Buckets",
+          "titleZh": "借助 Strands Agents、LeRobot 和 Hugging Face 存储桶，在同一平台完成数据录制、训练和部署",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/amazon/strands-lerobot-streaming-data-loop",
+          "formattedDate": "2026年8月13日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The builder’s guide to GPT‑5.6",
+          "titleZh": "开发者的 GPT-5.6 指南",
+          "description": "Learn how startups use GPT-5.6 to build faster, more cost-efficient AI agents with smarter model selection and new Responses API capabilities.",
+          "descriptionZh": "了解初创企业如何利用 GPT-5.6，通过更智能的模型选择和全新的 Responses API 功能，构建更快、更具成本效益的 AI 代理。",
+          "link": "https://openai.com/index/builders-guide-to-gpt-5-6",
+          "formattedDate": "2026年8月13日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "OpenAI appoints Dali Rajic as Chief Revenue Officer",
+          "titleZh": "OpenAI任命达利·拉吉奇为首席营收官",
+          "description": "OpenAI appoints Dali Rajic as Chief Revenue Officer to lead its global revenue organization and help businesses realize the full value of AI.",
+          "descriptionZh": "OpenAI 任命达利·拉吉奇（Dali Rajic）为首席营收官，负责领导其全球营收团队，并帮助企业充分释放人工智能的价值。",
+          "link": "https://openai.com/index/dali-rajic-chief-revenue-officer",
+          "formattedDate": "2026年8月13日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "What We Learned by Reproducing 2,200 papers from ICML",
+          "titleZh": "通过重现ICML上的2,200篇论文，我们获得了哪些启示",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/icml-2026-open-reproductions",
+          "formattedDate": "2026年8月13日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "Amazon will train on Twitch streamers’ content by default, unless they opt out",
+          "titleZh": "亚马逊将默认利用Twitch主播的内容进行训练，除非主播选择退出",
+          "description": "\"If this was opt-in, nobody would opt in,\" Twitch CPO Mike Minton said on a livestream responding to user feedback. \"That's honestly the answer.\"",
+          "descriptionZh": "“如果这是需要用户主动选择加入的功能，那根本没人会选择加入，”Twitch首席产品官迈克·明顿在直播中回应用户反馈时说道，“说实话，答案就是这样。”",
+          "link": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/",
+          "formattedDate": "2026年8月12日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "Booksellers suspect AI firms are buying and then destroying rare books",
+          "titleZh": "书商怀疑人工智能公司正在收购并销毁珍本",
+          "description": "AI firms quietly bulk buying rare books face resistance from booksellers.",
+          "descriptionZh": "悄然大量收购珍本的AI公司正面临书商的抵制。",
+          "link": "https://arstechnica.com/tech-policy/2026/08/heres-a-balm-if-the-idea-of-destroying-books-to-train-ai-breaks-your-heart/",
+          "formattedDate": "2026年8月12日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Google’s Gemini app surges to 1 billion users",
+          "titleZh": "谷歌的Gemini应用用户数激增至10亿",
+          "description": "Google also shared numbers of how people are actually using the chatbot, with 63% of Gemini users talking directly to the assistant using the voice feature. Plus, Gemini now generates more than 150 million images every…",
+          "descriptionZh": "谷歌还公布了用户实际使用该聊天机器人的数据：63%的Gemini用户通过语音功能直接与该助手对话。此外，Gemini目前每天生成的图片数量已超过1.5亿张……",
+          "link": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/",
+          "formattedDate": "2026年8月11日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "Anthropic says it will watermark text generated by its AI models",
+          "titleZh": "Anthropic表示，将对其AI模型生成的文本添加水印",
+          "description": "Anthropic will extend support for watermarking AI generations for older models as well.",
+          "descriptionZh": "Anthropic 还将为旧版模型的 AI 生成内容添加水印功能。",
+          "link": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/",
+          "formattedDate": "2026年8月11日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "AWS Open-Sources Dogwood, Extending Cedar to Govern Sequences of Agent Tool Calls",
+          "titleZh": "AWS 将 Dogwood 开源，通过扩展 Cedar 来管理代理工具调用的序列",
+          "description": "AWS has open-sourced Dogwood, a policy language extending Cedar with temporal conditions so rules can reason about an agent's prior tool calls rather than one request in isolation. It covers approvals, rate limits and…",
+          "descriptionZh": "AWS 已将 Dogwood 开源，这是一种在 Cedar 基础上扩展了时间条件的策略语言，使规则能够基于代理的先前工具调用进行推理，而非仅针对单个请求进行孤立分析。它涵盖了审批、速率限制以及……",
+          "link": "https://www.infoq.com/news/2026/08/aws-dogwood-agent-policy/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月16日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AWS Introduces Native Vector Search for DynamoDB",
+          "titleZh": "AWS 为 DynamoDB 推出原生向量搜索功能",
+          "description": "Amazon DynamoDB recently introduced native vector search, allowing developers to store embeddings alongside application data and run approximate nearest-neighbor queries directly from DynamoDB without using a separate…",
+          "descriptionZh": "亚马逊 DynamoDB 最近推出了原生向量搜索功能，允许开发人员将嵌入向量与应用程序数据一同存储，并直接在 DynamoDB 中执行近似最近邻查询，而无需使用单独的……",
+          "link": "https://www.infoq.com/news/2026/08/aws-dynamodb-vector-search/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月16日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How PGSimCity Turns PostgreSQL Complexity into a Virtual City 3D Simulation",
+          "titleZh": "PGSimCity 如何将 PostgreSQL 的复杂性转化为虚拟城市的 3D 模拟",
+          "description": "Nikolay Samokhvalov has developed PGSimCity, an open-source educational tool that visualises PostgreSQL mechanics as a 3D spatial simulation in the browser. It assists backend developers and site reliability engineers…",
+          "descriptionZh": "尼古拉·萨莫赫瓦洛夫（Nikolay Samokhvalov）开发了 PGSimCity，这是一款开源教育工具，可在浏览器中通过 3D 空间模拟直观展示 PostgreSQL 的工作原理。它有助于后端开发人员和站点可靠性工程师……",
+          "link": "https://www.infoq.com/news/2026/08/pgsimcity/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月16日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Woman claims her stepfather used Grok to transform childhood photo into explicit imagery",
+          "titleZh": "一名女子称继父利用Grok将她儿时的照片改造成露骨的图像",
+          "description": "The woman claimed that AI tools are \"taking everyday life and turning it into child sexual abuse.\"",
+          "descriptionZh": "该女子声称，人工智能工具正在“将日常生活转化为对儿童的性虐待”。",
+          "link": "https://techcrunch.com/2026/08/15/woman-claims-her-stepfather-used-grok-to-transform-childhood-photo-into-explicit-imagery/",
+          "formattedDate": "2026年8月15日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: From Models to Agents: Building Context-Aware Consumer AI at Scale at DoorDash",
+          "titleZh": "演讲：从模型到智能体：DoorDash 如何大规模构建情境感知型消费者人工智能",
+          "description": "Sudeep Das shares how DoorDash shifts from legacy one-shot predictions to an agentic recommendation platform. He discusses leveraging language-native consumer memory, RQ-VAE semantic IDs for catalog representation, and…",
+          "descriptionZh": "苏迪普·达斯（Sudeep Das）分享了DoorDash如何从传统的单次预测模式转型为基于智能代理的推荐平台。他探讨了如何利用语言原生的消费者记忆、RQ-VAE语义ID进行商品目录表示，以及……",
+          "link": "https://www.infoq.com/presentations/ai-agentic-recommendations-semantic-ids/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月15日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Suspecting court of using AI, man injected prompts in filings to try to win case",
+          "titleZh": "一名男子怀疑法院使用人工智能，便在诉讼文件中植入提示词，试图赢得官司",
+          "description": "Judge warns pro se litigants are using chatbots wrong and getting desperate.",
+          "descriptionZh": "法官警告称，自行诉讼的当事人正在错误使用聊天机器人，且已陷入走投无路的境地。",
+          "link": "https://arstechnica.com/tech-policy/2026/08/suspecting-court-of-using-ai-man-injected-prompts-in-filings-to-try-to-win-case/",
+          "formattedDate": "2026年8月14日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+          "titleZh": "随着中国人工智能竞争对手不断壮大，OpenAI与Anthropic展开价格战",
+          "description": "US groups release cheaper models after new challenges to their trillion-dollar ambitions.",
+          "descriptionZh": "在美国企业万亿美元雄心面临新挑战后，多家美国企业推出了更便宜的机型。",
+          "link": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground/",
+          "formattedDate": "2026年8月14日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The new Instagram logo is the perfect embodiment of AI slop",
+          "titleZh": "Instagram的新标志完美体现了AI设计的粗制滥造",
+          "description": "Opinion: Some remarks about the new wordmark accidentally being perfectly awful.",
+          "descriptionZh": "观点：关于新字标“无意间变得极其糟糕”的几点看法。",
+          "link": "https://arstechnica.com/ai/2026/08/the-new-instagram-logo-is-the-perfect-embodiment-of-ai-slop/",
+          "formattedDate": "2026年8月13日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "sqlite-utils 4.2",
+          "titleZh": "sqlite-utils 4.2",
+          "description": "Release: sqlite-utils 4.2 Lots of improvements in this one relating to the table.transform() feature , which adds support for complex alter table operations by creating a fresh table, copying across the data and then…",
+          "descriptionZh": "发布：sqlite-utils 4.2 本次更新对 table.transform() 功能进行了大量改进，该功能通过创建新表、复制数据，然后……来支持复杂的 ALTER TABLE 操作。",
+          "link": "https://simonwillison.net/2026/Aug/13/sqlite-utils/",
+          "formattedDate": "2026年8月13日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "alchemy-utils 0.1a0",
+          "titleZh": "alchemy-utils 0.1a0",
+          "description": "Release: alchemy-utils 0.1a0 I've long pondered what a database agnostic version of my sqlite-utils Python library and CLI utility might look like. This morning (literally a shower project) I tasked Codex and GPT-5.6…",
+          "descriptionZh": "发布：alchemy-utils 0.1a0 我一直都在思考，如果将我的 sqlite-utils Python 库和命令行工具改造成一个与数据库无关的版本，会是什么样子。今天早上（真的是个“淋浴项目”），我让 Codex 和 GPT-5.6 负责……",
+          "link": "https://simonwillison.net/2026/Aug/12/alchemy-utils/",
+          "formattedDate": "2026年8月12日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Stealing Reasoning Traces from Proprietary LLM APIs",
+          "titleZh": "从专有大型语言模型（LLM）API中窃取推理轨迹",
+          "description": "Stealing Reasoning Traces from Proprietary LLM APIs A vanity domain name ( stolen-thoughts.com ) for a neat paper : Anthropic, OpenAI, and Google return encrypted chain-of-thought blocks to clients that can be replayed…",
+          "descriptionZh": "从专有大型语言模型（LLM）API中窃取推理轨迹 一篇精彩论文的自定义域名（stolen-thoughts.com）：Anthropic、OpenAI 和 Google 向客户端返回的加密推理链块可以被重放……",
+          "link": "https://simonwillison.net/2026/Aug/11/stealing-reasoning-traces/#atom-everything",
+          "formattedDate": "2026年8月11日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Quoting Claude Opus 5 system prompt",
+          "titleZh": "引用克劳德·奥普斯 5 系统提示",
+          "description": "Claude Fable 5 and Claude Mythos 5 were first released on June 9, 2026. On June 12, 2026, Anthropic suspended access to both models to comply with U.S. Department of Commerce export controls; the Department lifted those…",
+          "descriptionZh": "Claude Fable 5 和 Claude Mythos 5 于 2026 年 6 月 9 日首次发布。2026 年 6 月 12 日，Anthropic 为遵守美国商务部的出口管制规定，暂停了这两款模型的访问权限；该部随后解除了这些……",
+          "link": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+          "formattedDate": "2026年8月9日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Alibaba AI Models Hit 3B Downloads, Passing Meta, Google",
+          "titleZh": "阿里巴巴AI模型下载量突破30亿次，超越Meta和谷歌",
+          "description": "Article URL: https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google Comments URL: https://news.ycombinator.com/item?id=49312866 Points: 6 # Comments: 1",
+          "descriptionZh": "文章网址：https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google 评论网址： https://news.ycombinator.com/item?id=49312866 积分：6 # 评论：1",
+          "link": "https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google",
+          "formattedDate": "2026年8月15日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Log-decisions – an append-only decision journal for AI agents",
+          "titleZh": "Show HN：Log-decisions——一种面向人工智能代理的仅追加式决策日志",
+          "description": "Article URL: https://github.com/swe-workflow/log-decisions Comments URL: https://news.ycombinator.com/item?id=49264597 Points: 2 # Comments: 0",
+          "descriptionZh": "文章网址：https://github.com/swe-workflow/log-decisions 评论网址：https://news.ycombinator.com/item?id=49264597 积分：2 # 评论：0",
+          "link": "https://github.com/swe-workflow/log-decisions",
+          "formattedDate": "2026年8月11日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Pacific Slate: a self-hosted, model-agnostic multi-agent AI assistant",
+          "titleZh": "Show HN：Pacific Slate：一款自托管、模型无关的多智能体AI助手",
+          "description": "I didn't want to buy a standalone computer or repurpose a laptop to run constantly so I could maintain a system to sync my LLMs, so I built this. It's a simple overview of my system, laid out in a way easy to unpack and…",
+          "descriptionZh": "我不想为了运行一个用于同步我的大型语言模型（LLMs）的系统而专门购买一台独立电脑，也不想把笔记本电脑改造成全天候运行的设备，所以我搭建了这个系统。这是对我系统的一个简要概述，以一种便于理解的方式呈现……",
+          "link": "https://pacslate.com/",
+          "formattedDate": "2026年8月9日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "React for Agents: Astro Creator Brings Hooks to his Meta-Harness, Flue",
+          "titleZh": "面向代理的 React：Astro 创始人将 Hooks 引入其元框架 Flue",
+          "description": "Flue 2 takes its inspiration from React. Creator Fred Schott, of Astro fame, tells Latent Space why he added hooks and why agents are defined by their harnesses.",
+          "descriptionZh": "Flue 2 的灵感源自 React。其创作者弗雷德·肖特（Fred Schott）——即以《Astro》闻名的开发者——向 Latent Space 解释了为何添加钩子（hooks），以及为何代理（agents）由其连接器（harnesses）来定义。",
+          "link": "https://www.latent.space/p/flue-2",
+          "formattedDate": "2026年8月15日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] SpaceXAI Grok 4.6 and Grok @Bot",
+          "titleZh": "[AINews] SpaceXAI Grok 4.6 和 Grok @Bot",
+          "description": "AI teammate category just had its most significant new entrant yet",
+          "descriptionZh": "“AI队友”类别刚刚迎来了迄今为止最重要的新成员",
+          "link": "https://www.latent.space/p/ainews-spacexai-grok-46-and-grok",
+          "formattedDate": "2026年8月13日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] How to steal a Reasoning Trace",
+          "titleZh": "[AINews] 如何窃取推理轨迹",
+          "description": "Speculative Decoding by any other name would distil as sweet",
+          "descriptionZh": "无论叫什么名字，推测性解码的魅力依然不减",
+          "link": "https://www.latent.space/p/ainews-how-to-steal-a-reasoning-trace",
+          "formattedDate": "2026年8月12日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "🔬The BioAI Phase Shift - Matthew McPartlon & Neil Patil, Chai Discovery",
+          "titleZh": "🔬生物人工智能的相位转变——马修·麦克帕特隆与尼尔·帕蒂尔，Chai Discovery",
+          "description": "Pharma is suddenly paying for Bio × AI tools, and Chai is leading the pack with four deals closed this summer. Cofounder Matt McPartlon and Product leader Neil Patil explain why.",
+          "descriptionZh": "制药行业突然开始投资生物技术×人工智能工具，而Chai公司以今年夏天敲定的四笔交易领跑行业。联合创始人马特·麦克帕特隆（Matt McPartlon）和产品负责人尼尔·帕蒂尔（Neil Patil）解释了其中的原因。",
+          "link": "https://www.latent.space/p/chai-discovery",
+          "formattedDate": "2026年8月11日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AI-Assisted GPU Porting of a 250k Line Legacy Weather Simulation Code",
+          "titleZh": "利用人工智能辅助将25万行代码的旧版气象模拟程序移植到GPU上",
+          "description": "Article URL: https://arxiv.org/abs/2608.13122 Comments URL: https://news.ycombinator.com/item?id=49314967 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://arxiv.org/abs/2608.13122 评论网址：https://news.ycombinator.com/item?id=49314967 积分：1 # 评论：0",
+          "link": "https://arxiv.org/abs/2608.13122",
+          "formattedDate": "2026年8月15日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "Claude",
+      "items": [
+        {
+          "title": "v2.1.233",
+          "titleZh": "v2.1.233",
+          "description": "What's changed Added GitLab merge request URL support to the --worktree flag and the claude agents view (where MRs display as !N) Added an opt-in forward_user_identity apps gateway setting on Anthropic upstreams that…",
+          "descriptionZh": "有哪些变化 在 --worktree 标志和 claude 代理视图（其中合并请求显示为 !N）中添加了对 GitLab 合并请求 URL 的支持 在 Anthropic 上游版本中添加了一个可选的 forward_user_identity 应用网关设置，该设置……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
+          "formattedDate": "2026年8月14日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.232",
+          "titleZh": "v2.1.232",
+          "description": "What's changed Subagent forking is now on by default: a subagent_type: \"fork\" subagent inherits the full conversation and prompt cache, and non-teammate agent spawns in interactive sessions now run in the background by…",
+          "descriptionZh": "有哪些变化？子代理分叉功能现已默认启用：设置 subagent_type: \"fork\" 的子代理将继承完整的对话和提示词缓存，而在交互式会话中生成的非团队成员代理现在将由……在后台运行……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.232",
+          "formattedDate": "2026年8月13日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.231",
+          "titleZh": "v2.1.231",
+          "description": "What's changed Fixed MCP OAuth sign-in failing with a redirect URI mismatch for servers that use a pre-registered OAuth client, such as Slack",
+          "descriptionZh": "更新内容：修复了使用预注册 OAuth 客户端（如 Slack）的服务器在 MCP OAuth 登录时因重定向 URI 不匹配而导致登录失败的问题。",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.231",
+          "formattedDate": "2026年8月13日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.229",
+          "titleZh": "v2.1.229",
+          "description": "What's changed Documented claude remote-control --continue for resuming the most recent Remote Control session Added server-supplied Claude Code hook support for self-hosted runner sessions, matching managed-environment…",
+          "descriptionZh": "有哪些变化 记录了使用 `claude remote-control --continue` 命令恢复最近一次远程控制会话的功能 添加了对自托管运行器会话的服务器提供的 Claude Code 钩子支持，与托管环境……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+          "formattedDate": "2026年8月12日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 218,
+    "published": 39,
+    "sourceCount": 11,
+    "translated": true
+  }
+}
