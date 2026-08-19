@@ -72,9 +72,8 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.SERVER_HOST }}
-          REMOTE_PORT: ${{ secrets.SERVER_PORT }}
-          REMOTE_USER: ${{ secrets.SERVER_USER }}
+          REMOTE_USER: ${{ secrets.SERVER_USERNAME }}
           SOURCE: dist/
-          TARGET: ${{ secrets.SERVER_DEPLOY_PATH }}
+          TARGET: /www/wwwroot/ai-news-digest/
           ARGS: -rltgoDzvO --delete
           EXCLUDE: .user.ini
