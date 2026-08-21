@@ -32,7 +32,7 @@ jobs:
           ref: ${{ github.ref_name }}
       - uses: pnpm/action-setup@v4
         with:
-          version: 11.15.1
+          version: 11.22.0
       - uses: actions/setup-node@v4
         with:
           node-version: 22
