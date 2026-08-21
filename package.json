@@ -3,6 +3,7 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.22.0",
   "description": "Daily AI news digest aggregated from RSS feeds",
   "scripts": {
     "dev": "vite",
@@ -12,7 +13,7 @@
     "rebuild-issue": "tsx scripts/rebuild-issue.ts",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
+    "lint:fix": "eslint --fix",
     "typecheck": "vue-tsc --noEmit",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
@@ -29,7 +30,7 @@
     "@antfu/eslint-config": "^9.1.0",
     "@commitlint/cli": "^21.2.1",
     "@commitlint/config-conventional": "^21.2.0",
-    "@huberyyang/todo-scripts": "^1.0.12",
+    "@huberyyang/todo-scripts": "^1.1.1",
     "@iconify-json/lucide": "^1.2.118",
     "@types/node": "^22.20.1",
     "@vitejs/plugin-vue": "^6.0.8",
@@ -43,9 +44,5 @@
     "vite": "^8.1.5",
     "vite-plugin-vue-devtools": "^8.1.5",
     "vue-tsc": "^3.3.7"
-  },
-  "lint-staged": {
-    "*": "eslint . --fix",
-    "*.{ts,vue}": "bash -c 'vue-tsc --noEmit'"
   }
 }
