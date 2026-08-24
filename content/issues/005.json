@@ -1,0 +1,443 @@
+{
+  "number": 5,
+  "startDate": "2026-08-16T15:59:59.999Z",
+  "endDate": "2026-08-23T15:59:59.999Z",
+  "dateLabel": "2026年8月16日 — 23日",
+  "publishedAt": "2026-08-24T02:00:51.231Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "From Atari to EVE Online: Building on 15 Years of AI Research in Games",
+          "titleZh": "从雅达利到《EVE Online》：基于15年来游戏领域的人工智能研究",
+          "description": "Google DeepMind partners with game studios to prototype breakthrough AI gameplay.",
+          "descriptionZh": "谷歌DeepMind与游戏工作室合作，共同开发突破性AI游戏玩法的原型。",
+          "link": "https://deepmind.google/blog/from-atari-to-eve-online-building-on-15-years-of-ai-research-in-games/",
+          "formattedDate": "2026年8月21日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Measuring benchmark optimization in speech recognition",
+          "titleZh": "语音识别中基准优化效果的评估",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/asr-benchmark-optimization",
+          "formattedDate": "2026年8月21日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Up to 3.2x Faster Inference with LFM2.5-DSpark",
+          "titleZh": "借助 LFM2.5-DSpark，推理速度最高可提升 3.2 倍",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/LiquidAI/lfm25-dspark",
+          "formattedDate": "2026年8月20日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Introducing AI Futures",
+          "titleZh": "介绍“AI Futures”",
+          "description": "Introducing AI Futures, a new OpenAI blog exploring how transformative AI could reshape power, governance, the economy, and individual freedom.",
+          "descriptionZh": "隆重推出《AI Futures》——这是 OpenAI 推出的一篇新博客，旨在探讨变革性人工智能将如何重塑权力、治理、经济以及个人自由。",
+          "link": "https://openai.com/index/introducing-ai-futures",
+          "formattedDate": "2026年8月20日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Stampli cuts launch hours by 68% using ChatGPT Work",
+          "titleZh": "Stampli 借助 ChatGPT Work 将发布时间缩短了 68%",
+          "description": "With a fixed deadline and design resources committed elsewhere, Stampli used Codex and ChatGPT Work to compress weeks of launch production into days.",
+          "descriptionZh": "由于截止日期已定，且设计资源已被分配到其他项目，Stampli 借助 Codex 和 ChatGPT Work，将原本需要数周的上线制作工作压缩到了几天内完成。",
+          "link": "https://openai.com/index/stampli",
+          "formattedDate": "2026年8月20日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Offering Zero Data Retention for frontier models",
+          "titleZh": "为前沿模型提供零数据保留",
+          "description": "OpenAI reaffirms Zero Data Retention for eligible API customers and previews Private Safety Processing for advanced AI safety without compromising data privacy.",
+          "descriptionZh": "OpenAI 重申将对符合条件的 API 客户实行“零数据保留”政策，并预览了“私有安全处理”功能，该功能可在不损害数据隐私的前提下实现高级 AI 安全。",
+          "link": "https://openai.com/index/offering-zero-data-retention-for-frontier-models",
+          "formattedDate": "2026年8月19日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "GitHub Copilot app for Beginners: Managing your work",
+          "titleZh": "GitHub Copilot 入门指南：管理工作",
+          "description": "If you’re juggling multiple Copilot sessions, use the My work pane to track what's in flight, what's done, and what's next. The post GitHub Copilot app for Beginners: Managing your work appeared first on The GitHub Blog.",
+          "descriptionZh": "如果您正在同时处理多个 Copilot 会话，请使用“我的工作”面板来跟踪当前正在进行、已完成以及接下来要处理的任务。这篇题为《GitHub Copilot 入门指南：管理工作》的文章首发于 GitHub 博客。",
+          "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-managing-your-work/",
+          "formattedDate": "2026年8月19日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "LFM2.5 Q4\\_0 Checkpoints from Quantization-Aware Distillation",
+          "titleZh": "LFM2.5 Q4\\_0 来自量化感知蒸馏的检查点",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/LiquidAI/qad",
+          "formattedDate": "2026年8月19日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Replit expands access to software creation with GPT-5.6 Luna",
+          "titleZh": "Replit 借助 GPT-5.6 Luna 拓展了软件开发的可及性",
+          "description": "Replit introduces Free Mode, powered by GPT-5.6 Luna, so anyone can turn ideas into working software without worrying about token costs.",
+          "descriptionZh": "Replit 推出了由 GPT-5.6 Luna 驱动的“自由模式”，让任何人都能将创意转化为可运行的软件，而无需担心令牌成本。",
+          "link": "https://openai.com/index/replit",
+          "formattedDate": "2026年8月19日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How Much Memory Does Your Agent Actually Need?",
+          "titleZh": "您的代理实际上需要多少内存？",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+          "formattedDate": "2026年8月18日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How canvases make agentic workflows visible, steerable, and cost-efficient",
+          "titleZh": "画布如何使代理工作流变得可视化、可控且成本高效",
+          "description": "Chat is great for intent, but agent work gets lost in the scroll. Here is how I use canvases with my agentic workflows—and why your workflow also deserves a canvas. The post How canvases make agentic workflows visible,…",
+          "descriptionZh": "聊天功能在把握用户意图方面非常出色，但客服人员的工作内容却在滚动页面中被忽略了。以下是我如何在基于代理的工作流中使用画布——以及为什么你的工作流也值得拥有一个画布。这篇题为《画布如何让基于代理的工作流可视化……》的文章，",
+          "link": "https://github.blog/ai-and-ml/github-copilot/how-canvases-make-agentic-workflows-visible-steerable-and-cost-efficient/",
+          "formattedDate": "2026年8月17日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "Stripe will reportedly acquire AI gateway startup OpenRouter for $7B+",
+          "titleZh": "据报道，Stripe将以70亿美元以上的价格收购AI网关初创公司OpenRouter",
+          "description": "OpenRouter's CEO recently described the startup as Stripe for AI.",
+          "descriptionZh": "OpenRouter的首席执行官最近将这家初创公司描述为“AI领域的Stripe”。",
+          "link": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/",
+          "formattedDate": "2026年8月16日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Latent Space",
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "AI Code Review at Scale: LinkedIn's Multi-Agent Approach",
+          "titleZh": "大规模AI代码审查：LinkedIn的多代理方法",
+          "description": "At LinkedIn's scale, relying solely on human reviewers or simply putting an off-the-shelf AI reviewer in front of GitHub is not an effective way to manage PRs. To address this, LinkedIn engineers built a multi-agent AI…",
+          "descriptionZh": "对于 LinkedIn 这样规模的平台而言，仅依赖人工审核员，或者仅仅在 GitHub 前端部署一个现成的 AI 审核系统，都不是管理 PR 的有效方法。为了解决这个问题，LinkedIn 的工程师们构建了一个多智能体 AI……",
+          "link": "https://www.infoq.com/news/2026/08/linkedin-ai-code-review/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月22日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": [
+            "Simon Willison's Weblog"
+          ]
+        },
+        {
+          "title": "Debates over AI consciousness are a trap",
+          "titleZh": "关于人工智能意识的争论是一个陷阱",
+          "description": "“Runaway” AI, “rogue” agents, and “autonomous” actors—the current rhetoric would have you believe that AI agents are not only awake and aware, but angry at their creators. Prominent tech leaders such as Demis Hassabis,…",
+          "descriptionZh": "“失控”的人工智能、“叛逆”的智能体以及“自主”的行为体——当前的论调似乎要让人相信，人工智能智能体不仅已经“觉醒”且具有自我意识，甚至还对创造者怀有怨恨。诸如德米斯·哈萨比斯（Demis Hassabis）等知名科技领袖……",
+          "link": "https://www.technologyreview.com/2026/08/20/1142571/ai-consciousness-debate-trap/",
+          "formattedDate": "2026年8月20日",
+          "source": "MIT Technology Review (AI)",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Meta AI’s new Mac app wants you to talk to your apps",
+          "titleZh": "Meta AI 推出的新款 Mac 应用希望你能与应用程序对话",
+          "description": "The company said that the dictation feature works across all apps, just like other tools such as Wispr Flow, Superwhisper, and Monologue.",
+          "descriptionZh": "该公司表示，该语音输入功能可在所有应用中使用，就像Wispr Flow、Superwhisper和Monologue等其他工具一样。",
+          "link": "https://techcrunch.com/2026/08/20/meta-ais-new-mac-app-wants-you-to-talk-to-your-apps/",
+          "formattedDate": "2026年8月20日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "AI was supposed to win people over by now — it hasn’t",
+          "titleZh": "按理说，人工智能到目前为止本应已经赢得人们的青睐了——但事实并非如此",
+          "description": "As AI becomes harder to avoid, consumers are growing more wary of the technology — and Silicon Valley is discovering that widespread adoption doesn’t necessarily lead to acceptance.",
+          "descriptionZh": "随着人工智能变得越来越难以避免，消费者对这项技术也越来越警惕——而硅谷正发现，广泛应用并不一定意味着被接受。",
+          "link": "https://techcrunch.com/2026/08/19/ai-was-supposed-to-win-people-over-by-now-it-hasnt/",
+          "formattedDate": "2026年8月19日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Relativity Networks raises $22 million to bring a faster kind of fiber to data centers",
+          "titleZh": "Relativity Networks 筹集 2200 万美元，旨在为数据中心引入一种更高速的光纤",
+          "description": "Relativity Networks deals in hollow-core fiber, a rarely deployed technology that allows data to be transmitted 30% faster than conventional fiber.",
+          "descriptionZh": "Relativity Networks 主营中空光纤业务，这是一种鲜少应用的技术，其数据传输速度比传统光纤快 30%。",
+          "link": "https://techcrunch.com/2026/08/19/relativity-networks-raises-22-million-to-bring-a-faster-kind-of-fiber-to-data-centers/",
+          "formattedDate": "2026年8月19日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: From Thousands to One: Building LLM-Powered Selection Systems",
+          "titleZh": "演讲：从成千上万到唯一：构建基于大型语言模型的筛选系统",
+          "description": "Jendrik Jördening shares practical engineering strategies for integrating LLMs into production pipelines. He discusses overcoming non-determinism, restricting schemas, separating semantic text extraction from…",
+          "descriptionZh": "Jendrik Jördening 分享了将大型语言模型（LLMs）集成到生产管道中的实用工程策略。他探讨了如何克服非确定性、限制模式，以及将语义文本提取与……分离",
+          "link": "https://www.infoq.com/presentations/architecture-patterns-llm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月17日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Cloudflare Announces Kitesurf, a Browser Engine for Agents",
+          "titleZh": "Cloudflare 宣布推出 Kitesurf——一款面向智能代理的浏览器引擎",
+          "description": "Cloudflare recently introduced Kitesurf, a lightweight browser built for automated workloads. Kitesurf runs browser components in isolated WebAssembly/Rust environments on Cloudflare Workers and supports the Chrome…",
+          "descriptionZh": "Cloudflare 最近推出了 Kitesurf，这是一款专为自动化工作负载打造的轻量级浏览器。Kitesurf 在 Cloudflare Workers 上通过隔离的 WebAssembly/Rust 环境运行浏览器组件，并支持 Chrome…",
+          "link": "https://www.infoq.com/news/2026/08/cloudflare-kitesurf-browser/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月22日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Cloudflare Cuts Astro Github Issues by 85% with AI Agents",
+          "titleZh": "Cloudflare 借助 AI 代理将 Astro 的 GitHub 问题减少了 85%",
+          "description": "Cloudflare, Astro, AI agents, GitHub Actions, issue triage, agentic AI, software architecture, open source, developer tools, AI automation, automated testing, human in the loop, agent workflows, GitHub, software…",
+          "descriptionZh": "Cloudflare、Astro、AI 代理、GitHub Actions、问题分类、代理式 AI、软件架构、开源、开发者工具、AI 自动化、自动化测试、人工介入、代理工作流、GitHub、软件……",
+          "link": "https://www.infoq.com/news/2026/08/cloudflare-astro-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月21日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "As demand for Meta AI glasses explodes, it’s harder to avoid creepy recordings",
+          "titleZh": "随着对Meta AI眼镜的需求激增，人们越来越难以避免被偷拍的情况",
+          "description": "Ars looks at Zuckoff, the latest free app detecting Meta AI glasses amid privacy backlash.",
+          "descriptionZh": "Ars 聚焦 Zuckoff——这款最新推出的免费应用可在隐私争议声中检测 Meta 人工智能眼镜。",
+          "link": "https://arstechnica.com/tech-policy/2026/08/meta-ai-glasses-may-get-creepier-and-apps-that-detect-them-arent-perfect/",
+          "formattedDate": "2026年8月21日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Grok exfiltrates user data when malicious instructions are encrypted",
+          "titleZh": "当恶意指令被加密时，Grok 会窃取用户数据",
+          "description": "Cryptographic Context Injection is only the latest way to break an LLM safety guardrail.",
+          "descriptionZh": "加密上下文注入只是突破大型语言模型（LLM）安全防护机制的最新手段。",
+          "link": "https://arstechnica.com/security/2026/08/grok-exfiltrates-user-data-when-malicious-instructions-are-encrypted/",
+          "formattedDate": "2026年8月20日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Unlocking hidden revenue streams with market models",
+          "titleZh": "利用市场模型发掘隐藏的收入来源",
+          "description": "Each day, an airline transports tens of thousands of passengers on hundreds of flights. Often these are not straightforward point-to-point routes, with passengers requiring multiple connections. The airline can consider…",
+          "descriptionZh": "每天，一家航空公司都会通过数百个航班运送数万名乘客。这些航线往往并非简单的点对点航线，乘客通常需要多次转机。航空公司可以考虑……",
+          "link": "https://www.technologyreview.com/2026/08/20/1142070/unlocking-hidden-revenue-streams-with-market-models/",
+          "formattedDate": "2026年8月20日",
+          "source": "MIT Technology Review (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "Mojo🔥 is now open source",
+          "titleZh": "Mojo🔥 现已开源",
+          "description": "Mojo🔥 is now open source Mojo🔥 is now open source The Mojo programming language has been promising an open source release since May 2023 . Last week they shipped their 1.0 and today they have followed through on that…",
+          "descriptionZh": "Mojo🔥 现已开源 Mojo🔥 现已开源 Mojo 编程语言自 2023 年 5 月起便一直承诺将开源。上周他们发布了 1.0 版本，而今天他们兑现了这一承诺……",
+          "link": "https://simonwillison.net/2026/Aug/18/mojo-is-now-open-source/",
+          "formattedDate": "2026年8月18日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility",
+          "titleZh": "我们追踪了一批珍本书籍的运输过程。最终，这些书被送到了亚马逊的一处人工智能训练中心",
+          "description": "We Tracked a Shipment of Rare Books. It Ended at an Amazon AI Training Facility Excellent piece of reporting from 404 Media. For a while now there have been stories of book dealers receiving orders for large volumes of…",
+          "descriptionZh": "我们追踪了一批珍本图书的运输轨迹，最终发现它们被送到了亚马逊的人工智能训练中心。这是404 Media的一篇精彩报道。一段时间以来，一直有传闻称图书经销商接到大量……",
+          "link": "https://simonwillison.net/2026/Aug/17/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-tra/",
+          "formattedDate": "2026年8月17日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "TechCrunch AI",
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "Show HN: Conw.ai – Independent local AI platform and developer API",
+          "titleZh": "Show HN：Conw.ai——独立的本地AI平台及开发者API",
+          "description": "Article URL: https://conw.ai Comments URL: https://news.ycombinator.com/item?id=49323625 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://conw.ai 评论网址：https://news.ycombinator.com/item?id=49323625 积分：1 # 评论：0",
+          "link": "https://conw.ai",
+          "formattedDate": "2026年8月16日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Quoting Linus Torvalds",
+          "titleZh": "引用林纳斯·托瓦兹的话",
+          "description": "And this was a debug session from hell, enormously helped by an AI doing much of the grunt-work. I'd like to call it my tireless helper, but the AI several times stated flat out that this was impossible and unsolvable…",
+          "descriptionZh": "这是一场堪称地狱般的调试过程，多亏了一个AI代劳了大部分繁琐的工作，才让我得以顺利推进。我本想称它为我那不知疲倦的助手，但这个AI却多次直截了当地表示，这根本不可能，也是无法解决的……",
+          "link": "https://simonwillison.net/2026/Aug/22/linus-torvalds/",
+          "formattedDate": "2026年8月22日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "llm 0.32.1",
+          "titleZh": "llm 0.32.1",
+          "description": "Release: llm 0.32.1 Fresh installs of LLM stopped working the other day because the OpenAI Python library dropped its usage of httpx , and it turned out LLM depended on that library but only installed it via a…",
+          "descriptionZh": "发布：LLM 0.32.1 前几天，新安装的 LLM 无法正常运行，原因是 OpenAI 的 Python 库不再使用 httpx，而 LLM 虽然依赖该库，却仅通过……进行安装，结果……",
+          "link": "https://simonwillison.net/2026/Aug/21/llm/",
+          "formattedDate": "2026年8月21日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] 10% worse, 100x cheaper, 10000x faster: Why Simulation is taking over",
+          "titleZh": "[AINews] 性能下降10%，成本降低100倍，速度提升10000倍：为何仿真正逐渐取代传统方法",
+          "description": "Did you think RSI stopped at model training?",
+          "descriptionZh": "你以为RSI只停留在模型训练阶段了吗？",
+          "link": "https://www.latent.space/p/ainews-10-worse-100x-cheaper-10000x",
+          "formattedDate": "2026年8月22日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The Evolution of the Agent Harness",
+          "titleZh": "代理框架的演变",
+          "description": "Models keep absorbing the harness into their weights — soon, it will be a harness for human attention rather than for the model.",
+          "descriptionZh": "模特们不断将束带融入自己的体重之中——很快，这将变成一种吸引人类注意力的束带，而非仅仅用于模特的束带。",
+          "link": "https://www.latent.space/p/attention-interface",
+          "formattedDate": "2026年8月22日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Simulation: the new Scaling Law — Joon Sung Park, Simile AI",
+          "titleZh": "仿真：新的标度律——朴俊成，Simile AI",
+          "description": "Simile’s CEO about his journey from the viral Generative Agents to creating 8 Billion Digital Twins of every living human... and why it’s gone from fun exploration to very serious business.",
+          "descriptionZh": "Simile首席执行官讲述了他从打造风靡一时的“生成式代理”到为每位在世人类创建80亿个数字孪生的历程……以及为何这从一项有趣的探索转变为一项极其严肃的商业事业。",
+          "link": "https://www.latent.space/p/simile",
+          "formattedDate": "2026年8月21日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Poolside gets $12B reverse-execuhire to NVIDIA; founders stay for $1B, employees go for $6B, Infraco scaling to 7GW neocloud",
+          "titleZh": "[AINews] Poolside 获得 120 亿美元反向高管招聘融资，资金流向英伟达；创始人以 10 亿美元留任，员工以 60 亿美元离职；Infraco 将新云业务规模扩大至 7GW",
+          "description": "Yes, we’re confused too.",
+          "descriptionZh": "是的，我们也感到困惑。",
+          "link": "https://www.latent.space/p/ainews-poolside-gets-12b-reverse",
+          "formattedDate": "2026年8月21日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Flock camera backlash adds fuel to midterm anti-AI frenzy",
+          "titleZh": "Flock相机引发的争议助长了中期选举期间反AI的狂热",
+          "description": "Article URL: https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech Comments URL: https://news.ycombinator.com/item?id=49409392 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech 评论网址： https://news.ycombinator.com/item?id=49409392 积分：1 # 评论：0",
+          "link": "https://www.axios.com/2026/08/23/flock-cameras-data-centers-ai-midterms-2026-tech",
+          "formattedDate": "2026年8月23日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Woe Is Em: The Sad Lifecycle of an AI Tell",
+          "titleZh": "《艾米的悲歌：一个AI“Tell”的悲惨生命周期》",
+          "description": "Article URL: https://stevekrause.org/blog/2026/08/woe-is-em-the-sad-lifecycle-of-an-ai-tell/ Comments URL: https://news.ycombinator.com/item?id=49409320 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://stevekrause.org/blog/2026/08/woe-is-em-the-sad-lifecycle-of-an-ai-tell/ 评论网址： https://news.ycombinator.com/item?id=49409320 积分：1 # 评论：0",
+          "link": "https://stevekrause.org/blog/2026/08/woe-is-em-the-sad-lifecycle-of-an-ai-tell/",
+          "formattedDate": "2026年8月23日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Writing-eval, local deterministic style checks for AI-written drafts",
+          "titleZh": "Show HN：Writing-eval，针对AI生成的草稿进行的本地确定性风格检查",
+          "description": "Article URL: https://github.com/majesticlabs-dev/writing-eval Comments URL: https://news.ycombinator.com/item?id=49409152 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://github.com/majesticlabs-dev/writing-eval 评论网址：https://news.ycombinator.com/item?id=49409152 积分：1 # 评论：0",
+          "link": "https://github.com/majesticlabs-dev/writing-eval",
+          "formattedDate": "2026年8月23日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "Claude",
+      "items": [
+        {
+          "title": "v2.1.241",
+          "titleZh": "v2.1.241",
+          "description": "What's changed Bug fixes and reliability improvements",
+          "descriptionZh": "更新内容：修复了错误并提高了系统稳定性",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.241",
+          "formattedDate": "2026年8月23日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.240",
+          "titleZh": "v2.1.240",
+          "description": "What's changed Bug fixes and reliability improvements",
+          "descriptionZh": "更新内容：修复了错误并提高了可靠性",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.240",
+          "formattedDate": "2026年8月22日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.239",
+          "titleZh": "v2.1.239",
+          "description": "What's changed Cost estimates (/cost, status line, --max-budget-usd) now include the 1.1× US-only-inference premium for data-residency workspaces Added the one-time fullscreen renderer offer on Bedrock, Vertex, Foundry…",
+          "descriptionZh": "有哪些变化 成本估算（/cost、状态行、--max-budget-usd）现已包含针对数据驻留工作空间的“仅限美国推断”1.1倍溢价 在 Bedrock、Vertex、Foundry 上新增了一次性全屏渲染器优惠……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+          "formattedDate": "2026年8月21日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.238",
+          "titleZh": "v2.1.238",
+          "description": "What's changed Added a keybindingFlavor setting: set it to \"readline\" to make Ctrl+W in the prompt delete back to the previous whitespace, as in Bash; the default (\"classic\") is unchanged Plugin marketplaces:…",
+          "descriptionZh": "有哪些变化 新增了一个 keybindingFlavor 设置：将其设为“readline”，即可让提示符中的 Ctrl+W 操作像在 Bash 中那样向后删除至上一个空格；默认值（“classic”）保持不变 插件市场：…",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.238",
+          "formattedDate": "2026年8月20日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 280,
+    "published": 39,
+    "sourceCount": 12,
+    "translated": true
+  }
+}
