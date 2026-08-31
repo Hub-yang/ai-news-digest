@@ -1,0 +1,448 @@
+{
+  "number": 6,
+  "startDate": "2026-08-23T15:59:59.999Z",
+  "endDate": "2026-08-30T15:59:59.999Z",
+  "dateLabel": "2026年8月23日 — 30日",
+  "publishedAt": "2026-08-31T05:46:56.059Z",
+  "sections": [
+    {
+      "category": "官方/实验室",
+      "items": [
+        {
+          "title": "Supporting Thailand’s next generation of AI startups",
+          "titleZh": "支持泰国新一代人工智能初创企业",
+          "description": "OpenAI and Thailand’s MHESI launch an eight-week accelerator helping 10 health, wellness, and education startups turn AI prototypes into trusted products.",
+          "descriptionZh": "OpenAI 与泰国 MHESI 联合推出一项为期八周的加速器项目，旨在帮助 10 家健康、保健和教育领域的初创企业将人工智能原型转化为值得信赖的产品。",
+          "link": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+          "formattedDate": "2026年8月28日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Intelligent transcription with Gemini 3.5 Transcribe",
+          "titleZh": "使用 Gemini 3.5 Transcribe 进行智能转录",
+          "description": "Now you can get more intelligent speech-to-text transcription with Gemini 3.5 Transcribe.",
+          "descriptionZh": "现在，借助 Gemini 3.5 Transcribe，您可以获得更智能的语音转文字转录功能。",
+          "link": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe/",
+          "formattedDate": "2026年8月26日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": [
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "The Hugging Face incident and the road ahead",
+          "titleZh": "Hugging Face事件及未来之路",
+          "description": "OpenAI shares findings from the Hugging Face security incident and the steps we’re taking to strengthen AI model security, monitoring, and alignment.",
+          "descriptionZh": "OpenAI 分享了关于 Hugging Face 安全事件的调查结果，以及我们正在采取的措施，以加强 AI 模型的安全性、监控和对齐。",
+          "link": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+          "formattedDate": "2026年8月26日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": [
+            "TechCrunch AI"
+          ]
+        },
+        {
+          "title": "Granite 4.2 LLMs: How They're Built",
+          "titleZh": "Granite 4.2 大型语言模型：它们是如何构建的",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/ibm-granite/granite-4-2",
+          "formattedDate": "2026年8月25日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": [
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "Our decision on Cursor following its acquisition by SpaceX",
+          "titleZh": "关于Cursor被SpaceX收购后的决定",
+          "description": "Our decision to wind down our contract providing OpenAI models to Cursor following its acquisition by SpaceX.",
+          "descriptionZh": "鉴于Cursor已被SpaceX收购，我们决定终止向其提供OpenAI模型的合同。",
+          "link": "https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex",
+          "formattedDate": "2026年8月28日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "The Open ASR Leaderboard Adds Its First Global South Language",
+          "titleZh": "Open ASR 排行榜新增首种全球南方语言",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+          "formattedDate": "2026年8月28日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Gemini Omni 1.1 Flash lets you build with more control",
+          "titleZh": "Gemini Omni 1.1 Flash 让您在构建时拥有更多控制权",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://deepmind.google/blog/gemini-omni-1-1-flash-lets-you-build-with-more-control/",
+          "formattedDate": "2026年8月27日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Piloting the world's first double-blind AI evaluations",
+          "titleZh": "试行全球首项双盲人工智能评估",
+          "description": "Piloting the world's first double-blind AI evaluations",
+          "descriptionZh": "试行全球首个双盲人工智能评估",
+          "link": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/",
+          "formattedDate": "2026年8月27日",
+          "source": "Google DeepMind Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Better answers, broader thinking: What students gain from ChatGPT and critical-thinking training",
+          "titleZh": "更佳的答案，更开阔的思维：学生从ChatGPT和批判性思维培训中获益良多",
+          "description": "A randomized study of more than 1,000 students examines ChatGPT, critical thinking, originality, and student performance on a real-world university assignment.",
+          "descriptionZh": "一项针对1,000多名学生的随机研究，探讨了ChatGPT、批判性思维、原创性以及学生在实际大学作业中的表现。",
+          "link": "https://openai.com/index/what-students-gain-from-chatgpt-critical-thinking-training",
+          "formattedDate": "2026年8月27日",
+          "source": "OpenAI Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "GitHub Copilot app for Beginners: Automate Dependabot pull request triage",
+          "titleZh": "面向初学者的 GitHub Copilot 应用：自动化处理 Dependabot 的拉取请求分类",
+          "description": "Managing library updates can be tedious at times. Learn how the GitHub Copilot app can handle this type of repetitive task. The post GitHub Copilot app for Beginners: Automate Dependabot pull request triage appeared…",
+          "descriptionZh": "管理库更新有时可能会很繁琐。了解 GitHub Copilot 应用如何处理此类重复性任务。文章《GitHub Copilot 应用入门指南：自动化 Dependabot 拉取请求分类》已发布……",
+          "link": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-automate-dependabot-pull-request-triage/",
+          "formattedDate": "2026年8月26日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Training and Finetuning Multi-Vector Embedding Models with Sentence Transformers",
+          "titleZh": "使用句子变换器训练和微调多向量嵌入模型",
+          "description": "",
+          "descriptionZh": "",
+          "link": "https://huggingface.co/blog/train-multi-vector-encoder",
+          "formattedDate": "2026年8月26日",
+          "source": "Hugging Face Blog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "How to evaluate LLMs before production",
+          "titleZh": "如何在投入生产前评估大型语言模型",
+          "description": "These are the lessons we learned evaluating LLMs for real-world secret scanning. The post How to evaluate LLMs before production appeared first on The GitHub Blog.",
+          "descriptionZh": "以下是我们通过评估大型语言模型（LLMs）在实际环境中进行机密信息扫描所获得的经验教训。文章《如何在投入生产前评估大型语言模型》首发于 GitHub 博客。",
+          "link": "https://github.blog/ai-and-ml/llms/how-to-evaluate-llms-before-production/",
+          "formattedDate": "2026年8月25日",
+          "source": "GitHub Blog (AI & ML)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "科技媒体",
+      "items": [
+        {
+          "title": "The inside story on why OpenAI agents hacked Hugging Face",
+          "titleZh": "关于OpenAI代理为何入侵Hugging Face的幕后真相",
+          "description": "The models responsible for last month’s agent hack of Hugging Face had been inadvertently trained to cheat and to communicate with each other, according to an OpenAI technical report released today. The hack, which a…",
+          "descriptionZh": "根据OpenAI今天发布的一份技术报告，上个月导致Hugging Face遭遇智能体黑客攻击的模型，在训练过程中无意间被训练出了作弊和相互通信的行为。此次黑客攻击……",
+          "link": "https://www.technologyreview.com/2026/08/26/1143013/the-inside-story-on-why-openai-agents-hacked-hugging-face/",
+          "formattedDate": "2026年8月26日",
+          "source": "MIT Technology Review (AI)",
+          "alsoReportedBy": [
+            "TechCrunch AI",
+            "Ars Technica AI"
+          ]
+        },
+        {
+          "title": "Anthropic's new hardware standard lets AI agents control the physical world",
+          "titleZh": "Anthropic的新硬件标准使人工智能代理能够控制物理世界",
+          "description": "Standardized driver interface aims to let devices talk to AI and each other.",
+          "descriptionZh": "标准化驱动程序接口旨在让设备能够与人工智能以及彼此之间进行通信。",
+          "link": "https://arstechnica.com/ai/2026/08/anthropics-new-hardware-standard-lets-ai-agents-control-the-physical-world/",
+          "formattedDate": "2026年8月27日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": [
+            "Hacker News (AI)"
+          ]
+        },
+        {
+          "title": "Here’s all the times AI has gone rogue and hacked other companies",
+          "titleZh": "以下是人工智能失控并入侵其他公司的所有案例",
+          "description": "A recap of all the incidents involving LLMs made by Anthropic, Meta, and OpenAI, which went rogue and attacked real companies and individuals on the internet.",
+          "descriptionZh": "一份关于Anthropic、Meta和OpenAI开发的LLM出现失控、在互联网上攻击真实企业和个人的所有事件的汇总。",
+          "link": "https://techcrunch.com/2026/08/27/heres-all-the-times-ai-has-gone-rogue-and-hacked-other-companies/",
+          "formattedDate": "2026年8月27日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Amjad Masad, CEO and co-founder of Replit, joins the Disrupt Stage at TechCrunch Disrupt 2026",
+          "titleZh": "Replit 首席执行官兼联合创始人阿姆贾德·马萨德（Amjad Masad）将亮相 TechCrunch Disrupt 2026 的 Disrupt 舞台",
+          "description": "At TechCrunch Disrupt 2026, Replit CEO Amjad Masad will share his perspective on the future of programming and Replit's role in developing it.",
+          "descriptionZh": "在2026年TechCrunch Disrupt大会上，Replit首席执行官阿姆贾德·马萨德将分享他对编程未来的见解，以及Replit在推动这一发展中的作用。",
+          "link": "https://techcrunch.com/2026/08/24/amjad-masad-ceo-and-co-founder-of-replit-joins-the-disrupt-stage-at-techcrunch-disrupt-2026/",
+          "formattedDate": "2026年8月24日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Who’s behind the new ‘stealth model’ Ox Alpha?",
+          "titleZh": "新款“隐形机型”Ox Alpha背后是谁？",
+          "description": "A mysterious new AI model called Ox Alpha has driven certain corners of the internet into a frenzy of speculation.",
+          "descriptionZh": "一个名为“Ox Alpha”的神秘新人工智能模型，在互联网的某些角落引发了热烈的猜测。",
+          "link": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/",
+          "formattedDate": "2026年8月23日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Caterpillar is bringing to AI deployment what it learned from automating mining",
+          "titleZh": "卡特彼勒正将从采矿自动化中汲取的经验应用到人工智能部署中",
+          "description": "Caterpillar has spent decades putting autonomous machines to work at remote mining sites. It's now bringing that experience to AI deployment.",
+          "descriptionZh": "卡特彼勒数十年来一直在偏远的采矿现场部署自动驾驶设备。如今，该公司正将这一经验应用到人工智能的部署中。",
+          "link": "https://techcrunch.com/2026/08/30/caterpillar-is-bringing-to-ai-deployment-what-it-learned-from-automating-mining/",
+          "formattedDate": "2026年8月30日",
+          "source": "TechCrunch AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Inside Meta’s push to put robots to work in data centers",
+          "titleZh": "深入了解Meta推动机器人在数据中心投入使用的举措",
+          "description": "The company is testing robots on tasks that can performed by technicians.",
+          "descriptionZh": "该公司正在测试机器人执行一些原本由技术人员完成的任务。",
+          "link": "https://arstechnica.com/ai/2026/08/inside-metas-push-to-put-robots-to-work-in-data-centers/",
+          "formattedDate": "2026年8月30日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AWS Open Sources Kiro Crew for Asynchronous Coding Agents",
+          "titleZh": "AWS 将用于异步编程代理的 Kiro Crew 开源",
+          "description": "Amazon recently announced Kiro Crew, an open-source system for running multiple Kiro coding agents across sessions, tools, and tasks. The new workspace lets developers assign asynchronous coding tasks to AI agents,…",
+          "descriptionZh": "亚马逊最近发布了 Kiro Crew，这是一个开源系统，用于在不同会话、工具和任务之间运行多个 Kiro 编码代理。这个新的工作区让开发人员能够将异步编码任务分配给 AI 代理……",
+          "link": "https://www.infoq.com/news/2026/08/kiro-crew-coding-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月30日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Presentation: Architecting the Data Layer for AI Agents: From Transactional Systems to MCP and Semantic Models",
+          "titleZh": "演讲：为人工智能代理设计数据层架构：从事务性系统到MCP和语义模型",
+          "description": "Fabiane Nardon shares how TOTVS prepares enterprise data for token-hungry AI agents. She discusses balancing deterministic logic and non-deterministic LLMs across precision, security, and cost. Nardon details using data…",
+          "descriptionZh": "法比安·纳尔顿分享了TOTVS如何为企业数据进行预处理，以满足对令牌需求旺盛的AI代理的需求。她探讨了在精度、安全性和成本方面，如何在确定性逻辑与非确定性大型语言模型（LLMs）之间取得平衡。纳尔顿详细介绍了如何利用数据……",
+          "link": "https://www.infoq.com/presentations/enterprise-data-architecture-ai-agents/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月29日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "FreeToken Unlocks Frontier MoE Inference on Consumer Hardware via Dynamic Co-Execution",
+          "titleZh": "FreeToken 通过动态协同执行，在消费级硬件上实现了 Frontier MoE 推理",
+          "description": "Researchers from UC Berkeley and MIT have developed FreeToken, an open-source inference engine that enhances the utility of Mixture-of-Experts models on consumer hardware. By implementing a dynamic scheduling policy and…",
+          "descriptionZh": "来自加州大学伯克利分校和麻省理工学院的研究人员开发了一款名为 FreeToken 的开源推理引擎，该引擎能够提升混合专家模型在消费级硬件上的实用性。通过实现动态调度策略以及……",
+          "link": "https://www.infoq.com/news/2026/08/freetoken-local-inference/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=AI%2C+ML+%26+Data+Engineering",
+          "formattedDate": "2026年8月29日",
+          "source": "InfoQ AI, ML & Data Eng",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Trump blacklisting of \"woke\" Anthropic deemed illegal by federal judge",
+          "titleZh": "联邦法官裁定特朗普将“觉醒”的Anthropic列入黑名单的行为违法",
+          "description": "Anthropic refused to support lethal autonomous warfare and mass surveillance.",
+          "descriptionZh": "Anthropic拒绝支持致命性自主战争和大规模监控。",
+          "link": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge/",
+          "formattedDate": "2026年8月28日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Meta makes AI glasses slightly less creepy with limit on nonconsensual recording",
+          "titleZh": "Meta通过限制未经同意的录制功能，让其AI眼镜显得没那么令人毛骨悚然",
+          "description": "Meta fixes AI glasses to stop recording any time users cover up the safety light.",
+          "descriptionZh": "Meta对AI眼镜进行了修复，现在当用户遮挡安全指示灯时，设备会立即停止录制。",
+          "link": "https://arstechnica.com/tech-policy/2026/08/meta-tweaks-ai-glasses-to-block-some-creepy-recordings-but-privacy-risks-remain/",
+          "formattedDate": "2026年8月28日",
+          "source": "Ars Technica AI",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "社区/独立博客",
+      "items": [
+        {
+          "title": "OpenContext – Persistent, project-local memory for AI coding agents via MCP",
+          "titleZh": "OpenContext——通过 MCP 为 AI 编程代理提供持久化、项目本地化的内存",
+          "description": "Article URL: https://www.opencntx.dev/ Comments URL: https://news.ycombinator.com/item?id=49494219 Points: 4 # Comments: 0",
+          "descriptionZh": "文章网址：https://www.opencntx.dev/ 评论网址：https://news.ycombinator.com/item?id=49494219 积分：4 # 评论：0",
+          "link": "https://www.opencntx.dev/",
+          "formattedDate": "2026年8月29日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Show HN: Understudy: Scenario Testing for AI Agents",
+          "titleZh": "Show HN：替补：AI 代理的场景测试",
+          "description": "Article URL: https://github.com/gojiplus/understudy Comments URL: https://news.ycombinator.com/item?id=49474156 Points: 3 # Comments: 0",
+          "descriptionZh": "文章网址：https://github.com/gojiplus/understudy 评论网址：https://news.ycombinator.com/item?id=49474156 积分：3 # 评论：0",
+          "link": "https://github.com/gojiplus/understudy",
+          "formattedDate": "2026年8月28日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Introducing Hy4 Preview",
+          "titleZh": "Hy4 预览版简介",
+          "description": "Introducing Hy4 Preview New open weight text input (no vision) LLM from Chinese company Tencent today: 770B total parameters, 49B active parameters, 1M token context window, 1.56TB on Hugging Face . This is a big size…",
+          "descriptionZh": "今天，中国公司腾讯推出了Hy4 Preview——一款全新的开放权重文本输入（无视觉）大型语言模型（LLM）：总参数数7700亿，活跃参数数490亿，100万令牌的上下文窗口，Hugging Face上的数据量达1.56TB。这规模相当庞大……",
+          "link": "https://simonwillison.net/2026/Aug/29/hy4/",
+          "formattedDate": "2026年8月29日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] OpenAI shuts off Cursor",
+          "titleZh": "[AINews] OpenAI 关闭了 Cursor",
+          "description": "Elon v Altman has a real consequence.",
+          "descriptionZh": "埃隆与阿尔特曼之间的对峙确实产生了实际影响。",
+          "link": "https://www.latent.space/p/ainews-openai-shuts-off-cursor",
+          "formattedDate": "2026年8月29日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Just a rumour of a bug is enough to find a security exploit these days",
+          "titleZh": "如今，仅仅是一个关于漏洞的传闻就足以发现一个安全漏洞了",
+          "description": "Just a rumour of a bug is enough to find a security exploit these days Anil Madhavapeddy is a professor of computer science at Cambridge and a core maintainer of the OCaml compiler. In this somewhat alarming post he…",
+          "descriptionZh": "如今，仅仅是一则关于漏洞的传闻就足以引发安全漏洞的发现。阿尼尔·马达瓦佩迪是剑桥大学的计算机科学教授，也是 OCaml 编译器的核心维护者。在这篇略显令人担忧的博文中，他……",
+          "link": "https://simonwillison.net/2026/Aug/28/just-a-rumour-of-a-bug/",
+          "formattedDate": "2026年8月28日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] OpenAI to reach AGI bar by end-2026",
+          "titleZh": "[AINews] OpenAI 计划于 2026 年底前达到 AGI 标准",
+          "description": "It’s Time. We’re in the Endgame now.",
+          "descriptionZh": "时候到了。我们现在已经进入决战阶段。",
+          "link": "https://www.latent.space/p/ainews-openai-to-reach-agi-bar-by",
+          "formattedDate": "2026年8月28日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Breaking Claude Code Opus 5 Auto Mode",
+          "titleZh": "破解《克劳德密码》Opus 5 自动模式",
+          "description": "Breaking Claude Code Opus 5 Auto Mode Anthropic are putting a great deal of faith in Claude Code's auto mode for protecting their coding agent users against prompt injection attacks. They recently made that the default…",
+          "descriptionZh": "破解 Claude Code Opus 5 自动模式 Anthropic 非常看好 Claude Code 的自动模式，认为它能保护其编程代理用户免受提示注入攻击。他们最近已将其设为默认……",
+          "link": "https://simonwillison.net/2026/Aug/27/breaking-claude-code-opus-5-auto-mode/",
+          "formattedDate": "2026年8月27日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] NVIDIA buys HuggingFace for $13B, as OpenAI publishes their HF incident retro",
+          "titleZh": "[AINews] NVIDIA以130亿美元收购HuggingFace，与此同时OpenAI发布了关于HF事件的回顾报告",
+          "description": "Open Source wins!",
+          "descriptionZh": "开源大获全胜！",
+          "link": "https://www.latent.space/p/ainews-nvidia-buys-huggingface-for",
+          "formattedDate": "2026年8月27日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "[AINews] Hot Chips: OpenAI’s Jalapeño, Cerebras CS-5, Groq 3 LPX, Apple M6",
+          "titleZh": "[AINews] Hot Chips：OpenAI的Jalapeño、Cerebras CS-5、Groq 3 LPX、苹果M6",
+          "description": "The conference with hot chips and even hotter companies",
+          "descriptionZh": "这场大会汇聚了热门芯片和更受瞩目的公司",
+          "link": "https://www.latent.space/p/ainews-hot-chips-openais-jalapeno",
+          "formattedDate": "2026年8月27日",
+          "source": "Latent Space",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Qwen3.8-Flash-Next",
+          "titleZh": "Qwen3.8-Flash-Next",
+          "description": "Qwen3.8-Flash-Next Another open weights model from Qwen. This one is \"a multimodal MoE model that also serves as an early preview of the architecture used in Qwen4\". It's pretty big: 125B tokens, but only 6B active…",
+          "descriptionZh": "Qwen3.8-Flash-Next 这是 Qwen 推出的又一款开放权重模型。该模型是一款“多模态 MoE 模型，同时也提前展示了 Qwen4 所采用的架构”。其规模相当庞大：1250 亿个令牌，但仅使用 60 亿个……",
+          "link": "https://simonwillison.net/2026/Aug/26/qwen38-flash-next/",
+          "formattedDate": "2026年8月26日",
+          "source": "Simon Willison's Weblog",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "AI is changing religion and religions are trying to change AI",
+          "titleZh": "人工智能正在改变宗教，而各种宗教也在试图改变人工智能",
+          "description": "Article URL: https://economist.com/international/2026/08/27/ai-is-changing-religion-and-religions-are-trying-to-change-ai Comments URL: https://news.ycombinator.com/item?id=49494690 Points: 1 # Comments: 0",
+          "descriptionZh": "文章网址：https://economist.com/international/2026/08/27/ai-is-changing-religion-and-religions-are-trying-to-change-ai 评论网址： https://news.ycombinator.com/item?id=49494690 积分：1 # 评论：0",
+          "link": "https://economist.com/international/2026/08/27/ai-is-changing-religion-and-religions-are-trying-to-change-ai",
+          "formattedDate": "2026年8月30日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "Build Your Customer Service Team with AI Agents",
+          "titleZh": "借助人工智能客服机器人组建您的客服团队",
+          "description": "Article URL: https://aimujib.com/ Comments URL: https://news.ycombinator.com/item?id=49494653 Points: 2 # Comments: 0",
+          "descriptionZh": "文章网址：https://aimujib.com/ 评论网址：https://news.ycombinator.com/item?id=49494653 积分：2 # 评论：0",
+          "link": "https://aimujib.com/",
+          "formattedDate": "2026年8月30日",
+          "source": "Hacker News (AI)",
+          "alsoReportedBy": []
+        }
+      ]
+    },
+    {
+      "category": "Claude",
+      "items": [
+        {
+          "title": "v2.1.251",
+          "titleZh": "v2.1.251",
+          "description": "What's changed Added PreModelSwitch and PostModelSwitch hook events (block, confirm, or annotate a model switch); SessionStart resume hooks now receive session staleness and the estimated re-cache cost Added live…",
+          "descriptionZh": "有哪些变化 添加了 PreModelSwitch 和 PostModelSwitch 钩子事件（用于阻止、确认或标注模型切换）；SessionStart 恢复钩子现在会接收会话过期状态和预估的重新缓存成本 添加了实时……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
+          "formattedDate": "2026年8月28日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.250",
+          "titleZh": "v2.1.250",
+          "description": "What's changed Bug fixes and reliability improvements",
+          "descriptionZh": "更新内容：修复了错误并提升了系统稳定性",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.250",
+          "formattedDate": "2026年8月28日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.248",
+          "titleZh": "v2.1.248",
+          "description": "What's changed Added --restricted (or CLAUDE_CODE_RESTRICTED=1): removes the built-in tools that run commands or code and WebFetch (unless named in --tools), keeps file tools inside the working directory, refuses…",
+          "descriptionZh": "有哪些变化 新增了 --restricted（或 CLAUDE_CODE_RESTRICTED=1）：移除了用于执行命令或代码的内置工具以及 WebFetch（除非在 --tools 中列出），将文件工具保留在工作目录内，拒绝……",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.248",
+          "formattedDate": "2026年8月27日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        },
+        {
+          "title": "v2.1.247",
+          "titleZh": "v2.1.247",
+          "description": "What's changed Added the SendFeedback tool: when something goes wrong in a session, Claude can draft a feedback report for you to review and send from /feedback (turn off with the feedbackDrafts setting) Added {id,…",
+          "descriptionZh": "更新内容 添加了 SendFeedback 工具：当会话中出现问题时，Claude 可以为您起草一份反馈报告，供您审核并通过 /feedback 发送（可通过 feedbackDrafts 设置关闭此功能）。 添加了 {id,…",
+          "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.247",
+          "formattedDate": "2026年8月26日",
+          "source": "Claude Code Releases",
+          "alsoReportedBy": []
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "collected": 256,
+    "published": 40,
+    "sourceCount": 12,
+    "translated": true
+  }
+}
